@@ -1,0 +1,10 @@
+The Light Reveals is an mod that focuses on built-in compabilities for mods I like, yet it works on it's own.
+
+Adds two new damage classes, HOLY and UNHOLY. These are usually in tandem with other damage classes.
+
+The HOLY class is mostly locked in hardmode, since it's based off the hallow. (Expection: Enchanted Sword!)
+The UNHOLY class is avaivable during the whole game, since it's based off the corruption and crimson.
+
+Mods that are compatible:
+- Secrets of the Shadows (I love that mod. It's the original mod I planned compatibility for.)
+(Credits to Vortex for giving me access to the source code.)

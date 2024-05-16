@@ -1,0 +1,137 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	CyberScope: {
+		DisplayName: Cybernetic Eye Enchanments
+		Tooltip:
+			'''
+			Increases view range for ranged weapons (Right-click to zoom out)
+			10% increased ranged damage and critical strike chance
+			Greatly increased arrow speed
+			Wooden arrows are lit ablaze
+			Enemies are less likely to target you
+			'''
+	}
+
+	EndlessRocketIBelt: {
+		Tooltip: ""
+		DisplayName: Endless Rocket I Belt
+	}
+
+	EndlessDartBag: {
+		Tooltip: ""
+		DisplayName: Endless Dart Bag
+	}
+
+	HallowedGauntlet: {
+		DisplayName: Hallowed Gauntlet
+		Tooltip:
+			'''
+			Increases melee knockback and melee attacks inflict fire damage
+			15% increased melee damage and speed
+			10% increased holy damage and critical strike chance
+			Enabled auto-swing for melee weapons
+			Increases size for melee weapons
+			Gives the user master yoyo skills
+			Hitting an enemy with a melee weapon increases defense for a while
+			Getting hit will make you unable to get the defense for 10 seconds
+			Enemies are more likely to target you
+			'''
+	}
+
+	EndlessPoisonDartBag: {
+		DisplayName: Endless Poison Dart Bag
+		Tooltip: ""
+	}
+
+	Exoskeleton: {
+		DisplayName: TABECDS Exoskeleton
+		Tooltip:
+			'''
+			Allows the user to quadruple jump and auto-jump, increases jump height and speed, and negates fall damage
+			Grants the ability to swim and greatly extends underwater breathing
+			Provides extra mobility on ice and improved vision
+			Provides light when worn and a subtle glow that becomes more vibrant underwater
+			Increases mining speed by 25% and increases block & wall placement speed
+			Increases block placement and tool range by 3, and pickup range for items
+			Automatically paints, coats or actuates placed items
+			Hold Up to reach higher
+			Fishing line will never break, decreases chance of bait consumption, increases fishing power by 20
+			Allows fishing in lava and grants you a fishing bobber
+			Allows the ability to climb walls
+			Increases movement speed and acceleration
+			Grants you wire vision and measurement lines on screen for block placement
+			'Terminate, Analyze, Build, Explore, Conquer, Destroy, Scavenge.'
+			'''
+	}
+
+	KungFuShoes: {
+		DisplayName: Kung-Fu Shoes
+		Tooltip:
+			'''
+			Allows flight, super fast running and extra mobility on ice
+			12% increased movement speed
+			Provides the ability to walk on liquids
+			Grants immunity to fire blocks and 7 seconds of immunity to lava
+			Allows the ability to climb walls and dash
+			Gives a chance to dodge attacks
+			Negates fall damage
+			Reduces damage from touching lava
+			'''
+	}
+
+	CursedMusketPouch: {
+		DisplayName: Cursed Musket Pouch
+		Tooltip: ""
+	}
+
+	CursedQuiver: {
+		DisplayName: Cursed Quiver
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	BlessedDefense: {
+		DisplayName: Blessed Defense
+		Description: Increases defense by 10
+	}
+
+	BlessingCooldown: {
+		DisplayName: Blessing Cooldown
+		Description: Cannot get Blessed Defense
+	}
+}
+
+Configs: {
+	TLRConfigServer: {
+		DisplayName: TLR Config Server
+
+		HolyBalance: {
+			Label: Holy Balance
+			Tooltip: If enabled, buffs to holiness debuff unholiness, and vice-versa.
+		}
+	}
+}
+
+DamageClasses: {
+	HolySummon.DisplayName: holy + summon damage
+	HolyRanged.DisplayName: holy + ranged damage
+	HolyMelee.DisplayName: holy + melee damage
+	HolyMagic.DisplayName: holy + magic damage
+	Holy.DisplayName: holy damage
+	Unholy.DisplayName: unholy damage
+	UnholyMagic.DisplayName: unholy + magic damage
+	UnholyMelee.DisplayName: unholy + melee damage
+	UnholyRanged.DisplayName: unholy + ranged damage
+	UnholySummon.DisplayName: unholy + summon damage
+	UnholySummonWhip.DisplayName: unholy + summon damage
+	HolySummonWhip.DisplayName: holy + summon damage
+	UnholyMeleeNoSpeed.DisplayName: unholy + melee damage
+	HolyMeleeNoSpeed.DisplayName: holy + melee damage
+}
+
+Projectiles: {
+	CursedArrow.DisplayName: Cursed Arrow
+	CursedBullet.DisplayName: Cursed Bullet
+}

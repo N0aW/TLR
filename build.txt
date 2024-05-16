@@ -1,0 +1,3 @@
+displayName = The Light Reveals
+author = N0aW
+version = 0.1
