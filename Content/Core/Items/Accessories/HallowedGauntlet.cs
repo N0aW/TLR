@@ -48,9 +48,6 @@ namespace TLR.Content.Core.Items.Accessories
             recipe.AddIngredient(ItemID.SoulofMight, 10);
             recipe.AddIngredient(ItemID.SoulofSight, 10);
             recipe.AddIngredient(ItemID.SoulofFright, 10);
-            if (ModLoader.TryGetMod("SOTS", out Mod SOTS) && SOTS.TryFind<ModItem>("SoulOfPlight", out ModItem SoulOfPlight)) {
-	            recipe.AddIngredient(SoulOfPlight.Type, 10);
-            }
 			recipe.AddTile(TileID.MythrilAnvil);
             recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();

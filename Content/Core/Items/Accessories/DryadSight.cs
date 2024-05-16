@@ -100,14 +100,5 @@ namespace TLR.Content.Core.Items.Accessories
                 player.GetDamage(ModContent.GetInstance<DamageClasses.Holy>()) += WorldGen.tGood / 200f;
             }
         }
-        public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.ReconScope);
-			recipe.AddIngredient(ItemID.MoltenQuiver);
-			recipe.AddIngredient(ItemID.SoulofSight, 15);
-			recipe.AddTile(TileID.TinkerersWorkbench);
-			recipe.Register();
-		}
 	}
 }

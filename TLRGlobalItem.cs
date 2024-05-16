@@ -63,4 +63,16 @@ namespace TLR
 			}
 		}
 	}
+	public class SOTSHolyItem : GlobalItem {
+        public override void SetDefaults(Item item) {
+			if (ModLoader.TryGetMod("SOTS", out Mod SOTS)) {
+				if (item.type == SOTS.Find<ModItem>("DeathSpiral").Type) {
+					item.DamageType = ModContent.GetInstance<Content.Core.DamageClasses.UnholyMelee>();
+				}
+				if (item.type == SOTS.Find<ModItem>("AbyssalFury").Type) {
+					item.DamageType = ModContent.GetInstance<Content.Core.DamageClasses.UnholyVoidMelee>();
+				}
+			}
+		}
+    }
 }
