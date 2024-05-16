@@ -10,9 +10,9 @@ namespace TLR.Content.Core.Items.Ammo
 	{
         public override bool IsLoadingEnabled(Mod mod)
         {
-            return true;
+            return false;
         }
-        // HITTING ENEMY WITH THESE DARTS KILLS THE PLAYER!!!
+        // Is way too fast and doesn't break when used.
         public override void SetDefaults() {
             Item.damage = 4;
             Item.knockBack = 2;

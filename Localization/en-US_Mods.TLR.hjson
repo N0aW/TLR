@@ -7,6 +7,7 @@ Items: {
 			'''
 			Increases view range for ranged weapons (Right-click to zoom out)
 			10% increased ranged damage and critical strike chance
+			5% increased unholy damage and critical strike chance
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
 			Enemies are less likely to target you
@@ -77,6 +78,21 @@ Items: {
 			Gives a chance to dodge attacks
 			Negates fall damage
 			Reduces damage from touching lava
+			'''
+	}
+
+	DryadSight: {
+		DisplayName: Dryad Sight
+		Tooltip:
+			'''
+			Increases unholy damage the more corrupted/crimson the world is
+			Increases holy damage the more hallowed the world is
+			Increases all damage greatly if the world is fully pure
+			The world might have corruption? The info hasn't loaded yet.
+			The world might have crimson? The info hasn't loaded yet.
+			The world might have hallow? The info hasn't loaded yet.
+			Unholy damage increased by ...I have no idea.
+			Holy damage incresed by ...Yeah the tooltips aren't loading.
 			'''
 	}
 

@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
+using tModPorter;
 
 namespace TLR.Content.Core.DamageClasses
 {
@@ -21,6 +23,17 @@ namespace TLR.Content.Core.DamageClasses
 				armorPenInheritance: 1f,
 				knockbackInheritance: 1f
 			    );
+			}
+			if (ModContent.GetInstance<TLRConfigServer>().HolyBalance) {
+				if (damageClass == ModContent.GetInstance<Unholy>()) {
+					return new StatInheritanceData(
+					damageInheritance: -1f,
+					critChanceInheritance: -1f,
+					attackSpeedInheritance: -1f,
+					armorPenInheritance: -1f,
+					knockbackInheritance: -1f
+					);
+				}
 			}
 			return new StatInheritanceData(
 				damageInheritance: 0f,

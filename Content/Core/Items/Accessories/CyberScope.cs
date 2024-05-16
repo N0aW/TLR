@@ -28,6 +28,8 @@ namespace TLR.Content.Core.Items.Accessories
 			player.GetDamage(DamageClass.Ranged) += 10 / 100f;
 			player.GetCritChance(DamageClass.Ranged) += 10;
 			player.aggro -= 400;
+			player.GetDamage(ModContent.GetInstance<DamageClasses.Unholy>()) += 5 / 100f;
+			player.GetCritChance(ModContent.GetInstance<DamageClasses.Unholy>()) += 5;
         }
 
         public override void AddRecipes()

@@ -22,6 +22,17 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 1f
 			    );
 			}
+			if (ModContent.GetInstance<TLRConfigServer>().HolyBalance) {
+				if (damageClass == ModContent.GetInstance<Holy>()) {
+					return new StatInheritanceData(
+					damageInheritance: -1f,
+					critChanceInheritance: -1f,
+					attackSpeedInheritance: -1f,
+					armorPenInheritance: -1f,
+					knockbackInheritance: -1f
+					);
+				}
+			}
 			return new StatInheritanceData(
 				damageInheritance: 0f,
 				critChanceInheritance: 0f,

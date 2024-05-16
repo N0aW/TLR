@@ -1,3 +1,4 @@
+using Mono.CompilerServices.SymbolWriter;
 using Terraria;
 using Terraria.GameContent.Events;
 using Terraria.GameContent.UI.Chat;
@@ -11,7 +12,13 @@ namespace TLR
 	// See other GlobalItem classes in ExampleMod to see other ways that GlobalItem can be used.
 	public class TLRGlobalItem : GlobalItem
 	{
+	}
+	public class HolyGlobalItem : GlobalItem
+	{
 		public override void SetDefaults(Item item) {
+			if (item.type == ItemID.HolyWater) {
+				item.DamageType = ModContent.GetInstance<Content.Core.DamageClasses.Holy>();
+			}
 			if (item.type == ItemID.Excalibur || item.type == ItemID.TrueExcalibur || item.type == ItemID.PickaxeAxe || item.type == ItemID.Drax || item.type == ItemID.Pwnhammer ||
 				item.type == ItemID.EnchantedSword || item.type == ItemID.PearlwoodSword || item.type == ItemID.PearlwoodHammer || item.type == ItemID.PiercingStarlight) {
 				item.DamageType = ModContent.GetInstance<Content.Core.DamageClasses.HolyMelee>();
@@ -31,6 +38,9 @@ namespace TLR
 			}
             if (item.type == ItemID.SwordWhip || item.type == ItemID.RainbowWhip) {
 				item.DamageType = ModContent.GetInstance<Content.Core.DamageClasses.HolySummonWhip>();
+			}
+			if (item.type == ItemID.UnholyWater || item.type == ItemID.BloodWater) {
+				item.DamageType = ModContent.GetInstance<Content.Core.DamageClasses.Unholy>();
 			}
 			if (item.type == ItemID.EbonwoodSword || item.type == ItemID.ShadewoodSword || item.type == ItemID.EbonwoodHammer || item.type == ItemID.ShadewoodHammer ||
 				item.type == ItemID.LightsBane || item.type == ItemID.BloodButcherer || item.type == ItemID.NightsEdge || item.type == ItemID.TrueNightsEdge ||
