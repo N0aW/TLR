@@ -21,8 +21,5 @@ namespace TLR
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
-        [DefaultValue(false)]
-		[ReloadRequired]
-        public bool HolyBalance;
     }
 }

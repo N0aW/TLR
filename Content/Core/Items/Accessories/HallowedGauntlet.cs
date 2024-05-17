@@ -29,8 +29,6 @@ namespace TLR.Content.Core.Items.Accessories
             player.magmaStone = true;
 			player.GetDamage(DamageClass.Melee) += 15 / 100f;
 			player.GetAttackSpeed(DamageClass.Melee) += 15 / 100f;
-			player.GetDamage(ModContent.GetInstance<DamageClasses.Holy>()) += 10 / 100f;
-			player.GetCritChance(ModContent.GetInstance<DamageClasses.Holy>()) += 10;
 			player.autoReuseGlove = true;
             player.kbGlove = true;
             player.yoyoGlove = true;

@@ -7,7 +7,6 @@ Items: {
 			'''
 			Increases view range for ranged weapons (Right-click to zoom out)
 			10% increased ranged damage and critical strike chance
-			5% increased unholy damage and critical strike chance
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
 			Enemies are less likely to target you
@@ -30,7 +29,6 @@ Items: {
 			'''
 			Increases melee knockback and melee attacks inflict fire damage
 			15% increased melee damage and speed
-			10% increased holy damage and critical strike chance
 			Enabled auto-swing for melee weapons
 			Increases size for melee weapons
 			Gives the user master yoyo skills
@@ -80,31 +78,6 @@ Items: {
 			Reduces damage from touching lava
 			'''
 	}
-
-	DryadSight: {
-		DisplayName: Dryad Sight
-		Tooltip:
-			'''
-			Increases unholy damage the more corrupted/crimson the world is
-			Increases holy damage the more hallowed the world is
-			Increases all damage greatly if the world is fully pure
-			The world might have corruption? The info hasn't loaded yet.
-			The world might have crimson? The info hasn't loaded yet.
-			The world might have hallow? The info hasn't loaded yet.
-			Unholy damage increased by ...I have no idea.
-			Holy damage incresed by ...Yeah the tooltips aren't loading.
-			'''
-	}
-
-	CursedMusketPouch: {
-		DisplayName: Cursed Musket Pouch
-		Tooltip: ""
-	}
-
-	CursedQuiver: {
-		DisplayName: Cursed Quiver
-		Tooltip: ""
-	}
 }
 
 Buffs: {
@@ -122,46 +95,6 @@ Buffs: {
 Configs: {
 	TLRConfigServer: {
 		DisplayName: TLR Config Server
-
-		HolyBalance: {
-			Label: Holy Balance
-			Tooltip: If enabled, buffs to holiness debuff unholiness, and vice-versa.
-		}
 	}
 }
 
-DamageClasses: {
-	HolySummon.DisplayName: holy + summon damage
-	HolyRanged.DisplayName: holy + ranged damage
-	HolyMelee.DisplayName: holy + melee damage
-	HolyMagic.DisplayName: holy + magic damage
-	Holy.DisplayName: holy damage
-	Unholy.DisplayName: unholy damage
-	UnholyMagic.DisplayName: unholy + magic damage
-	UnholyMelee.DisplayName: unholy + melee damage
-	UnholyRanged.DisplayName: unholy + ranged damage
-	UnholySummon.DisplayName: unholy + summon damage
-	UnholySummonWhip.DisplayName: unholy + summon damage
-	HolySummonWhip.DisplayName: holy + summon damage
-	UnholyMeleeNoSpeed.DisplayName: unholy + melee damage
-	HolyMeleeNoSpeed.DisplayName: holy + melee damage
-	UnholyVoid.DisplayName: unholy + void damage
-	HolyVoidSummonWhip.DisplayName: holy + void + summon damage
-	HolyVoidSummon.DisplayName: holy + void + summon damage
-	HolyVoidRanged.DisplayName: holy + void + ranged damage
-	HolyVoidMeleeNoSpeed.DisplayName: holy + void + melee damage
-	HolyVoidMelee.DisplayName: holy + void + melee damage
-	HolyVoidMagic.DisplayName: holy + void + magic damage
-	HolyVoid.DisplayName: holy + void damage
-	UnholyVoidMagic.DisplayName: unholy + void + magic damage
-	UnholyVoidMelee.DisplayName: unholy + void + melee damage
-	UnholyVoidMeleeNoSpeed.DisplayName: unholy + void + melee damage
-	UnholyVoidRanged.DisplayName: unholy + void + ranged damage
-	UnholyVoidSummon.DisplayName: unholy + void + summon damage
-	UnholyVoidSummonWhip.DisplayName: unholy + void + summon damage
-}
-
-Projectiles: {
-	CursedArrow.DisplayName: Cursed Arrow
-	CursedBullet.DisplayName: Cursed Bullet
-}

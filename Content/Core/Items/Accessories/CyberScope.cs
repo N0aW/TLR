@@ -24,12 +24,12 @@ namespace TLR.Content.Core.Items.Accessories
         {
             player.hasMoltenQuiver = true;
 			player.magicQuiver = true;
-			player.scope = true;
+			if (player.HeldItem.DamageType == DamageClass.Ranged) {
+				player.scope = true;
+			}
 			player.GetDamage(DamageClass.Ranged) += 10 / 100f;
 			player.GetCritChance(DamageClass.Ranged) += 10;
 			player.aggro -= 400;
-			player.GetDamage(ModContent.GetInstance<DamageClasses.Unholy>()) += 5 / 100f;
-			player.GetCritChance(ModContent.GetInstance<DamageClasses.Unholy>()) += 5;
         }
 
         public override void AddRecipes()
