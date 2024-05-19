@@ -22,4 +22,8 @@ namespace TLR
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
     }
+    public class TLRConfigClient : ModConfig
+    {
+        public override ConfigScope Mode => ConfigScope.ClientSide;
+    }
 }

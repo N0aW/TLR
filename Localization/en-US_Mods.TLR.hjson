@@ -92,9 +92,4 @@ Buffs: {
 	}
 }
 
-Configs: {
-	TLRConfigServer: {
-		DisplayName: TLR Config Server
-	}
-}
-
+Configs.TLRConfigServer.DisplayName: TLR Config Server
