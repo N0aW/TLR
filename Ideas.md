@@ -1,12 +1,5 @@
 # Core
-### Lunar Pick-axe
-- Pickaxe Axe + Axe of Regrowth + Luminite Bar (10)
-- 225% pickaxe power, 150% axe power, +4 range
-- Has the powers of axe of regrowth.
-### Lunax
-- Drax + Axe of Regrowth + Luminite Bar (10)
-- 225% pickaxe power, 150% axe power, +2 range
-- Has the powers of axe of regrowth.
+## Items
 ### Gemblade
 - Gold/Platinum Sword + Large Amethyst + Large Topaz + Large Sapphire + Large Emerald + Large Amber + Large Ruby + Large Diamond
 - 36 Damage, 12% Critical Strike chance, Large in size.
@@ -18,27 +11,33 @@
 - Amber: Ichor
 - Ruby: Weak & Bleeding
 - Diamond: Broken Armor
-### Hallowed Musket Pouch
-- 13 holy + ranged damage
-- Endless Musket Pouch + Hallowed Bar (10) + Soul of Might (5) + Soul of Sight (5) + Soul of Fright (5)
-### Hallowed Quiver
-- 11 holy + ranged damage
-- Endless Quiver + Hallowed Bar (10) + Soul of Might (5) + Soul of Sight (5) + Soul of Fright (5)
-### Starsail Boots
-- Kung-Fu Boots + Celestial Starboard + Soaring Insignia
-### Dryad Sight
-- When equipped, the more corrupt/crimson your world has, the more unholy damage you deal. (2% crimson = +1% damage)
-- When equipped, the more hallow your world has, the more holy damage you deal. (2% hallow = +1% damage)
-- If the world is completely purified, get a +50% damage modifier on everything.
-- Displays world hallow, and corrupt/crimson %.
-- Sold by Dryad in Hardmode for 50 gold.
+### Skinwalker Staff
+- 44 summon damage, no multiple summons, it stacks
+- Scratches enemies.
+- 10 Souls of Night + 10 Souls of Fright + Dark Shard + Guide Voodoo Doll
+- When you die, the skinwalker will take your place. (you just dont die in game terms)
+    - The skinwalker will have limited max HP.
+        - The max HP you initally get depends on how many minion slots the skinwalker takes.
+            - 1 Slot = 20% HP
+            - 2 Slots = 40% HP
+            - 3 Slots = 60% HP
+            - 4 Slots = 80% HP
+            - 5+ Slots = 100% HP
+        - Your Max HP will start regenerating to your true max HP.
+            - The regeneration is halted when a boss is alive.
+    - This feature has a cooldown.
 # SOTS
-### Void + Holiness / Void + Unholiness.
-- I would guess more unholiness than holiness?
+### Flash-by Shoes
+- "Your enemies won't even see you coming!"
+- Kung-Fu Shoes + 12 Polar Bars / Flashspark Boots + Master Ninja Gear + Lucky Horseshoe
+### Ultraspace Boosters
+- "I walk."
+- Flash-by Shoes + 12 Sanguine Scales / Subspace Boosters + Master Ninja Gear + Lucky Horseshoe
 ### Gauntlet of War
 - Hallowed Gauntlet + Soul of Plight (10) + Spirit Glove
 - When hit, get 15% boost to damage and attack speed for 5 seconds
-- Killing blows leave you on 1 HP. Has a cooldown of 30 seconds.
+- Killing blows will leave you on 1 HP, but this uses 100 Void.
+    - 15 second cooldown
 - Heavily increased aggro (800)
 - "For War... War never changes."
 ### Extension Cord
