@@ -1,16 +1,5 @@
 # Core
 ## Items
-### Gemblade
-- Gold/Platinum Sword + Large Amethyst + Large Topaz + Large Sapphire + Large Emerald + Large Amber + Large Ruby + Large Diamond
-- 36 Damage, 12% Critical Strike chance, Large in size.
-- Hitting enemies curses them with one of 7 random debuffs for 15 seconds.
-- Amethyst: Venom
-- Topaz: Midas
-- Sapphire: Frozen
-- Emerald: Healing Curse: You give life regeneration to the enemies around you, while yours is halted.
-- Amber: Ichor
-- Ruby: Weak & Bleeding
-- Diamond: Broken Armor
 ### Skinwalker Staff
 - 44 summon damage, no multiple summons, it stacks
 - Scratches enemies.
