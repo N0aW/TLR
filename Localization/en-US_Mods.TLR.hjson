@@ -78,6 +78,11 @@ Items: {
 			Reduces damage from touching lava
 			'''
 	}
+
+	TerragemBlade: {
+		Tooltip: "Enemies hit get a random debuff for 3 seconds"
+		DisplayName: Terragem Blade
+	}
 }
 
 Buffs: {
@@ -92,4 +97,7 @@ Buffs: {
 	}
 }
 
-Configs.TLRConfigServer.DisplayName: TLR Config Server
+Configs: {
+	TLRConfigServer.DisplayName: TLR Config Server
+	TLRConfigClient.DisplayName: T L R Config Client
+}

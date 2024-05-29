@@ -18,6 +18,7 @@ namespace TLR.Content.Core.Items.Weapons
 			Item.crit = 6;
 			Item.DamageType = DamageClass.Melee;
 			Item.useTime = 22;
+			Item.useAnimation = 22;
 			Item.knockBack = 5;
 			Item.autoReuse = true;
 			Item.useStyle = ItemUseStyleID.Swing;
