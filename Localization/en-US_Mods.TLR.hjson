@@ -44,7 +44,7 @@ Items: {
 	}
 
 	Exoskeleton: {
-		DisplayName: TABECDS Exoskeleton
+		DisplayName: Lightrevealer Exoskeleton
 		Tooltip:
 			'''
 			Allows the user to quadruple jump and auto-jump, increases jump height and speed, and negates fall damage
@@ -60,7 +60,7 @@ Items: {
 			Allows the ability to climb walls
 			Increases movement speed and acceleration
 			Grants you wire vision and measurement lines on screen for block placement
-			'Terminate, Analyze, Build, Explore, Conquer, Destroy, Scavenge.'
+			'Gave to the miners, fishers and explorers of the Lightrevealers.'
 			'''
 	}
 
@@ -76,11 +76,12 @@ Items: {
 			Gives a chance to dodge attacks
 			Negates fall damage
 			Reduces damage from touching lava
+			'Unleash a kick with a hidden trick'
 			'''
 	}
 
 	TerragemBlade: {
-		Tooltip: "Enemies hit get a random debuff for 3 seconds"
+		Tooltip: Enemies hit get a random debuff for 3 seconds
 		DisplayName: Terragem Blade
 	}
 }

@@ -15,7 +15,7 @@ namespace TLR.Content.Core.Items.Accessories
 			Item.width = 32;
 			Item.height = 50;
 			Item.value = Item.sellPrice(gold: 30);
-			Item.rare = ItemRarityID.Cyan;
+			Item.rare = ItemRarityID.Lime;
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
 			Item.maxStack = 1;
@@ -61,7 +61,7 @@ namespace TLR.Content.Core.Items.Accessories
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.BundleofBalloons);
+			recipe.AddIngredient(ItemID.HorseshoeBundle);
 			recipe.AddIngredient(ItemID.ArcticDivingGear);
             recipe.AddIngredient(ItemID.HandOfCreation);
             recipe.AddIngredient(ItemID.ActuationAccessory);
@@ -73,6 +73,19 @@ namespace TLR.Content.Core.Items.Accessories
             recipe.AddIngredient(ItemID.WireKite);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
+            Recipe recipe2 = CreateRecipe();
+			recipe2.AddIngredient(ItemID.HorseshoeBundle);
+			recipe2.AddIngredient(ItemID.ArcticDivingGear);
+            recipe2.AddIngredient(ItemID.HandOfCreation);
+            recipe2.AddIngredient(ItemID.ActuationAccessory);
+            recipe2.AddIngredient(ItemID.LavaproofTackleBag);
+            recipe2.AddIngredient(ItemID.FishingBobber);
+            recipe2.AddIngredient(ItemID.UltrabrightHelmet);
+            recipe2.AddIngredient(ItemID.FrogGear);
+            recipe2.AddIngredient(ItemID.Magiluminescence);
+            recipe2.AddIngredient(ItemID.WireKite);
+			recipe2.AddTile(TileID.TinkerersWorkbench);
+			recipe2.Register();
 		}
 	}
 }
