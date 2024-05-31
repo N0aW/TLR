@@ -42,7 +42,7 @@ namespace TLR.Content.Core.Items.Weapons
 			recipe.AddIngredient(ItemID.LargeAmber);
 			recipe.AddIngredient(ItemID.LargeRuby);
 			recipe.AddIngredient(ItemID.LargeDiamond);
-			recipe.AddTile(TileID.TinkerersWorkbench);
+			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}
         public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)

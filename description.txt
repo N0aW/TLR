@@ -2,3 +2,7 @@ The Light Reveals is an mod that focuses on built-in compabilities for mods I li
 
 Mods that are compatible:
 - Secrets of the Shadows (I love that mod. It's the original mod I planned compatibility for.)
+
+Two new classes that are usually paired with melee, ranged, magic and summon weapons.
+- HOLY weapons, which can spread the hallow, and benefit from it's existence
+- UNHOLY weapons, which can spread the corruption / crimson, and benefit from it's existence.

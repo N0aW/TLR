@@ -16,15 +16,34 @@
         - Your Max HP will start regenerating to your true max HP.
             - The regeneration is halted when a boss is alive.
     - This feature has a cooldown.
-### Lightrevealer Exoskeleton MK2
-#### Rarity: Yellow (9)
-- "After the threats of the hallow, the Lightbringers had to strengthen their Exoskeletons."
-- Lightrevealer Exoskeleton + Greedy Ring
+### Cruel Strategies
+#### Rarity: Green (2)
+- Book + Any Evil Bar (10) + Bone (30)
+- Increases whip damage by 20%
+- Decreases minion damage by 20%
+### Compassionate Strategies
+#### Rarity: Green (2)
+- Book + Gold/Platinum Bar (10) + Bone (30)
+- Increases minion damage by 20%
+- Decreases whip damage by 20%
+### Master Strategies
+#### Rarity: Orange (3)
+- Cruel Strategies + Master Stategies + Vine (2)
+- Increases all summon damage by 10%
+### Scroller
+- Berserker Glove + Master Strategies
+### Golem Safety Shield
+#### Rarity: Rainbow (12) - Expert Only
+- Ankh Shield + Hero Shield + Frozen Shield + Charm of Myths + Regen Stone + Worm Scarf + Brain of Cthulhu + Shield of Cthulhu
+- Increases Max HP by 100.
 ### Manamaster 2000
 #### Rarity: Lime (7)
 - "Must have for all expert wizards!"
 - Mana Flower + Star Cloak + Putrid Scent + Magic Cuffs + Avenger Emblem + Celestial Magnet
 # SOTS
+### Shield of Chaos
+#### Rarity: Rainbow (12) - Expert Only
+- Golem Safety Shield + Bulewark of the Ancients + Fortress Generator
 ### Flash-by Shoes
 #### Rarity: Cyan (9)
 - "Your enemies won't even see you coming!"
@@ -43,7 +62,7 @@
 - "For War... War never changes."
 ### Elemental Glove
 #### Rarity: Red (10)
-- Gauntlet of War + Papyrus Scarab + Hyperdrive + Phase Bar (10)
+- Gauntlet of War + Scroller + Hyperdrive + Phase Bar (10)
 ### Scorcheye Enchanement
 #### Rarity: Cyan (9)
 - Blazing Quiver + Recon Scope / Cybernetic Eye Enchanements + Dissolving Nether + 5 Fragments of Inferno + 10 Souls of Fright

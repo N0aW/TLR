@@ -1,7 +1,10 @@
+# The Light Reveals (TLR)
 Currently no important info.
 
 For information on the mod, check description.txt
 
+### Compats:
+- Secrets of the Shadows
 ### Credits:
 - VortexOfRainbows
     - For giving the source code to SOTS.

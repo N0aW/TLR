@@ -27,9 +27,9 @@ namespace TLR.Content.Core.Items.Accessories
 			if (player.HeldItem.DamageType == DamageClass.Ranged) {
 				player.scope = true;
 			}
-			player.GetDamage(DamageClass.Ranged) += 10 / 100f;
-			player.GetCritChance(DamageClass.Ranged) += 10;
-			player.aggro -= 400;
+			player.GetDamage(DamageClass.Ranged) += 15 / 100f;
+			player.GetCritChance(DamageClass.Ranged) += 15;
+			player.aggro -= 800;
         }
 
         public override void AddRecipes()
@@ -37,9 +37,24 @@ namespace TLR.Content.Core.Items.Accessories
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.ReconScope);
 			recipe.AddIngredient(ItemID.MoltenQuiver);
+			recipe.AddIngredient(ItemID.PutridScent);
 			recipe.AddIngredient(ItemID.SoulofSight, 15);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
+			Recipe recipe2 = CreateRecipe();
+			recipe2.AddIngredient(ItemID.ReconScope);
+			recipe2.AddIngredient(ItemID.MagmaStone);
+			recipe2.AddIngredient(ItemID.StalkersQuiver);
+			recipe2.AddIngredient(ItemID.SoulofSight, 15);
+			recipe2.AddTile(TileID.TinkerersWorkbench);
+			recipe2.Register();
+			Recipe recipe3 = CreateRecipe();
+			recipe3.AddIngredient(ItemID.ReconScope);
+			recipe3.AddIngredient(ItemID.MoltenQuiver);
+			recipe3.AddIngredient(ItemID.StalkersQuiver);
+			recipe3.AddIngredient(ItemID.SoulofSight, 15);
+			recipe3.AddTile(TileID.TinkerersWorkbench);
+			recipe3.Register();
 		}
 	}
 }
