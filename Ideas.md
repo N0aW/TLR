@@ -31,7 +31,11 @@
 - Cruel Strategies + Master Stategies + Vine (2)
 - Increases all summon damage by 10%
 ### Scroller
-- Berserker Glove + Master Strategies
+- Fire Gauntlet + Master Strategies
+- Increases melee and summon damage by 12%
+- Increases melee attack speed by 12%
+- Increases melee knockback, autoswing
+- Melee attacks light enemies on fire
 ### Golem Safety Shield
 #### Rarity: Rainbow (12) - Expert Only
 - Ankh Shield + Hero Shield + Frozen Shield + Charm of Myths + Regen Stone + Worm Scarf + Brain of Cthulhu + Shield of Cthulhu
@@ -65,6 +69,7 @@ Grants the following:
 ### Gauntlet of War
 #### Rarity: Cyan (9)
 - Hallowed Gauntlet + Soul of Plight (10) + Spirit Glove
+- Also grants 15% critical strike chance
 - When hit, get 15% boost to damage and attack speed for 5 seconds
 - Killing blows will leave you on 1 HP, but this uses 100 Void.
     - 15 second cooldown

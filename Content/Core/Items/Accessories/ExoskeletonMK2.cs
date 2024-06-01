@@ -54,6 +54,10 @@ namespace TLR.Content.Core.Items.Accessories
             player.discountEquipped = true;
             player.CanSeeInvisibleBlocks = true;
             player.accMerman = true;
+            player.cPortableStool = Item.dye;
+            player.GetJumpState<CloudInABottleJump>().Enable();
+            player.GetJumpState<BlizzardInABottleJump>().Enable();
+            player.GetJumpState<SandstormInABottleJump>().Enable();
             // following code is for the celestial stone effect. I actually have no idea how to do it otherwise.
             player.GetDamage(DamageClass.Generic) += 10 / 100f;
             player.GetAttackSpeed(DamageClass.Melee) += 10 / 100f;
@@ -73,6 +77,13 @@ namespace TLR.Content.Core.Items.Accessories
 			{
 				Lighting.AddLight((int)player.Center.X / 16, (int)player.Center.Y / 16, 0.4f, 1.2f, 1.8f);
 			}
+        }
+        public override void UpdateInventory(Player player)
+        {
+            player.autoActuator = true;
+            player.autoPaint = true;
+            player.rulerGrid = true;
+            player.InfoAccMechShowWires = true;
         }
 
         public override void AddRecipes()
