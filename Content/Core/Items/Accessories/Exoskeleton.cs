@@ -10,6 +10,7 @@ namespace TLR.Content.Core.Items.Accessories
 	public class Exoskeleton : ModItem
 	{
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
+        // No step stool yet. No balloons.
 		public override void SetDefaults()
 		{
 			Item.width = 32;
@@ -24,7 +25,6 @@ namespace TLR.Content.Core.Items.Accessories
         {
             player.jumpBoost = true;
             player.autoJump = true;
-            player.accRunSpeed = 6f;
             player.noFallDmg = true;
             player.accFlipper = true;
             player.accFishingLine = true;

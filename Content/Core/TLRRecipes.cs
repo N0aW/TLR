@@ -58,6 +58,34 @@ namespace TLR.Content.Core
 			recipe6.AddTile(TileID.WorkBenches);
 			recipe6.AddCondition(Condition.InJungle);
 			recipe6.Register();
+			Recipe recipe7 = Recipe.Create(ItemID.BrickLayer);
+			recipe7.AddIngredient(ItemID.AncientChisel);
+			recipe7.AddIngredient(ItemID.ClayBlock, 30);
+			recipe7.AddIngredient(ItemID.RedBrick, 10);
+			recipe7.AddTile(TileID.Anvils);
+			recipe7.Register();
+			Recipe recipe8 = Recipe.Create(ItemID.PortableCementMixer);
+			recipe8.AddIngredient(ItemID.EmptyBucket, 2);
+			recipe8.AddIngredient(ItemID.Chain, 5);
+			recipe8.AddIngredient(ItemID.ClayBlock, 15);
+			recipe8.AddTile(TileID.Anvils);
+			recipe8.Register();
+			Recipe recipe9 = Recipe.Create(ItemID.PaintSprayer);
+			recipe9.AddIngredient(ItemID.Minishark);
+			recipe9.AddIngredient(ItemID.CyanPaint, 10);
+			recipe9.AddTile(TileID.Anvils);
+			recipe9.Register();
+			Recipe recipe10 = Recipe.Create(ItemID.ExtendoGrip);
+			recipe10.AddIngredient(ItemID.Wrench);
+			recipe10.AddIngredient(RecipeGroupID.IronBar, 10);
+			recipe10.AddTile(TileID.Anvils);
+			recipe10.Register();
+			Recipe recipe11 = Recipe.Create(ItemID.ActuationAccessory);
+			recipe11.AddIngredient(ItemID.ActuationRod);
+			recipe11.AddIngredient(ItemID.Actuator, 30);
+			recipe11.AddIngredient(ItemID.Wire, 25);
+			recipe11.AddTile(TileID.Anvils);
+			recipe11.Register();
         }
 	}
 }

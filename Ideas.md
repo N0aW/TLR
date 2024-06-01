@@ -35,7 +35,17 @@
 ### Golem Safety Shield
 #### Rarity: Rainbow (12) - Expert Only
 - Ankh Shield + Hero Shield + Frozen Shield + Charm of Myths + Regen Stone + Worm Scarf + Brain of Cthulhu + Shield of Cthulhu
+
+Grants the following:
 - Increases Max HP by 100.
+- 16 Defense
+- Immunity to knockback
+- 20% damage reduction
+- +400 Aggro
+- Regeneration, even more if standing still
+- While health is below 50%, reduces damage taken by 25%
+- Eye of Cthulhu dash, this time for 120 damage
+- While health is above 25%, redirects 25% of the damage taken by nearby team members to the wearer
 ### Manamaster 2000
 #### Rarity: Lime (7)
 - "Must have for all expert wizards!"
