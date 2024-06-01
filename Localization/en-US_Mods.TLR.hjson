@@ -108,6 +108,20 @@ Items: {
 			'The Lightrevealers made this upgraded suit to battle the threats of Hardmode.'
 			'''
 	}
+
+	Manamaster: {
+		DisplayName: Manamaster 2000
+		Tooltip:
+			'''
+			15% increased magic damage
+			12% reduced mana usage
+			Automatically use mana potions when needed
+			Increases maximum mana by 20
+			Increases pickup range for mana stars
+			Restores mana when damaged
+			Enemies are less likely to target you
+			'''
+	}
 }
 
 Buffs: {

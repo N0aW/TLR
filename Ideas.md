@@ -1,5 +1,9 @@
 # Core
+## Mechanics
 ## Items
+### Starsail Shoes
+#### Rarity: Rainbow (12) 
+- Kung-Fu Shoes + Celestial Starboard + Soaring Insignia
 ### Skinwalker Staff
 #### Rarity: Pink (5)
 - 44 summon damage, no multiple summons, it stacks
@@ -36,36 +40,22 @@
 - Increases melee attack speed by 12%
 - Increases melee knockback, autoswing
 - Melee attacks light enemies on fire
-### Golem Safety Shield
-#### Rarity: Rainbow (12) - Expert Only
-- Ankh Shield + Hero Shield + Frozen Shield + Charm of Myths + Regen Stone + Worm Scarf + Brain of Cthulhu + Shield of Cthulhu
-
-Grants the following:
-- Increases Max HP by 100.
-- 16 Defense
-- Immunity to knockback
-- 20% damage reduction
-- +400 Aggro
-- Regeneration, even more if standing still
-- While health is below 50%, reduces damage taken by 25%
-- Eye of Cthulhu dash, this time for 120 damage
-- While health is above 25%, redirects 25% of the damage taken by nearby team members to the wearer
-### Manamaster 2000
-#### Rarity: Lime (7)
-- "Must have for all expert wizards!"
-- Mana Flower + Star Cloak + Putrid Scent + Magic Cuffs + Avenger Emblem + Celestial Magnet
 # SOTS
-### Shield of Chaos
-#### Rarity: Rainbow (12) - Expert Only
-- Golem Safety Shield + Bulewark of the Ancients + Fortress Generator
-### Flash-by Shoes
+### Big Red Boots
 #### Rarity: Cyan (9)
-- "Your enemies won't even see you coming!"
+- "Become a rambunctious scallywag."
+(looks like the tall red boots)
 - Kung-Fu Shoes + 12 Polar Bars / Flashspark Boots + Master Ninja Gear + Lucky Horseshoe
-### Ultraspace Boosters
+### Emoji Shoes
 #### Rarity: Red (10)
-- "I walk."
+(Make the icon just the apple shoe emoji. no sprites when on player)
+- "Ok bro."
 - Flash-by Shoes + 12 Sanguine Scales / Subspace Boosters + Master Ninja Gear + Lucky Horseshoe
+### Dual Emoji Shoes
+#### Rarity: Rainbow (12) - Expert Only
+(Make the icon just two apple shoe emojis. also no prices)
+- "Ok bros."
+- Emoji Shoes + Spirit Insignia + Celestial Starboard / Starsail Shoes + Spirit Symphony + 12 Polar Bars + 12 Sanguine Scales
 ### Gauntlet of War
 #### Rarity: Cyan (9)
 - Hallowed Gauntlet + Soul of Plight (10) + Spirit Glove
@@ -75,13 +65,13 @@ Grants the following:
     - 15 second cooldown
 - Heavily increased aggro (800)
 - "For War... War never changes."
-### Elemental Glove
-#### Rarity: Red (10)
-- Gauntlet of War + Scroller + Hyperdrive + Phase Bar (10)
 ### Scorcheye Enchanement
 #### Rarity: Cyan (9)
 - Blazing Quiver + Recon Scope / Cybernetic Eye Enchanements + Dissolving Nether + 5 Fragments of Inferno + 10 Souls of Fright
 - "You are definitely burning your eye."
+### Elemental Glove
+#### Rarity: Red (10)
+- Gauntlet of War + Scroller + Hyperdrive + Phase Bar (10)
 ### Subspace Scope
 #### Rarity: Red (10)
 - Scrorcheye Enhancement + Manamaster 2000 + Subspace Emblem + Mana Stabilizer + Sanguine Scales (12)
