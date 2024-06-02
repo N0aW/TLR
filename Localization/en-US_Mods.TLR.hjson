@@ -124,6 +124,22 @@ Items: {
 			Enemies are less likely to target you
 			'''
 	}
+
+	ManamasterX: {
+		Tooltip:
+			'''
+			15% increased magic damage and critical strike chance
+			12% reduced mana cost
+			Automatically use mana potions when needed
+			Increases maximum mana by 60
+			Increases pickup range for mana stars
+			Causes stars to fall after taking damage
+			Stars restore mana when collected
+			Mana is restored when you land critical strikes or are damaged
+			Enemies are less likely to target you
+			'''
+		DisplayName: Manamaster 3000
+	}
 }
 
 Buffs: {

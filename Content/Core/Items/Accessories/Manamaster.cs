@@ -25,6 +25,7 @@ namespace TLR.Content.Core.Items.Accessories
             player.manaFlower = true;
             player.manaCost -= 0.12f;
             player.aggro -= 400;
+			player.statManaMax2 += 20;
             player.GetDamage(DamageClass.Magic) += 15f / 100f;
             player.magicCuffs = true;
             player.manaMagnet = true;

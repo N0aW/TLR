@@ -91,6 +91,11 @@
 - Right-click while favorited to enable/disable Mana Stabilizer.
 ### Void Symphony
 #### Rarity: Purple (11)
+- Elemental Glove + Subspace Scope + Luminite Bar (25) + Sanguine Scales (25) + Phase Bar (25)
+
+or
+
+- Lunar Symphony + Soul of Plight (10) + Dissolving Nether + 5 Fragments of Interno + 10 Souls Fright + Starbelt + Glow Spores + Spirit Glove
 ### Extension Cord
 #### Rarity: Blue (1)
 - Increases void drain by 2 when active
