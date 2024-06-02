@@ -55,6 +55,14 @@ namespace TLR.Content.Core.Items.Accessories
             recipe3.AddIngredient(ItemID.AvengerEmblem);
 			recipe3.AddTile(TileID.TinkerersWorkbench);
 			recipe3.Register();
+			Recipe recipe4 = CreateRecipe();
+			recipe4.AddIngredient(ItemID.MagnetFlower);
+			recipe4.AddIngredient(ItemID.StarCloak);
+			recipe4.AddIngredient(ItemID.PutridScent);
+			recipe4.AddIngredient(ItemID.MagicCuffs);
+			recipe4.AddIngredient(ItemID.AvengerEmblem);
+			recipe4.AddTile(TileID.TinkerersWorkbench);
+			recipe4.Register();
 		}
 	}
 }

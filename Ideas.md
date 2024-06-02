@@ -1,6 +1,16 @@
 # Core
 ## Mechanics
 ## Items
+### 
+### Lunar Symphony
+#### Rarity: Red (10)
+- Hallowed Gauntlet + Cyber Scope + Manamaster 2000 + Scroller + Luminite Bar (10)
+- Increases damage and critical strike chance by 20%
+- Increases melee speed by 15%, melee knockback greatly increased.
+- Melee weapons are bigger, ranged weapons have scoping abilities. (right-click)
+- 12% reduced mana usage, increases max mana by 20%, getting hit grants mana.
+- Extra pickup range for mana stars, getting hit causes stars to fall; these stars can be collected for mana
+- Melee attacks light enemies on fire, ranged attacks slow enemies, magic attacks have lifesteal and summon attacks make enemies weaker.
 ### Starsail Shoes
 #### Rarity: Rainbow (12) 
 - Kung-Fu Shoes + Celestial Starboard + Soaring Insignia
@@ -69,13 +79,18 @@
 #### Rarity: Cyan (9)
 - Blazing Quiver + Recon Scope / Cybernetic Eye Enchanements + Dissolving Nether + 5 Fragments of Inferno + 10 Souls of Fright
 - "You are definitely burning your eye."
+### Manamaster 3000
+#### Rarity: Yellow (8)
+- Manamaster 2000 + Starbelt + Glow Spores
 ### Elemental Glove
 #### Rarity: Red (10)
-- Gauntlet of War + Scroller + Hyperdrive + Phase Bar (10)
+- Gauntlet of War + (some scroller upgrade) + Hyperdrive + Phase Bar (10)
 ### Subspace Scope
 #### Rarity: Red (10)
-- Scrorcheye Enhancement + Manamaster 2000 + Subspace Emblem + Mana Stabilizer + Sanguine Scales (12)
+- Scrorcheye Enhancement + Manamaster 3000 + Subspace Emblem + Mana Stabilizer + Sanguine Scales (12)
 - Right-click while favorited to enable/disable Mana Stabilizer.
+### Void Symphony
+#### Rarity: Purple (11)
 ### Extension Cord
 #### Rarity: Blue (1)
 - Increases void drain by 2 when active
