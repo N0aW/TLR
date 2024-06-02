@@ -1,5 +1,4 @@
 displayName = [c/32ff82:The Light Reveals]
 author = N0aW
-version = 0.1.8.2
+version = 0.1.8.3
 weakReferences = SOTS
-dllReferences = SOTS
