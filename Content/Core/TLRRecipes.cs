@@ -124,12 +124,12 @@ namespace TLR.Content.Core
 			Recipe recipe13b = Recipe.Create(ItemID.ShroomiteBreastplate);
 			recipe13b.AddIngredient(ItemID.ChlorophytePlateMail);
 			recipe13b.AddIngredient(ItemID.GlowingMushroom, 360);
-			recipe13b.AddTile(TileID.MythrilAnvil);
+			recipe13b.AddTile(TileID.Autohammer);
 			recipe13b.Register();
 			Recipe recipe13c = Recipe.Create(ItemID.TurtleLeggings);
 			recipe13c.AddIngredient(ItemID.ChlorophyteGreaves);
 			recipe13c.AddIngredient(ItemID.GlowingMushroom, 270);
-			recipe13c.AddTile(TileID.MythrilAnvil);
+			recipe13c.AddTile(TileID.Autohammer);
 			recipe13c.Register();
 			Recipe recipe14aa = Recipe.Create(ItemID.SpectreMask);
 			recipe14aa.AddIngredient(ItemID.ChlorophyteHelmet);
