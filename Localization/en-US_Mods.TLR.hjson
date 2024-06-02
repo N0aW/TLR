@@ -50,7 +50,7 @@ Items: {
 			Allows the user to quadruple jump and auto-jump, increases jump height and speed, and negates fall damage
 			Grants the ability to swim and greatly extends underwater breathing
 			Provides extra mobility on ice and improved vision
-			Provides light when worn and a subtle glow that becomes more vibrant underwater
+			Provides a vibrant glow when worn
 			Increases mining speed by 25% and increases block & wall placement speed
 			Increases block placement and tool range by 3, and pickup range for items
 			Automatically paints, coats or actuates placed items
@@ -92,7 +92,7 @@ Items: {
 			Allows the user to quadruple jump and auto-jump, increases jump height and speed, and negates fall damage
 			Grants the ability to swim and greatly extends underwater breathing
 			Provides extra mobility on ice and improved vision
-			Provides light when worn and a subtle glow that becomes more vibrant underwater
+			Provides a vibrant glow when worn
 			Increases mining speed by 25% and increases block & wall placement speed
 			Increases block placement and tool range by 3, and pickup range for items and coins
 			Automatically paints, coats or actuates placed items
@@ -114,7 +114,7 @@ Items: {
 		Tooltip:
 			'''
 			15% increased magic damage
-			12% reduced mana usage
+			12% reduced mana cost
 			Automatically use mana potions when needed
 			Increases maximum mana by 20
 			Increases pickup range for mana stars

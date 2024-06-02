@@ -54,14 +54,14 @@ namespace TLR.Content.Core.Items.Accessories
             player.GetJumpState<CloudInABottleJump>().Enable();
             player.GetJumpState<BlizzardInABottleJump>().Enable();
             player.GetJumpState<SandstormInABottleJump>().Enable();
-			if (!player.wet)
-			{
-				Lighting.AddLight((int)player.Center.X / 16, (int)player.Center.Y / 16, 0.05f, 0.15f, 0.225f);
-			}
-			if (player.wet)
-			{
-				Lighting.AddLight((int)player.Center.X / 16, (int)player.Center.Y / 16, 0.4f, 1.2f, 1.8f);
-			}
+			Lighting.AddLight((int)player.Center.X / 16, (int)player.Center.Y / 16, 0.4f, 1.2f, 1.8f);
+        }
+        public override void UpdateVanity(Player player)
+        {
+            player.autoActuator = true;
+            player.autoPaint = true;
+            player.rulerGrid = true;
+            player.InfoAccMechShowWires = true;
         }
         public override void UpdateInventory(Player player)
         {
