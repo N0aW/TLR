@@ -158,3 +158,13 @@ Configs: {
 	TLRConfigServer.DisplayName: TLR Config Server
 	TLRConfigClient.DisplayName: T L R Config Client
 }
+
+DamageClasses: {
+	SupportSummonWhip.DisplayName: support + summon damage
+	SupportSummon.DisplayName: support + summon damage
+	SupportRanged.DisplayName: support + ranged damage
+	SupportMeleeNoSpeed.DisplayName: support + melee damage
+	SupportMelee.DisplayName: support + melee damage
+	SupportMagic.DisplayName: support + magic damage
+	Support.DisplayName: support damage
+}

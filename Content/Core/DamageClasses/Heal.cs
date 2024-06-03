@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace TLR.Content.Core.DamageClasses
 {
-	public class Heal : DamageClass
+	public class Support : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -68,7 +68,7 @@ namespace TLR.Content.Core.DamageClasses
 			return true;
 		}
 	}
-    public class HealMelee : DamageClass
+    public class SupportMelee : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -94,7 +94,7 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 1f
 			    );
 			}
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>()) {
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>()) {
 				return new StatInheritanceData(
 				damageInheritance: 1f,
 				critChanceInheritance: 1f,
@@ -120,7 +120,7 @@ namespace TLR.Content.Core.DamageClasses
 		public override bool GetEffectInheritance(DamageClass damageClass) {
 			if (damageClass == DamageClass.Melee)
 				return true;
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>())
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>())
 				return true;
 			return false;
 		}
@@ -147,7 +147,7 @@ namespace TLR.Content.Core.DamageClasses
 			return true;
 		}
 	}
-	public class HealMeleeNoSpeed : DamageClass
+	public class SupportMeleeNoSpeed : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -173,7 +173,7 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 1f
 			    );
 			}
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>()) {
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>()) {
 				return new StatInheritanceData(
 				damageInheritance: 1f,
 				critChanceInheritance: 1f,
@@ -199,7 +199,7 @@ namespace TLR.Content.Core.DamageClasses
 		public override bool GetEffectInheritance(DamageClass damageClass) {
 			if (damageClass == DamageClass.Melee)
 				return true;
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>())
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>())
 				return true;
 			return false;
 		}
@@ -226,7 +226,7 @@ namespace TLR.Content.Core.DamageClasses
 			return true;
 		}
 	}
-    public class HealRanged : DamageClass
+    public class SupportRanged : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -252,7 +252,7 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 1f
 			    );
 			}
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>()) {
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>()) {
 				return new StatInheritanceData(
 				damageInheritance: 1f,
 				critChanceInheritance: 1f,
@@ -278,7 +278,7 @@ namespace TLR.Content.Core.DamageClasses
 		public override bool GetEffectInheritance(DamageClass damageClass) {
 			if (damageClass == DamageClass.Ranged)
 				return true;
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>())
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>())
 				return true;
 			return false;
 		}
@@ -305,7 +305,7 @@ namespace TLR.Content.Core.DamageClasses
 			return true;
 		}
 	}
-    public class HealMagic : DamageClass
+    public class SupportMagic : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -331,7 +331,7 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 1f
 			    );
 			}
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>()) {
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>()) {
 				return new StatInheritanceData(
 				damageInheritance: 1f,
 				critChanceInheritance: 1f,
@@ -357,7 +357,7 @@ namespace TLR.Content.Core.DamageClasses
 		public override bool GetEffectInheritance(DamageClass damageClass) {
 			if (damageClass == DamageClass.Magic)
 				return true;
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>())
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>())
 				return true;
 			return false;
 		}
@@ -384,7 +384,7 @@ namespace TLR.Content.Core.DamageClasses
 			return true;
 		}
 	}
-    public class HealSummon : DamageClass
+    public class SupportSummon : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -410,7 +410,7 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 1f
 			    );
 			}
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>()) {
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>()) {
 				return new StatInheritanceData(
 				damageInheritance: 1f,
 				critChanceInheritance: 1f,
@@ -436,7 +436,7 @@ namespace TLR.Content.Core.DamageClasses
 		public override bool GetEffectInheritance(DamageClass damageClass) {
 			if (damageClass == DamageClass.Summon)
 				return true;
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>())
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>())
 				return true;
 			return false;
 		}
@@ -463,7 +463,7 @@ namespace TLR.Content.Core.DamageClasses
 			return true;
 		}
 	}
-	public class HealSummonWhip : DamageClass
+	public class SupportSummonWhip : DamageClass
 	{
 		public override void SetStaticDefaults() {
 		}
@@ -498,7 +498,7 @@ namespace TLR.Content.Core.DamageClasses
 				knockbackInheritance: 0f
 			    );
 			}
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>()) {
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>()) {
 				return new StatInheritanceData(
 				damageInheritance: 1f,
 				critChanceInheritance: 1f,
@@ -524,7 +524,7 @@ namespace TLR.Content.Core.DamageClasses
 		public override bool GetEffectInheritance(DamageClass damageClass) {
 			if (damageClass == DamageClass.Summon)
 				return true;
-            if (damageClass == ModContent.GetInstance<DamageClasses.Heal>())
+            if (damageClass == ModContent.GetInstance<DamageClasses.Support>())
 				return true;
 			return false;
 		}
