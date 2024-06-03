@@ -1,6 +1,9 @@
-The Light Reveals is an mod that focuses on built-in compabilities for mods I like, yet it works on it's own.
+The Light Reveals is an mod that adds all sorts of stuff I think of.
+
+A new class, Healer! (well what do you consider "new"... thorium already did it but I do not care)
 
 Mods that are compatible:
-- Secrets of the Shadows (I love that mod. It's the original mod I planned compatibility for.)
-
+- Secrets of the Shadows (Upcoming)
+Mods that are NOT compatible: (If you try to play with them your computer will EXPLODE!!! (maybe))
+- Thorium (Both classes have healers. Will have to add compats later)
 Some accessories have SYNERGIES when using them both.

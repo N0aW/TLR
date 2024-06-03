@@ -4,7 +4,9 @@ Currently no important info.
 For information on the mod, check description.txt
 
 ### Compats:
-- Secrets of the Shadows
+- Secrets of the Shadows (Upcoming)
+### Incompats: (expected)
+- Thorium (Due to both mods adding a healer class)
 ### Credits:
 - VortexOfRainbows
     - For giving the source code to SOTS.

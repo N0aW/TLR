@@ -1,4 +1,3 @@
 displayName = [c/32ff82:The Light Reveals]
 author = N0aW
-version = 0.1.8.6
-weakReferences = SOTS
+version = 0.1.9

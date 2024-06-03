@@ -1,10 +1,73 @@
 # Core
 ## Mechanics
+### Support Class
+- Support Class focuses on supporting their allies stats, health and mana!
+- Critical Strikes support allies twice as potently!
+- Their weapons must have one of the following rules! Only one is required
+    - They must restore health
+    - They must restore mana
+    - They must buff any ally stat
+- Their accessories and armor don't require rules os much, but they should follow one of the following rules!
+    - They must buff the owners stats, restore health or mana.
+    - They must buff the ally stats, restore health or mana.
+    - They must give buffs to other healer items, such as weapons, armor and accessories-
+- Their weapons will have inferiro stats, as they are a support class, not an offense.
+- Support weapons can be paired with other classes! Examples below:
+    - Healer Sword? heal + melee
+    - Mana Bullets? heal + ranged
+    - Buffing Harp? heal + magic
+    - Buff + Heal Whip? heal + summon
 ## Items
-### 
+### Potion Belt
+#### Rarity: Green (2)
+- Healing Potion (10) + Mana Potion (10) + Bone (50) + Cobweb (100)
+    - Crafted at Alchemy Station
+- Increases healer critical strike chance by 8%
+- Increases healing from potions by 40
+- Increaes mana gain from potions by 40
+- Increaes buff length from potions by 33%
+- Allows crafting potions on the go.
+### Cookie Tray
+#### Rarity: Light Red (4)
+- Iron Bar (10) + Cookie (6)
+- Eating cookies fill out the tray!
+- Dying will reset the cookies
+    - 0 cookies = +10 Max HP, +0 life regen
+    - 1 cookie  = +20 Max HP, +1 life regen
+    - 2 cookies = +35 Max HP, +1 life regen, +4% healer damage
+    - 3 cookies = +50 Max HP, +2 life regen, +4% healer damage
+    - 4 cookies = +65 Max HP, +2 life regen, +8% healer damage, +8% healer crit chance
+    - 5 cookies = +80 Max HP, +3 life regen, +12% healer damage, +10% healer crit chance
+    - 6 cookies = +100 Max HP, +3 life regen, +15% healer damage and crit chance
+### Radiating Heart Necklace
+- Chain + Heart Crystal
+- Increases max health by 20
+- Allies around you get max health increased by 10
+### Sweet Heart
+#### Rarity: Orange (3)
+- 33% chance to drop from Queen Bee treasure bag, 66% chance in Expert Mode.
+- Increases healer damage and critical strike chance by 8%
+- Increases life regeneration by 2.
+### Toy Sword
+#### Rarity: White (0)
+- 2 heal + melee damage, very fast speed
+- Hit your allies to annoy them! Grants them 2 seconds of Wrath and Rage.
+- "A toy sword. Really bad at dealing damage."
+### Book of Wonders
+#### Rarity: Yellow (8)
+- Manamaster 2000 + (lategame healing accessory; including radiating heart necklace, sweet heart, potion belt) + Ectoplasm (10)
+- Increases magic and healer damage and critical strike chance by 15%
+- 15% reduced mana cost
+- Automatically use health potions if HP drops below 0
+- Automatically use mana potions when needed
+- Increases maximum life and mana by 20
+- Increases nearby allies maximum life and mana by 10
+- Causes star to fall after taking damage; stars restore mana when collected
+- Restores mana when damaged
+- Enemies are less likely to target you
 ### Lunar Symphony
 #### Rarity: Red (10)
-- Hallowed Gauntlet + Cyber Scope + Manamaster 2000 + Scroller + Luminite Bar (10)
+- Hallowed Gauntlet + Cyber Scope + Book of Wonders + Scroller + Luminite Bar (10)
 - Increases damage and critical strike chance by 20%
 - Increases melee speed by 15%, melee knockback greatly increased.
 - Melee weapons are bigger, ranged weapons have scoping abilities. (right-click)
@@ -42,7 +105,7 @@
 - Decreases whip damage by 20%
 ### Master Strategies
 #### Rarity: Orange (3)
-- Cruel Strategies + Master Stategies + Vine (2)
+- Cruel Strategies + Master Stategies + Vine (6)
 - Increases all summon damage by 10%
 ### Scroller
 - Fire Gauntlet + Master Strategies
