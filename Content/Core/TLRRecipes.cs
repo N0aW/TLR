@@ -132,12 +132,12 @@ namespace TLR.Content.Core
 			recipe13c.AddTile(TileID.Autohammer);
 			recipe13c.Register();
 			Recipe recipe14aa = Recipe.Create(ItemID.SpectreMask);
-			recipe14aa.AddIngredient(ItemID.ChlorophyteHelmet);
+			recipe14aa.AddIngredient(ItemID.ChlorophyteHeadgear);
 			recipe14aa.AddIngredient(ItemID.Ectoplasm, 6);
 			recipe14aa.AddTile(TileID.AdamantiteForge);
 			recipe14aa.Register();
 			Recipe recipe14ab = Recipe.Create(ItemID.SpectreHood);
-			recipe14ab.AddIngredient(ItemID.ChlorophyteHelmet);
+			recipe14ab.AddIngredient(ItemID.ChlorophyteHeadgear);
 			recipe14ab.AddIngredient(ItemID.Ectoplasm, 6);
 			recipe14ab.AddTile(TileID.AdamantiteForge);
 			recipe14ab.Register();
