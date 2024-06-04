@@ -58,17 +58,13 @@ namespace TLR.Content.Core.Items.Accessories
             player.GetJumpState<CloudInABottleJump>().Enable();
             player.GetJumpState<BlizzardInABottleJump>().Enable();
             player.GetJumpState<SandstormInABottleJump>().Enable();
-            // following code is for the celestial stone effect. I actually have no idea how to do it otherwise.
-            player.GetDamage(DamageClass.Generic) += 10 / 100f;
-            player.GetAttackSpeed(DamageClass.Melee) += 10 / 100f;
-            player.GetCritChance(DamageClass.Generic) += 2;
-            player.lifeRegen += 2 / 120;
-            player.statDefense += 4;
-            player.pickSpeed -= 15f / 100f;
-            player.GetKnockback(DamageClass.Summon) += 0.5f;
-            // the code stops here.
-            player.wereWolf = true;
+            player.skyStoneEffects = true;
+            player.wolfAcc = true;
             player.shimmerImmune = true;
+            if (hideVisual) {
+                player.hideMerman = true;
+                player.hideWolf = true;
+            }
 			Lighting.AddLight((int)player.Center.X / 16, (int)player.Center.Y / 16, 0.4f, 1.2f, 1.8f);
         }
         public override void UpdateVanity(Player player)
@@ -77,8 +73,8 @@ namespace TLR.Content.Core.Items.Accessories
             player.autoPaint = true;
             player.rulerGrid = true;
             player.InfoAccMechShowWires = true;
-            player.forceWerewolf = true;
-            player.forceMerman = true;
+            player.hideWolf = false;
+			player.forceWerewolf = true;
         }
         public override void UpdateInventory(Player player)
         {

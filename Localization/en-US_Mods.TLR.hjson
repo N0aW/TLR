@@ -74,8 +74,7 @@ Items: {
 			Grants immunity to fire blocks and 7 seconds of immunity to lava
 			Allows the ability to climb walls and dash
 			Gives a chance to dodge attacks
-			Negates fall damage
-			Reduces damage from touching lava
+			Negates fall damage and reduces damage from touching lava
 			'''
 	}
 
@@ -156,7 +155,7 @@ Items: {
 			Grants a chance to dodge attacks
 			Allows walking on water, lava and honey
 			Grants immunity to fire blocks and 10 seconds of immunity to lava
-			Reduces damage from touching lava
+			Negates fall damage and reduces damage from touching lava
 			Running causes you to blast forward, granting higher speed and acceleration
 			This blast cannot be controlled
 			'''
@@ -172,7 +171,7 @@ Items: {
 			Grants a chance to dodge attacks
 			Allows walking on water, lava and honey
 			Grants immunity to fire blocks and 10 seconds of immunity to lava
-			Reduces damage from touching lava
+			Negates fall damage and reduces damage from touching lava
 			Double tap dash while on the ground to blast forward, granting higher speed and acceleration
 			'''
 		DisplayName: Emoji Shoes
