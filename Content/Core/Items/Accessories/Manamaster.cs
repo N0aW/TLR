@@ -12,8 +12,8 @@ namespace TLR.Content.Core.Items.Accessories
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.width = 40;
-			Item.height = 40;
+			Item.width = 28;
+			Item.height = 32;
 			Item.value = Item.sellPrice(gold: 20);
 			Item.rare = ItemRarityID.Lime;
 			Item.accessory = true;

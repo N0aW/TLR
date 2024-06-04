@@ -1,9 +1,6 @@
 The Light Reveals is an mod that adds all sorts of stuff I think of.
 
-A new class, Healer! (well what do you consider "new"... thorium already did it but I do not care)
+A new class, Supporter! Grant support to your teammates in form of life recovery, mana recovery or buffs!
 
 Mods that are compatible:
-- Secrets of the Shadows (Upcoming)
-Mods that are NOT compatible: (If you try to play with them your computer will EXPLODE!!! (maybe))
-- Thorium (Both classes have healers. Will have to add compats later)
-Some accessories have SYNERGIES when using them both.
+- Secrets of the Shadows

@@ -76,7 +76,6 @@ Items: {
 			Gives a chance to dodge attacks
 			Negates fall damage
 			Reduces damage from touching lava
-			'Unleash a kick with a hidden trick'
 			'''
 	}
 
@@ -140,6 +139,44 @@ Items: {
 			'''
 		DisplayName: Manamaster 3000
 	}
+
+	PotionBundle: {
+		DisplayName: Potion Bundle
+		Tooltip: ""
+	}
+
+	FlashbyBoots: {
+		DisplayName: Flash-By Boots
+		Tooltip:
+			'''
+			Provides tremendous acceleration while running
+			Also provides flight and extra mobility on ice
+			Increases movement speed greatly
+			Allows the ability to dash and climb walls
+			Grants a chance to dodge attacks
+			Allows walking on water, lava and honey
+			Grants immunity to fire blocks and 10 seconds of immunity to lava
+			Reduces damage from touching lava
+			Running causes you to blast forward, granting higher speed and acceleration
+			This blast cannot be controlled
+			'''
+	}
+
+	EmojiShoes: {
+		Tooltip:
+			'''
+			Provides tremendous acceleration while running
+			Also provides flight and extra mobility on ice
+			Increases movement speed greatly
+			Allows the ability to dash and climb walls
+			Grants a chance to dodge attacks
+			Allows walking on water, lava and honey
+			Grants immunity to fire blocks and 10 seconds of immunity to lava
+			Reduces damage from touching lava
+			Double tap dash while on the ground to blast forward, granting higher speed and acceleration
+			'''
+		DisplayName: Emoji Shoes
+	}
 }
 
 Buffs: {
@@ -156,7 +193,7 @@ Buffs: {
 
 Configs: {
 	TLRConfigServer.DisplayName: TLR Config Server
-	TLRConfigClient.DisplayName: T L R Config Client
+	TLRConfigClient.DisplayName: TLR Config Client
 }
 
 DamageClasses: {
@@ -168,3 +205,5 @@ DamageClasses: {
 	SupportMagic.DisplayName: support + magic damage
 	Support.DisplayName: support damage
 }
+
+Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Proj
