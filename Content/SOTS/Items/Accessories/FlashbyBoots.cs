@@ -14,7 +14,7 @@ namespace TLR.Content.SOTS.Items.Accessories
 	{
         public override bool IsLoadingEnabled(Mod mod)
         {
-            return ModLoader.TryGetMod("SOTS", out Mod SOTS);
+            return ModLoader.TryGetMod("SOTS", out _);
         }
 		public override void SetDefaults()
 		{

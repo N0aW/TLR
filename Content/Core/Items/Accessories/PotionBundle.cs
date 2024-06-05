@@ -10,31 +10,29 @@ namespace TLR.Content.Core.Items.Accessories
 	public class PotionBundle : ModItem
 	{
         // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
-        public override bool IsLoadingEnabled(Mod mod)
-        {
-            return false;
-        }
         public override void SetDefaults()
 		{
 			Item.width = 28;
 			Item.height = 20;
 			Item.value = Item.sellPrice(gold: 1);
-			Item.rare = ItemRarityID.Green;
+			Item.rare = ItemRarityID.LightRed;
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
 			Item.maxStack = 1;
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            // Healing Potions heal 40 HP more
-            // Mana Potions restore 40 HP more
-            // You can craft ironskin, regen, swiftness, healing and mana potions on the go
-			// You get cheaper recipes for these, and no need for bottles
-            // Grants Regeneration to you and allies in a 25 block radius
-			// 5% increase to support damage and critical strike chance
-            player.GetDamage(ModContent.GetInstance<DamageClasses.Support>()) += 5f / 100f;
-			player.GetCritChance(ModContent.GetInstance<DamageClasses.Support>()) += 5;
+			// Healing potions heal 40 HP more
+			// Mana potions recover 40 mana more
+            // Grants Regeneration, Ironskin and Swiftness to you and allies in a 25 block radius
+			// 8% increase to support damage and critical strike chance
+            player.GetDamage(ModContent.GetInstance<DamageClasses.Support>()) += 8f / 100f;
+			player.GetCritChance(ModContent.GetInstance<DamageClasses.Support>()) += 8;
+			ModContent.GetInstance<TLRPlayer>().healPotionAdd += 40;
+			ModContent.GetInstance<TLRPlayer>().manaPotionAdd += 40;
 			player.AddBuff(BuffID.Regeneration, 1, true, false);
+			player.AddBuff(BuffID.Ironskin, 1, true, false);
+			player.AddBuff(BuffID.Swiftness, 1, true, false);
         }
 
         public override void AddRecipes()
@@ -45,10 +43,7 @@ namespace TLR.Content.Core.Items.Accessories
 			recipe.AddIngredient(ItemID.IronskinPotion, 5);
 			recipe.AddIngredient(ItemID.RegenerationPotion, 5);
 			recipe.AddIngredient(ItemID.SwiftnessPotion, 5);
-			recipe.AddIngredient(ItemID.Bone, 50);
-            recipe.AddIngredient(ItemID.Cobweb, 30);
-            recipe.AddIngredient(ItemID.Silk, 10);
-			recipe.AddTile(TileID.AlchemyTable);
+			recipe.AddTile(TileID.CrystalBall);
 			recipe.Register();
 		}
 	}

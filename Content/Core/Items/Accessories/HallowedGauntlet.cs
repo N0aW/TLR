@@ -32,7 +32,7 @@ namespace TLR.Content.Core.Items.Accessories
 			player.autoReuseGlove = true;
             player.kbGlove = true;
             player.yoyoGlove = true;
-            player.counterWeight = ProjectileID.YellowCounterweight;
+            player.counterWeight = 556 + Main.rand.Next(6);
             player.GetModPlayer<TLRPlayer>().hallowGlove = true;
         }
 
