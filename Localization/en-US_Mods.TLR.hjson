@@ -140,7 +140,13 @@ Items: {
 
 	PotionBundle: {
 		DisplayName: Potion Bundle
-		Tooltip: ""
+		Tooltip:
+			'''
+			8% increased support damage and critical strike chance
+			Increases healing from potions by 40
+			Increases mana gain from potions by 40
+			Grants permanent Ironskin, Regeneration and Swiftness
+			'''
 	}
 
 	FlashbyBoots: {
