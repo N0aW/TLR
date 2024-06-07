@@ -9,22 +9,27 @@ namespace TLR
     {
         public bool hallowGlove = false;
         public bool hallowGloveCD = false;
-        public bool warGlove = false;
+        public bool spookyGlove = false;
         public int healPotionAdd = 0;
         public int manaPotionAdd = 0;
         public override void ResetEffects()
         {
             hallowGlove = false;
             hallowGloveCD = false;
-            warGlove = false;
+            spookyGlove = false;
             healPotionAdd = 0;
             manaPotionAdd = 0;
         }
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            if (item.DamageType == DamageClass.Melee && hallowGlove == true && hallowGloveCD == false)
+            if (item.DamageType == DamageClass.Melee)
             {
-                Player.AddBuff(ModContent.BuffType<BlessedDefense>(), 300, true, false);
+                if (hallowGlove == true && hallowGloveCD == false) {
+                    Player.AddBuff(ModContent.BuffType<BlessedDefense>(), 300, true, false);
+                }
+                if (spookyGlove == true && !Player.HasBuff(BuffID.MoonLeech)) {
+                    Player.Heal(damageDone / 20);
+                }
             }
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
@@ -41,18 +46,6 @@ namespace TLR
                 Player.AddBuff(ModContent.BuffType<BlessingCooldown>(), 600, true, false);
                 Player.ClearBuff(ModContent.BuffType<BlessedDefense>());
             }
-        }
-        public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genDust, ref PlayerDeathReason damageSource)
-        {
-            if (ModLoader.TryGetMod("SOTS", out Mod SOTS)) {
-                if (warGlove == true) {
-                    return false;
-                }
-                else {
-                    return true;
-                }
-            }
-            return true;
         }
         public override void GetHealLife(Item item, bool quickHeal, ref int healValue)
         {

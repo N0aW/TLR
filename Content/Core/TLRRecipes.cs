@@ -10,19 +10,24 @@ namespace TLR.Content.Core
 	public class TLRRecipes : ModSystem
 	{
 		// A place to store the recipe group so we can easily use it later
-		public static RecipeGroup ExampleRecipeGroup;
+		public static RecipeGroup group;
 
 		public override void Unload() {
-			ExampleRecipeGroup = null;
+			group = null;
 		}
 
 		public override void AddRecipeGroups() {
+			group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + Language.GetTextValue("Mods.TLR.AddRecipeGroups.DD2Accessory"), new int[]
+			{
+				ItemID.SquireShield,
+				ItemID.HuntressBuckler,
+				ItemID.ApprenticeScarf,
+				ItemID.MonkBelt
+			});
+			RecipeGroup.RegisterGroup("TLR:DD2Accessory", group);
 		}
 
 		public override void AddRecipes() {
-			////////////////////////////////////////////////////////////////////////////////////
-			// The following basic recipe makes 999 ExampleItems out of 1 stone block. //
-			////////////////////////////////////////////////////////////////////////////////////
 			Recipe recipe = Recipe.Create(ItemID.BoneWelder);
 			recipe.AddIngredient(ItemID.Bone, 100);
 			recipe.AddTile(TileID.DemonAltar);

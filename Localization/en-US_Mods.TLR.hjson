@@ -2,14 +2,14 @@
 
 Items: {
 	CyberScope: {
-		DisplayName: Cybernetic Eye Enchanments
+		DisplayName: Cybernetic Scope
 		Tooltip:
 			'''
 			Increases view range for ranged weapons (Right-click to zoom out)
 			15% increased ranged damage and critical strike chance
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
-			Enemies are far less likely to target you
+			Enemies are less likely to target you
 			'''
 	}
 
@@ -142,7 +142,7 @@ Items: {
 		DisplayName: Potion Bundle
 		Tooltip:
 			'''
-			8% increased support damage and critical strike chance
+			5% increased support damage and critical strike chance
 			Increases healing from potions by 40
 			Increases mana gain from potions by 40
 			Grants permanent Ironskin, Regeneration and Swiftness
@@ -181,6 +181,50 @@ Items: {
 			'''
 		DisplayName: Emoji Shoes
 	}
+
+	SpookyStory: {
+		Tooltip:
+			'''
+			30% increased summon damage
+			Increases minion slots by 2 and sentry slots by 1
+			Increased minion knockback
+			'Little John liked playing in the snow. But so did the meat worm.'
+			'''
+		DisplayName: Spooky Story
+	}
+
+	SpookyGauntlet: {
+		Tooltip:
+			'''
+			Increases melee and minion knockback
+			20% increased melee damage and speed
+			30% increased summon damage
+			Enabled auto-swing for melee weapons
+			Increases size for melee weapons
+			Increases minion and sentry slots by 2
+			Gives the user master yoyo skills
+			Hitting enemies will grant you lifesteal and light the enemy on fire
+			Enemies are more likely to target you
+			'''
+		DisplayName: Spooky Gauntlet
+	}
+
+	StarScope: {
+		Tooltip:
+			'''
+			Increases view range for ranged weapons (Right-click to zoom out)
+			20% increased ranged damage and critical strike chance
+			20% increased magic damage and critical strike chance
+			Greatly increased arrow speed, your arrows are lit ablaze
+			20% reduced ammo consumption and mana cost
+			Automatically use mana potions when needed
+			Increases maximum mana by 100
+			Increases pickup range for mana stars
+			Mana-restoring stars fall if you take damage, mana is also restored
+			Enemies are far less likely to target you
+			'''
+		DisplayName: Star Scope
+	}
 }
 
 Buffs: {
@@ -210,4 +254,4 @@ DamageClasses: {
 	Support.DisplayName: support damage
 }
 
-Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Proj
+Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile
