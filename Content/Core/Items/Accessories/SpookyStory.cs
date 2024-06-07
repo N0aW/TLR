@@ -33,7 +33,7 @@ namespace TLR.Content.Core.Items.Accessories
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.PapyrusScarab);
 			recipe.AddIngredient(ItemID.PygmyNecklace);
-			recipe.AddRecipeGroup("TLR:DD2Accessory", 1);
+			recipe.AddRecipeGroup("TLR:T2DD2Accessory", 1);
             recipe.AddIngredient(ItemID.AvengerEmblem);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();

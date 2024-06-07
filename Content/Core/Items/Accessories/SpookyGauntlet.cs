@@ -20,7 +20,7 @@ namespace TLR.Content.Core.Items.Accessories
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
 			Item.maxStack = 1;
-            Item.defense = 8;
+            Item.defense = 16;
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {

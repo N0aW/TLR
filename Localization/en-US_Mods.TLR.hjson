@@ -253,5 +253,7 @@ DamageClasses: {
 	SupportMagic.DisplayName: support + magic damage
 	Support.DisplayName: support damage
 }
-
+AddRecipeGroups: {
+	T2DD2Accessory: " Tier 2 DD2 Accessory"
+}
 Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile

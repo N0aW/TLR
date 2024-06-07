@@ -17,14 +17,14 @@ namespace TLR.Content.Core
 		}
 
 		public override void AddRecipeGroups() {
-			group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + Language.GetTextValue("Mods.TLR.AddRecipeGroups.DD2Accessory"), new int[]
+			group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + Language.GetTextValue("TLR.AddRecipeGroups.T2DD2Accessory"), new int[]
 			{
 				ItemID.SquireShield,
 				ItemID.HuntressBuckler,
 				ItemID.ApprenticeScarf,
 				ItemID.MonkBelt
 			});
-			RecipeGroup.RegisterGroup("TLR:DD2Accessory", group);
+			RecipeGroup.RegisterGroup("TLR:T2DD2Accessory", group);
 		}
 
 		public override void AddRecipes() {
