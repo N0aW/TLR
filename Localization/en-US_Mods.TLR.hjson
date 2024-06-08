@@ -188,7 +188,7 @@ Items: {
 			30% increased summon damage
 			Increases minion slots by 2 and sentry slots by 1
 			Increased minion knockback
-			'Little John liked playing in the snow. But so did the meat worm.'
+			'Berry loved to play in the snow. But so did the meat worm.'
 			'''
 		DisplayName: Spooky Story
 	}
@@ -198,7 +198,7 @@ Items: {
 			'''
 			Increases melee and minion knockback
 			20% increased melee damage and speed
-			30% increased summon damage
+			35% increased summon damage
 			Enabled auto-swing for melee weapons
 			Increases size for melee weapons
 			Increases minion and sentry slots by 2
@@ -226,6 +226,9 @@ Items: {
 		DisplayName: Star Scope
 	}
 }
+AddRecipeGroups: {
+	T2DD2Accessory: " Tier 2 DD2 Accessory"
+}
 
 Buffs: {
 	BlessedDefense: {
@@ -252,8 +255,5 @@ DamageClasses: {
 	SupportMelee.DisplayName: support + melee damage
 	SupportMagic.DisplayName: support + magic damage
 	Support.DisplayName: support damage
-}
-AddRecipeGroups: {
-	T2DD2Accessory: " Tier 2 DD2 Accessory"
 }
 Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile

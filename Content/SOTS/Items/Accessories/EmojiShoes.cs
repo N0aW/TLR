@@ -20,7 +20,7 @@ namespace TLR.Content.SOTS.Items.Accessories
             Item.width = 83;     
             Item.height = 38;   
             Item.value = Item.sellPrice(0, 40, 0, 0);
-            Item.rare = ItemRarityID.Purple;
+            Item.rare = ItemRarityID.Red;
 			Item.accessory = true;
 			Item.expert = false;
             Item.ResearchUnlockCount = 1;
