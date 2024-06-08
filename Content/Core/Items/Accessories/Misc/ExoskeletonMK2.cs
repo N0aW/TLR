@@ -1,24 +1,21 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using System;
-using Newtonsoft.Json.Serialization;
 
-namespace TLR.Content.Core.Items.Accessories
+namespace TLR.Content.Core.Items.Accessories.Misc
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
 	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
-	public class Exoskeleton : ModItem
+	public class ExoskeletonMK2 : ModItem
 	{
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
-        // No step stool yet. No balloons.
 		public override void SetDefaults()
 		{
 			Item.width = 32;
 			Item.height = 50;
-			Item.value = Item.sellPrice(gold: 30);
-			Item.rare = ItemRarityID.Lime;
+			Item.value = Item.sellPrice(gold: 50);
+			Item.rare = ItemRarityID.Yellow;
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
 			Item.maxStack = 1;
@@ -27,6 +24,7 @@ namespace TLR.Content.Core.Items.Accessories
         {
             player.jumpBoost = true;
             player.autoJump = true;
+            player.accRunSpeed = 6f;
             player.noFallDmg = true;
             player.accFlipper = true;
             player.accFishingLine = true;
@@ -50,10 +48,23 @@ namespace TLR.Content.Core.Items.Accessories
             player.treasureMagnet = true;
             player.InfoAccMechShowWires = true;
             player.rulerGrid = true;
+            player.hasLuck_LuckyCoin = true;
+            player.hasLuckyCoin = true;
+            player.goldRing = true;
+            player.discountEquipped = true;
+            player.CanSeeInvisibleBlocks = true;
+            player.accMerman = true;
             player.cPortableStool = Item.dye;
             player.GetJumpState<CloudInABottleJump>().Enable();
             player.GetJumpState<BlizzardInABottleJump>().Enable();
             player.GetJumpState<SandstormInABottleJump>().Enable();
+            player.skyStoneEffects = true;
+            player.wolfAcc = true;
+            player.shimmerImmune = true;
+            if (hideVisual) {
+                player.hideMerman = true;
+                player.hideWolf = true;
+            }
 			Lighting.AddLight((int)player.Center.X / 16, (int)player.Center.Y / 16, 0.4f, 1.2f, 1.8f);
         }
         public override void UpdateVanity(Player player)
@@ -62,6 +73,8 @@ namespace TLR.Content.Core.Items.Accessories
             player.autoPaint = true;
             player.rulerGrid = true;
             player.InfoAccMechShowWires = true;
+            player.hideWolf = false;
+			player.forceWerewolf = true;
         }
         public override void UpdateInventory(Player player)
         {
@@ -74,31 +87,13 @@ namespace TLR.Content.Core.Items.Accessories
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.HorseshoeBundle);
-			recipe.AddIngredient(ItemID.ArcticDivingGear);
-            recipe.AddIngredient(ItemID.HandOfCreation);
-            recipe.AddIngredient(ItemID.ActuationAccessory);
-            recipe.AddIngredient(ItemID.LavaproofTackleBag);
-            recipe.AddIngredient(ItemID.FishingBobber);
-            recipe.AddIngredient(ItemID.UltrabrightHelmet);
-            recipe.AddIngredient(ItemID.FrogWebbing);
-            recipe.AddIngredient(ItemID.Magiluminescence);
-            recipe.AddIngredient(ItemID.WireKite);
+			recipe.AddIngredient(ModContent.ItemType<Exoskeleton>());
+            recipe.AddIngredient(ItemID.GreedyRing);
+            recipe.AddIngredient(ItemID.CelestialShell);
+            recipe.AddIngredient(ItemID.SpectreGoggles);
+            recipe.AddIngredient(ItemID.ShimmerCloak);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
-            Recipe recipe2 = CreateRecipe();
-			recipe2.AddIngredient(ItemID.HorseshoeBundle);
-			recipe2.AddIngredient(ItemID.ArcticDivingGear);
-            recipe2.AddIngredient(ItemID.HandOfCreation);
-            recipe2.AddIngredient(ItemID.ActuationAccessory);
-            recipe2.AddIngredient(ItemID.LavaproofTackleBag);
-            recipe2.AddIngredient(ItemID.FishingBobber);
-            recipe2.AddIngredient(ItemID.UltrabrightHelmet);
-            recipe2.AddIngredient(ItemID.FrogGear);
-            recipe2.AddIngredient(ItemID.Magiluminescence);
-            recipe2.AddIngredient(ItemID.WireKite);
-			recipe2.AddTile(TileID.TinkerersWorkbench);
-			recipe2.Register();
 		}
 	}
 }

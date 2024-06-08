@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TLR.Content.Core.Items.Accessories
+namespace TLR.Content.Core.Items.Accessories.Combat
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
@@ -49,8 +49,8 @@ namespace TLR.Content.Core.Items.Accessories
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<CyberScope>());
-			recipe.AddIngredient(ModContent.ItemType<Manamaster>());
+			recipe.AddIngredient(ModContent.ItemType<Combat.Ranged.CyberScope>());
+			recipe.AddIngredient(ModContent.ItemType<Combat.Magic.Manamaster>());
 			recipe.AddIngredient(ItemID.FallenStar, 100);
 			recipe.AddIngredient(ItemID.FragmentVortex, 12);
 			recipe.AddIngredient(ItemID.FragmentNebula, 12);

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TLR.Content.Core.Items.Accessories
+namespace TLR.Content.Core.Items.Accessories.Movement
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:

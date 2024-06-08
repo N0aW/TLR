@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TLR.Content.Core.Items.Accessories
+namespace TLR.Content.Core.Items.Accessories.Combat
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
@@ -42,8 +42,8 @@ namespace TLR.Content.Core.Items.Accessories
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<HallowedGauntlet>());
-			recipe.AddIngredient(ModContent.ItemType<SpookyStory>());
+			recipe.AddIngredient(ModContent.ItemType<Combat.Melee.HallowedGauntlet>());
+			recipe.AddIngredient(ModContent.ItemType<Combat.Summon.SpookyStory>());
             recipe.AddIngredient(ItemID.SpookyWood, 1500);
 			recipe.AddIngredient(ItemID.FragmentSolar, 12);
 			recipe.AddIngredient(ItemID.FragmentStardust, 12);
