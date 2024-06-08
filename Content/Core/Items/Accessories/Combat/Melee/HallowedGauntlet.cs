@@ -49,6 +49,18 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 			recipe.AddTile(TileID.MythrilAnvil);
             recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
+			Recipe recipe2 = CreateRecipe();
+			recipe2.AddIngredient(ItemID.BerserkerGlove);
+			recipe2.AddIngredient(ItemID.AvengerEmblem);
+			recipe2.AddIngredient(ItemID.MagmaStone);
+			recipe2.AddIngredient(ItemID.YoyoBag);
+			recipe2.AddIngredient(ItemID.HallowedBar, 15);
+            recipe2.AddIngredient(ItemID.SoulofMight, 10);
+            recipe2.AddIngredient(ItemID.SoulofSight, 10);
+            recipe2.AddIngredient(ItemID.SoulofFright, 10);
+			recipe2.AddTile(TileID.MythrilAnvil);
+            recipe2.AddTile(TileID.TinkerersWorkbench);
+			recipe2.Register();
 		}
 	}
 }

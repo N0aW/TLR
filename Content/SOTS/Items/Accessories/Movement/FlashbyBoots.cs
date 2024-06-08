@@ -36,12 +36,13 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 		{
             ModLoader.TryGetMod("SOTS", out Mod SOTS);
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Core.Items.Accessories.KungFuShoes>());
+			recipe.AddIngredient(ModContent.ItemType<Core.Items.Accessories.Movement.KungFuShoes>());
 			recipe.AddIngredient(SOTS.Find<ModItem>("AbsoluteBar").Type, 12);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
             Recipe recipe2 = CreateRecipe();
 			recipe2.AddIngredient(SOTS.Find<ModItem>("FlashsparkBoots").Type, 1);
+            recipe2.AddIngredient(ItemID.FrogFlipper);
 			recipe2.AddIngredient(ItemID.MasterNinjaGear);
             recipe2.AddIngredient(ItemID.LuckyHorseshoe);
 			recipe2.AddTile(TileID.TinkerersWorkbench);
@@ -64,6 +65,9 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 			player.moveSpeed += 0.2f;
             player.accRunSpeed = 7.25f;
             player.spikedBoots = 2;
+            player.accFlipper = true;
+			player.frogLegJumpBoost = true;
+			player.autoJump = true;
             bool particles = FireBoostPlayer(player);
             if(activateParticle)
             {

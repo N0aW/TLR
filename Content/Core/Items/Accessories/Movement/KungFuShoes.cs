@@ -38,12 +38,16 @@ namespace TLR.Content.Core.Items.Accessories.Movement
             player.noFallDmg = true;
             player.hasLuck_LuckyHorseshoe = true;
             player.spikedBoots = 2;
+			player.accFlipper = true;
+			player.frogLegJumpBoost = true;
+			player.autoJump = true;
         }
 
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.TerrasparkBoots);
+			recipe.AddIngredient(ItemID.FrogFlipper);
 			recipe.AddIngredient(ItemID.MasterNinjaGear);
             recipe.AddIngredient(ItemID.LuckyHorseshoe);
 			recipe.AddTile(TileID.TinkerersWorkbench);

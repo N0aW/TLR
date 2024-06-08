@@ -72,7 +72,8 @@ Items: {
 			12% increased movement speed
 			Provides the ability to walk on liquids
 			Grants immunity to fire blocks and 7 seconds of immunity to lava
-			Allows the ability to climb walls and dash
+			Allows the ability to climb walls, dash, swim and auto-jump
+			Increses jump speed
 			Gives a chance to dodge attacks
 			Negates fall damage and reduces damage from touching lava
 			'''
@@ -156,8 +157,9 @@ Items: {
 			Provides tremendous acceleration while running
 			Also provides flight and extra mobility on ice
 			Increases movement speed greatly
-			Allows the ability to dash and climb walls
+			Allows the ability to dash, climb walls, swim and auto-jump
 			Grants a chance to dodge attacks
+			Increases jump speed
 			Allows walking on water, lava and honey
 			Grants immunity to fire blocks and 10 seconds of immunity to lava
 			Negates fall damage and reduces damage from touching lava
@@ -172,8 +174,9 @@ Items: {
 			Provides tremendous acceleration while running
 			Also provides flight and extra mobility on ice
 			Increases movement speed greatly
-			Allows the ability to dash and climb walls
+			Allows the ability to dash, climb walls, swim and auto-jump
 			Grants a chance to dodge attacks
+			Increases jump speed
 			Allows walking on water, lava and honey
 			Grants immunity to fire blocks and 10 seconds of immunity to lava
 			Negates fall damage and reduces damage from touching lava
@@ -226,9 +229,8 @@ Items: {
 		DisplayName: Star Scope
 	}
 }
-AddRecipeGroups: {
-	T2DD2Accessory: " Tier 2 DD2 Accessory"
-}
+
+AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
 
 Buffs: {
 	BlessedDefense: {
@@ -256,4 +258,5 @@ DamageClasses: {
 	SupportMagic.DisplayName: support + magic damage
 	Support.DisplayName: support damage
 }
+
 Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile

@@ -41,12 +41,14 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 			recipe.Register();
             Recipe recipe2 = CreateRecipe();
 			recipe2.AddIngredient(SOTS.Find<ModItem>("SubspaceBoosters").Type, 1);
+            recipe2.AddIngredient(ItemID.FrogFlipper);
 			recipe2.AddIngredient(ItemID.MasterNinjaGear);
             recipe2.AddIngredient(ItemID.LuckyHorseshoe);
 			recipe2.AddTile(TileID.TinkerersWorkbench);
 			recipe2.Register();
             Recipe recipe3 = CreateRecipe();
 			recipe3.AddIngredient(SOTS.Find<ModItem>("SubspaceBoosters").Type, 1);
+            recipe3.AddIngredient(ItemID.FrogFlipper);
 			recipe3.AddIngredient(ItemID.BlackBelt);
             recipe3.AddIngredient(ItemID.TigerClimbingGear);
             recipe3.AddIngredient(ItemID.LuckyHorseshoe);
@@ -73,6 +75,9 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
             player.blackBelt = true;
             player.spikedBoots = 2;
             player.dashType = 1;
+            player.accFlipper = true;
+			player.frogLegJumpBoost = true;
+			player.autoJump = true;
             bool particles = FireBoostPlayer(player);
             bool activate = false;
             int direction = 0;
