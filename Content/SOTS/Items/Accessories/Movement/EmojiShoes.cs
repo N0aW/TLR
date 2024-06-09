@@ -5,6 +5,7 @@ using Terraria.DataStructures;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.GameInput;
 
 namespace TLR.Content.SOTS.Items.Accessories.Movement
 {
@@ -88,7 +89,9 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
             player.accFlipper = true;
 			player.frogLegJumpBoost = true;
 			player.autoJump = true;
-
+            if (PlayerInput.Triggers.Current.Jump) {
+				player.slowFall = true;
+			}
             bool particles = FireBoostPlayer(player);
             bool activate = false;
             int direction = 0;

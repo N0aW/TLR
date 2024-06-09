@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using Terraria;
+using Terraria.GameInput;
 using Terraria.ID;
 using Terraria.IO;
 using Terraria.ModLoader;
@@ -44,7 +45,9 @@ namespace TLR.Content.Core.Items.Accessories.Movement
 			// Air Master
 			player.rocketBoots = ArmorIDs.RocketBoots.TerrasparkBoots;
             player.vanityRocketBoots = ArmorIDs.RocketBoots.TerrasparkBoots;
-			player.slowFall = true;
+			if (PlayerInput.Triggers.Current.Jump) {
+				player.slowFall = true;
+			}
         }
 
         public override void AddRecipes()

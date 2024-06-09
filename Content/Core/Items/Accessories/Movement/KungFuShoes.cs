@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.GameInput;
 
 namespace TLR.Content.Core.Items.Accessories.Movement
 { 
@@ -41,7 +42,9 @@ namespace TLR.Content.Core.Items.Accessories.Movement
 			player.accFlipper = true;
 			player.frogLegJumpBoost = true;
 			player.autoJump = true;
-			player.slowFall = true;
+			if (PlayerInput.Triggers.Current.Jump) {
+				player.slowFall = true;
+			}
         }
 
         public override void AddRecipes()
