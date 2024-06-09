@@ -256,6 +256,7 @@ Items: {
 			Allows the ability to swim, auto-jump and slow fall
 			Increases jump speed
 			Negates fall damage and reduces damage from touching lava
+			'Master mobility on fire, earth, air and water'
 			'''
 		DisplayName: Avatar Boots
 	}
