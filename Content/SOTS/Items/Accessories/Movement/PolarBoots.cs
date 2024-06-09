@@ -21,7 +21,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
             Item.width = 34;
             Item.height = 32;   
             Item.value = Item.sellPrice(0, 30, 0, 0);
-            Item.rare = ItemRarityID.Red;
+            Item.rare = ItemRarityID.Cyan;
 			Item.accessory = true;
 			Item.expert = false;
             Item.ResearchUnlockCount = 1;

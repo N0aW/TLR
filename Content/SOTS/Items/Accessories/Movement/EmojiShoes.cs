@@ -44,6 +44,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
             recipe2.AddIngredient(ItemID.FrogFlipper);
 			recipe2.AddIngredient(ItemID.MasterNinjaGear);
             recipe2.AddIngredient(ItemID.LuckyHorseshoe);
+            recipe2.AddIngredient(ItemID.Feather, 10);
 			recipe2.AddTile(TileID.TinkerersWorkbench);
 			recipe2.Register();
             Recipe recipe3 = CreateRecipe();
@@ -52,8 +53,17 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 			recipe3.AddIngredient(ItemID.BlackBelt);
             recipe3.AddIngredient(ItemID.TigerClimbingGear);
             recipe3.AddIngredient(ItemID.LuckyHorseshoe);
+            recipe3.AddIngredient(ItemID.Feather, 10);
 			recipe3.AddTile(TileID.TinkerersWorkbench);
 			recipe3.Register();
+            Recipe recipe4 = CreateRecipe();
+			recipe4.AddIngredient(SOTS.Find<ModItem>("SubspaceBoosters").Type, 1);
+            recipe4.AddIngredient(ItemID.FrogGear);
+			recipe4.AddIngredient(ItemID.BlackBelt);
+            recipe4.AddIngredient(ItemID.LuckyHorseshoe);
+            recipe4.AddIngredient(ItemID.Feather, 10);
+			recipe4.AddTile(TileID.TinkerersWorkbench);
+			recipe4.Register();
 		}
         int hasActivate = -1;
         public static int GetPlayerDyeShoes(Player player)

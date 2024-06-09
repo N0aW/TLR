@@ -41,17 +41,10 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
             Recipe recipe2 = CreateRecipe();
-			recipe2.AddIngredient(SOTS.Find<ModItem>("FlashsparkBoots").Type, 1);
-            recipe2.AddIngredient(ItemID.FrogFlipper);
+			recipe2.AddIngredient(ModContent.ItemType<PolarBoots>());
 			recipe2.AddIngredient(ItemID.MasterNinjaGear);
-            recipe2.AddIngredient(ItemID.LuckyHorseshoe);
 			recipe2.AddTile(TileID.TinkerersWorkbench);
 			recipe2.Register();
-            Recipe recipe3 = CreateRecipe();
-			recipe3.AddIngredient(ModContent.ItemType<PolarBoots>());
-			recipe3.AddIngredient(ItemID.MasterNinjaGear);
-			recipe3.AddTile(TileID.TinkerersWorkbench);
-			recipe3.Register();
 		}
         bool activateParticle = false;
         int hasActivate = -1;
