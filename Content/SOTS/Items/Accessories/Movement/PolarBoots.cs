@@ -10,7 +10,7 @@ using Terraria.WorldBuilding;
 namespace TLR.Content.SOTS.Items.Accessories.Movement
 {
     [AutoloadEquip(EquipType.Shoes)]
-    public class FlashbyBoots : ModItem
+    public class PolarBoots : ModItem
 	{
         public override bool IsLoadingEnabled(Mod mod)
         {
@@ -20,7 +20,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 		{
             Item.width = 34;
             Item.height = 32;   
-            Item.value = Item.sellPrice(0, 35, 0, 0);
+            Item.value = Item.sellPrice(0, 30, 0, 0);
             Item.rare = ItemRarityID.Red;
 			Item.accessory = true;
 			Item.expert = false;
@@ -36,22 +36,17 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 		{
             ModLoader.TryGetMod("SOTS", out Mod SOTS);
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Core.Items.Accessories.Movement.KungFuShoes>());
+			recipe.AddIngredient(ModContent.ItemType<Core.Items.Accessories.Movement.AvatarBoots>());
 			recipe.AddIngredient(SOTS.Find<ModItem>("AbsoluteBar").Type, 12);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
             Recipe recipe2 = CreateRecipe();
 			recipe2.AddIngredient(SOTS.Find<ModItem>("FlashsparkBoots").Type, 1);
             recipe2.AddIngredient(ItemID.FrogFlipper);
-			recipe2.AddIngredient(ItemID.MasterNinjaGear);
             recipe2.AddIngredient(ItemID.LuckyHorseshoe);
+            recipe2.AddIngredient(ItemID.Feather, 10);
 			recipe2.AddTile(TileID.TinkerersWorkbench);
 			recipe2.Register();
-            Recipe recipe3 = CreateRecipe();
-			recipe3.AddIngredient(ModContent.ItemType<PolarBoots>());
-			recipe3.AddIngredient(ItemID.MasterNinjaGear);
-			recipe3.AddTile(TileID.TinkerersWorkbench);
-			recipe3.Register();
 		}
         bool activateParticle = false;
         int hasActivate = -1;
@@ -60,16 +55,13 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 			player.buffImmune[BuffID.Burning] = true;
 			player.waterWalk = true; 
 			player.fireWalk = true; 
-            player.blackBelt = true;
             player.noFallDmg = true;
-            player.dashType = 1;
-			player.lavaMax += 1800; // 30 Seconds!
+			player.lavaMax += 1200; // 20 seconds!!
             player.rocketBoots = (player.vanityRocketBoots = 4);
             player.iceSkate = true;
             player.lavaRose = true;
 			player.moveSpeed += 0.2f;
             player.accRunSpeed = 7.25f;
-            player.spikedBoots = 2;
             player.accFlipper = true;
 			player.frogLegJumpBoost = true;
 			player.autoJump = true;

@@ -71,9 +71,9 @@ Items: {
 			Allows flight, super fast running and extra mobility on ice
 			12% increased movement speed
 			Provides the ability to walk on liquids
-			Grants immunity to fire blocks and 7 seconds of immunity to lava
-			Allows the ability to climb walls, dash, swim and auto-jump
-			Increses jump speed
+			Grants immunity to fire blocks and 15 seconds of immunity to lava
+			Allows the ability to climb walls, dash, swim, auto-jump and slow fall
+			Increases jump speed
 			Gives a chance to dodge attacks
 			Negates fall damage and reduces damage from touching lava
 			'''
@@ -157,11 +157,11 @@ Items: {
 			Provides tremendous acceleration while running
 			Also provides flight and extra mobility on ice
 			Increases movement speed greatly
-			Allows the ability to dash, climb walls, swim and auto-jump
+			Allows the ability to dash, climb walls, swim, auto-jump and slow fall
 			Grants a chance to dodge attacks
 			Increases jump speed
 			Allows walking on water, lava and honey
-			Grants immunity to fire blocks and 10 seconds of immunity to lava
+			Grants immunity to fire blocks and 30 seconds of immunity to lava
 			Negates fall damage and reduces damage from touching lava
 			Running causes you to blast forward, granting higher speed and acceleration
 			This blast cannot be controlled
@@ -178,7 +178,7 @@ Items: {
 			Grants a chance to dodge attacks
 			Increases jump speed
 			Allows walking on water, lava and honey
-			Grants immunity to fire blocks and 10 seconds of immunity to lava
+			Grants immunity to fire blocks and 1 minute of immunity to lava
 			Negates fall damage and reduces damage from touching lava
 			Double tap dash while on the ground to blast forward, granting higher speed and acceleration
 			'''
@@ -227,6 +227,37 @@ Items: {
 			Enemies are far less likely to target you
 			'''
 		DisplayName: Star Scope
+	}
+
+	PolarBoots: {
+		Tooltip:
+			'''
+			Provides tremendous acceleration while running
+			Also provides flight and extra mobility on ice
+			Increases movement speed greatly
+			Allows the ability to swim, auto-jump and slow fall
+			Increases jump speed
+			Allows walking on water, lava and honey
+			Grants immunity to fire blocks and 20 seconds of immunity to lava
+			Negates fall damage and reduces damage from touching lava
+			Running causes you to blast forward, granting higher speed and acceleration
+			This blast cannot be controlled
+			'''
+		DisplayName: Polar Boots
+	}
+
+	AvatarBoots: {
+		Tooltip:
+			'''
+			Allows flight, super fast running and extra mobility on ice
+			12% increased movement speed
+			Provides the ability to walk on liquids
+			Grants immunity to fire blocks and 10 seconds of immunity to lava
+			Allows the ability to swim, auto-jump and slow fall
+			Increases jump speed
+			Negates fall damage and reduces damage from touching lava
+			'''
+		DisplayName: Avatar Boots
 	}
 }
 

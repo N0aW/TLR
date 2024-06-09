@@ -20,7 +20,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
             Item.width = 83;     
             Item.height = 38;   
             Item.value = Item.sellPrice(0, 40, 0, 0);
-            Item.rare = ItemRarityID.Red;
+            Item.rare = ItemRarityID.Purple;
 			Item.accessory = true;
 			Item.expert = false;
             Item.ResearchUnlockCount = 1;
@@ -29,7 +29,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {
             ModLoader.TryGetMod("SOTS", out Mod SOTS);
-            return equippedItem.type != SOTS.Find<ModItem>("FlashsparkBoots").Type && equippedItem.type != ModContent.ItemType<FlashbyBoots>();
+            return equippedItem.type != SOTS.Find<ModItem>("FlashsparkBoots").Type && equippedItem.type != ModContent.ItemType<FlashbyBoots>() && equippedItem.type != ModContent.ItemType<PolarBoots>();
         }
         public override void AddRecipes()
 		{
@@ -65,7 +65,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
 			player.buffImmune[BuffID.Burning] = true;
 			player.waterWalk = true; 
 			player.fireWalk = true; 
-			player.lavaMax += 600; 
+			player.lavaMax += 3600; // MINUTE!!
 			player.rocketBoots = (player.vanityRocketBoots = 4);
             player.iceSkate = true;
 			player.moveSpeed += 0.2f;
@@ -78,6 +78,7 @@ namespace TLR.Content.SOTS.Items.Accessories.Movement
             player.accFlipper = true;
 			player.frogLegJumpBoost = true;
 			player.autoJump = true;
+
             bool particles = FireBoostPlayer(player);
             bool activate = false;
             int direction = 0;
