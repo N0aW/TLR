@@ -1,5 +1,6 @@
 using Mono.CompilerServices.SymbolWriter;
 using Terraria;
+using Terraria.Enums;
 using Terraria.GameContent.Events;
 using Terraria.GameContent.UI.Chat;
 using Terraria.ID;
@@ -12,5 +13,9 @@ namespace TLR
 	// See other GlobalItem classes in ExampleMod to see other ways that GlobalItem can be used.
 	public class TLRGlobalItem : GlobalItem
 	{
-	}
+        public override void SetStaticDefaults()
+        {
+            ItemID.Sets.ShimmerTransformToItem[ItemID.CrystalBall] = ModContent.ItemType<Content.Core.Tiles.ShimmerBallItem>();
+        }
+    }
 }

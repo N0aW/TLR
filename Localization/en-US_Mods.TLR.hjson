@@ -260,6 +260,11 @@ Items: {
 			'''
 		DisplayName: Avatar Boots
 	}
+
+	ShimmerBallItem: {
+		Tooltip: Allows doing most shimmer recipes
+		DisplayName: Shimmer Ball
+	}
 }
 
 AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
@@ -291,4 +296,5 @@ DamageClasses: {
 	Support.DisplayName: support damage
 }
 
+Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
 Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile

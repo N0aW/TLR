@@ -34,9 +34,14 @@ namespace TLR
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            if (proj.DamageType == DamageClass.Melee && hallowGlove == true && hallowGloveCD == false)
+            if (proj.DamageType == DamageClass.Melee)
             {
-                Player.AddBuff(ModContent.BuffType<BlessedDefense>(), 300, true, false);
+                if (hallowGlove == true && hallowGloveCD == false) {
+                    Player.AddBuff(ModContent.BuffType<BlessedDefense>(), 300, true, false);
+                }
+                if (spookyGlove == true && !Player.HasBuff(BuffID.MoonLeech)) {
+                    Player.Heal(damageDone / 20);
+                }
             }
         }
         public override void OnHitByNPC(NPC npc, Player.HurtInfo hurtInfo)
