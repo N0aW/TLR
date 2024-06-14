@@ -143,7 +143,6 @@ Items: {
 		DisplayName: Potion Bundle
 		Tooltip:
 			'''
-			5% increased support damage and critical strike chance
 			Increases healing from potions by 40
 			Increases mana gain from potions by 40
 			Grants permanent Ironskin, Regeneration and Swiftness
@@ -188,7 +187,7 @@ Items: {
 	SpookyStory: {
 		Tooltip:
 			'''
-			30% increased summon damage
+			20% increased summon damage
 			Increases minion slots by 2 and sentry slots by 1
 			Increased minion knockback
 			'Berry loved to play in the snow. But so did the meat worm.'
@@ -201,7 +200,7 @@ Items: {
 			'''
 			Increases melee and minion knockback
 			20% increased melee damage and speed
-			35% increased summon damage
+			25% increased summon damage
 			Enabled auto-swing for melee weapons
 			Increases size for melee weapons
 			Increases minion and sentry slots by 2
@@ -262,8 +261,21 @@ Items: {
 	}
 
 	ShimmerBallItem: {
-		Tooltip: Allows doing most shimmer recipes
+		Tooltip:
+			'''
+			Allows doing most shimmer recipes
+			Also works as a crystal ball and demon altar
+			'''
 		DisplayName: Shimmer Ball
+	}
+
+	PalladiumShield: {
+		Tooltip:
+			'''
+			Grants immunity to knockback
+			Increases damage by 4%
+			'''
+		DisplayName: Palladium Shield
 	}
 }
 
@@ -283,7 +295,21 @@ Buffs: {
 
 Configs: {
 	TLRConfigServer.DisplayName: TLR Config Server
-	TLRConfigClient.DisplayName: TLR Config Client
+
+	TLRConfigClient: {
+		DisplayName: TLR Config Client
+
+		ShimmerInfo: {
+			Label: Shimmer Info
+			Tooltip:
+				'''
+				Shows what most items shimmer into 
+				 0 - None 
+				 1 - Mod Items 
+				 UPCOMING | 2 - All
+				'''
+		}
+	}
 }
 
 DamageClasses: {
@@ -294,6 +320,13 @@ DamageClasses: {
 	SupportMelee.DisplayName: support + melee damage
 	SupportMagic.DisplayName: support + magic damage
 	Support.DisplayName: support damage
+	StyleSummonWhip.DisplayName: style + summon damage
+	StyleSummon.DisplayName: style + summon damage
+	StyleRanged.DisplayName: style + ranged damage
+	StyleMeleeNoSpeed.DisplayName: style + melee damage
+	StyleMelee.DisplayName: style + melee damage
+	StyleMagic.DisplayName: style + magic damage
+	Style.DisplayName: style damage
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball

@@ -22,7 +22,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Summon
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Summon) += 30f / 100f;
+            player.GetDamage(DamageClass.Summon) += 20f / 100f;
             player.maxMinions += 2;
             player.maxTurrets += 1;
             player.GetKnockback(DamageClass.Summon) += 2f;

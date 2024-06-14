@@ -15,6 +15,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 using Terraria.ModLoader.Config.UI;
 using Terraria.UI;
+using tModPorter;
 
 namespace TLR
 {
@@ -25,5 +26,8 @@ namespace TLR
     public class TLRConfigClient : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
+        [Range (0, 1)]
+        [DefaultValue(1)]
+        public int ShimmerInfo;
     }
 }

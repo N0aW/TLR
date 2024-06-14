@@ -1,0 +1,31 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
+{ 
+	// This is a basic item template.
+	// Please see tModLoader's ExampleMod for every other example:
+	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
+    [AutoloadEquip(EquipType.Shield)]
+	public class PalladiumShield : ModItem
+	{
+        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
+        public override void SetDefaults()
+		{
+			Item.width = 30;
+			Item.height = 28;
+			Item.value = Item.sellPrice(gold: 1, silver: 75);
+			Item.rare = ItemRarityID.Green;
+			Item.accessory = true;
+			Item.ResearchUnlockCount = 1;
+			Item.maxStack = 1;
+            Item.defense = 1;
+		}
+        public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+            player.GetDamage(DamageClass.Generic) += 0.04f;
+            player.noKnockback = true;
+        }
+	}
+}

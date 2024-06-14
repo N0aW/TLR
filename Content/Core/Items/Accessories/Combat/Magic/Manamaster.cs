@@ -26,7 +26,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
             player.manaCost -= 0.12f;
             player.aggro -= 400;
 			player.statManaMax2 += 20;
-            player.GetDamage(DamageClass.Magic) += 15f / 100f;
+            player.GetDamage(DamageClass.Magic) += 0.15f;
             player.magicCuffs = true;
             player.manaMagnet = true;
             player.starCloakItem = Item;

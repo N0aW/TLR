@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TLR.Content.Core.Items.Accessories.Combat.Support
+namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
@@ -26,8 +26,6 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Support
 			// Mana potions recover 40 mana more
             // Grants Regeneration, Ironskin and Swiftness to you and allies in a 25 block radius
 			// 6% increase to support damage and critical strike chance
-            player.GetDamage(ModContent.GetInstance<DamageClasses.Support>()) += 5f / 100f;
-			player.GetCritChance(ModContent.GetInstance<DamageClasses.Support>()) += 5;
 			ModContent.GetInstance<TLRPlayer>().healPotionAdd += 40;
 			ModContent.GetInstance<TLRPlayer>().manaPotionAdd += 40;
 			player.AddBuff(BuffID.Regeneration, 1, true, false);

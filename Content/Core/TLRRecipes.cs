@@ -112,6 +112,13 @@ namespace TLR.Content.Core
 			Recipe shimmer83 = Recipe.Create(ItemID.LuckyCoin); shimmer83.AddIngredient(ItemID.DiscountCard); shimmer83.AddTile<Tiles.ShimmerBallTile>(); shimmer83.Register();
 			Recipe shimmer84 = Recipe.Create(ItemID.Cactus); shimmer84.AddIngredient(ItemID.Pumpkin); shimmer84.AddTile<Tiles.ShimmerBallTile>(); shimmer84.Register();
 			Recipe shimmer85 = Recipe.Create(ItemID.Pumpkin); shimmer85.AddIngredient(ItemID.Cactus); shimmer85.AddTile<Tiles.ShimmerBallTile>(); shimmer85.Register();
+			Recipe shimmer86 = Recipe.Create(ItemID.CobaltShield); shimmer86.AddIngredient(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>()); shimmer86.AddTile<Tiles.ShimmerBallTile>(); shimmer86.Register();
+			Recipe shimmer87 = Recipe.Create(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>()); shimmer87.AddIngredient(ItemID.CobaltShield); shimmer87.AddTile<Tiles.ShimmerBallTile>(); shimmer87.Register();
+			Recipe integrate = Recipe.Create(ItemID.ObsidianShield);
+			integrate.AddIngredient(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>());
+			integrate.AddIngredient(ItemID.ObsidianSkull);
+			integrate.AddTile(TileID.TinkerersWorkbench);
+			integrate.Register();
 			Recipe recipe = Recipe.Create(ItemID.BoneWelder);
 			recipe.AddIngredient(ItemID.Bone, 100);
 			recipe.AddTile(TileID.DemonAltar);

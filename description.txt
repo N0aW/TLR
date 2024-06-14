@@ -1,6 +1,14 @@
-The Light Reveals is an mod that adds all sorts of stuff I think of.
+The Light Reveals is an mod that adds all sorts of stuff I think of, such as...
 
-A new class, Supporter! Grant support to your teammates in form of life recovery, mana recovery or buffs!
+A new mechanic and class, Style!
+
+Gain Style by doing stylish things, such as killing bosses, using specific accessories, etc.
+
+Style can be used by STYLE weapons and accessories! These benefit from having a positive style count, and suffer from having a negative one!
+
+Style can be lost by doing UNSTYLISH things such as dying and taking damage!
 
 Mods that are compatible:
 - Secrets of the Shadows
+
+Code will be hidden from extraction due to it using code from SOTS.

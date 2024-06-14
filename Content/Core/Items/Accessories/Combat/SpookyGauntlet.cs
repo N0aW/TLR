@@ -26,14 +26,14 @@ namespace TLR.Content.Core.Items.Accessories.Combat
         {
             player.aggro += 400;
             player.magmaStone = true;
-			player.GetDamage(DamageClass.Melee) += 20 / 100f;
-			player.GetAttackSpeed(DamageClass.Melee) += 20 / 100f;
+			player.GetDamage(DamageClass.Melee) += 0.2f;
+			player.GetAttackSpeed(DamageClass.Melee) += 0.2f;
 			player.autoReuseGlove = true;
             player.kbGlove = true;
             player.yoyoGlove = true;
             player.counterWeight = 556 + Main.rand.Next(6);
             player.GetModPlayer<TLRPlayer>().spookyGlove = true; // Saps enemies of their life force, recovering HP with melee attacks
-            player.GetDamage(DamageClass.Summon) += 35f / 100f;
+            player.GetDamage(DamageClass.Summon) += 0.25f;
             player.maxMinions += 2;
             player.maxTurrets += 2;
             player.GetKnockback(DamageClass.Summon) += 2f;
@@ -42,9 +42,9 @@ namespace TLR.Content.Core.Items.Accessories.Combat
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Combat.Melee.HallowedGauntlet>());
-			recipe.AddIngredient(ModContent.ItemType<Combat.Summon.SpookyStory>());
-            recipe.AddIngredient(ItemID.SpookyWood, 1500);
+			recipe.AddIngredient(ModContent.ItemType<Melee.HallowedGauntlet>());
+			recipe.AddIngredient(ModContent.ItemType<Summon.SpookyStory>());
+            recipe.AddIngredient(ItemID.SpookyWood, 500);
 			recipe.AddIngredient(ItemID.FragmentSolar, 12);
 			recipe.AddIngredient(ItemID.FragmentStardust, 12);
             recipe.AddTile(TileID.TinkerersWorkbench);

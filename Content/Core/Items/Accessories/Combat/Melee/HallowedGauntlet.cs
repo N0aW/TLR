@@ -27,8 +27,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
         {
             player.aggro += 400;
             player.magmaStone = true;
-			player.GetDamage(DamageClass.Melee) += 15 / 100f;
-			player.GetAttackSpeed(DamageClass.Melee) += 15 / 100f;
+			player.GetDamage(DamageClass.Melee) += 0.15f;
+			player.GetAttackSpeed(DamageClass.Melee) += 0.15f;
 			player.autoReuseGlove = true;
             player.kbGlove = true;
             player.yoyoGlove = true;

@@ -27,7 +27,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
 			if (player.HeldItem.DamageType == DamageClass.Ranged) {
 				player.scope = true;
 			}
-			player.GetDamage(DamageClass.Ranged) += 15 / 100f;
+			player.GetDamage(DamageClass.Ranged) += 0.15f;
 			player.GetCritChance(DamageClass.Ranged) += 15;
 			player.aggro -= 400;
         }

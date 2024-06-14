@@ -30,7 +30,7 @@ namespace TLR.Content.Core.Tiles
 			AddMapEntry(new Color(246, 163, 255), name);
 
 			DustType = 84;
-			AdjTiles = new int[] { Type };
+			AdjTiles = [TileID.DemonAltar, TileID.CrystalBall];
 		}
 		public override void NumDust(int i, int j, bool fail, ref int num) {
 			num = fail ? 1 : 3;

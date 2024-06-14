@@ -3,6 +3,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using TLR.Content.Core.Buffs;
 using Terraria.DataStructures;
+using Terraria.ModLoader.IO;
 namespace TLR
 {
     public class TLRPlayer : ModPlayer

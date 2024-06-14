@@ -49,9 +49,9 @@ namespace TLR.Content.Core.Items.Accessories.Combat
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ModContent.ItemType<Combat.Ranged.CyberScope>());
-			recipe.AddIngredient(ModContent.ItemType<Combat.Magic.Manamaster>());
-			recipe.AddIngredient(ItemID.FallenStar, 100);
+			recipe.AddIngredient(ModContent.ItemType<Ranged.CyberScope>());
+			recipe.AddIngredient(ModContent.ItemType<Magic.Manamaster>());
+			recipe.AddIngredient(ItemID.FallenStar, 35);
 			recipe.AddIngredient(ItemID.FragmentVortex, 12);
 			recipe.AddIngredient(ItemID.FragmentNebula, 12);
             recipe.AddTile(TileID.TinkerersWorkbench);
