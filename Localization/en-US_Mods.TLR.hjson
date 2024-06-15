@@ -335,13 +335,13 @@ DamageClasses: {
 	StyleMelee.DisplayName: style + melee damage
 	StyleMagic.DisplayName: style + magic damage
 	Style.DisplayName: style damage
-	CookieSummonWhip.DisplayName: Cookie Summon Whip
-	CookieSummon.DisplayName: Cookie Summon
-	CookieRanged.DisplayName: Cookie Ranged
-	CookieMeleeNoSpeed.DisplayName: Cookie Melee No Speed
-	CookieMelee.DisplayName: Cookie Melee
-	CookieMagic.DisplayName: Cookie Magic
-	Cookie.DisplayName: Cookie
+	CookieSummonWhip.DisplayName: cookie + summon damage
+	CookieSummon.DisplayName: cookie + summon damage
+	CookieRanged.DisplayName: cookie + ranged damage
+	CookieMeleeNoSpeed.DisplayName: cookie + melee damage
+	CookieMelee.DisplayName: cookie + melee damage
+	CookieMagic.DisplayName: cookie + magic damage
+	Cookie.DisplayName: cookie damage
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball

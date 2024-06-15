@@ -19,10 +19,12 @@ using tModPorter;
 
 namespace TLR
 {
+    /*
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
     }
+    */
     public class TLRConfigClient : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
