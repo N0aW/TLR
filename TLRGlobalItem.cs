@@ -26,13 +26,23 @@ namespace TLR
         {
             if (item.type == ItemID.CobaltShield) {
                 player.noKnockback = true;
-                player.moveSpeed += 0.08f;
+                player.GetDamage(DamageClass.Melee) += 0.05f;
+                player.GetDamage(DamageClass.Ranged) += 0.05f;
+            }
+            if (item.type == ItemID.ObsidianShield) {
+                player.noKnockback = true;
+                player.fireWalk = true;
+                player.buffImmune[BuffID.Burning] = true;
+                player.GetDamage(DamageClass.Generic) += 0.05f;
             }
         }
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
             if (item.type == ItemID.CobaltShield) {
-                tooltips.Add(new(Mod, "Tooltip1", "Increases movement speed by 8%"));
+                tooltips.Add(new(Mod, "Tooltip1", "Increases melee and ranged damage by 5%"));
+            }
+            if (item.type == ItemID.ObsidianShield) {
+                tooltips.Add(new(Mod, "Tooltip1", "Increases damage by 5%"));
             }
             if (ModContent.GetInstance<TLRConfigClient>().ShimmerInfo != 0) {
                 if (item.type == ItemID.CobaltShield) {

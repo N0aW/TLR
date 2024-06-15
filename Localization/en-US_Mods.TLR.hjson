@@ -32,8 +32,9 @@ Items: {
 			Enabled auto-swing for melee weapons
 			Increases size for melee weapons
 			Gives the user master yoyo skills
-			Hitting an enemy with a melee weapon increases defense for a while
-			Getting hit will make you unable to get the defense for 10 seconds
+			Hitting an enemy with a melee weapon smites them
+			Smitten enemies get instantly defeated when under 10% HP
+			Otherwise the smitten enemys defense is halved for 5 seconds
 			Enemies are more likely to target you
 			'''
 	}
@@ -205,7 +206,9 @@ Items: {
 			Increases size for melee weapons
 			Increases minion and sentry slots by 2
 			Gives the user master yoyo skills
-			Hitting enemies will grant you lifesteal and light the enemy on fire
+			Critical strikes will spook enemies
+			Spooking enemies under 10% HP will kill them and steal 20% of their max health
+			Otherwise heals the user and grants a plethora of debuffs to the enemy
 			Enemies are more likely to target you
 			'''
 		DisplayName: Spooky Gauntlet
@@ -273,7 +276,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants immunity to knockback
-			Increases damage by 4%
+			Increases magic and ranged damage by 5%
 			'''
 		DisplayName: Palladium Shield
 	}
@@ -291,6 +294,11 @@ Buffs: {
 		DisplayName: Blessing Cooldown
 		Description: Cannot get Blessed Defense
 	}
+
+	BrokenBlessing: {
+		Description: Mods.TLR.Buffs.BrokenBlessing.Description
+		DisplayName: Broken Blessing
+	}
 }
 
 Configs: {
@@ -304,9 +312,9 @@ Configs: {
 			Tooltip:
 				'''
 				Shows what most items shimmer into 
-				 0 - None 
-				 1 - Mod Items 
-				 UPCOMING | 2 - All
+					0 - None 
+					1 - Mod Items 
+					UPCOMING | 2 - All
 				'''
 		}
 	}
@@ -327,6 +335,13 @@ DamageClasses: {
 	StyleMelee.DisplayName: style + melee damage
 	StyleMagic.DisplayName: style + magic damage
 	Style.DisplayName: style damage
+	CookieSummonWhip.DisplayName: Cookie Summon Whip
+	CookieSummon.DisplayName: Cookie Summon
+	CookieRanged.DisplayName: Cookie Ranged
+	CookieMeleeNoSpeed.DisplayName: Cookie Melee No Speed
+	CookieMelee.DisplayName: Cookie Melee
+	CookieMagic.DisplayName: Cookie Magic
+	Cookie.DisplayName: Cookie
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball

@@ -2,6 +2,7 @@
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using tModPorter.Rewriters;
 
 namespace TLR.Content.Core
 {
@@ -23,8 +24,19 @@ namespace TLR.Content.Core
 			});
 			RecipeGroup.RegisterGroup("TLR:T2DD2Accessory", group);
 		}
+		public override void PostAddRecipes()
+        {
+            for (int i = 0; i < Recipe.numRecipes; i++)
+            {
+                Recipe recipe = Main.recipe[i];
 
-		public override void AddRecipes() {
+                if (recipe.HasResult(ItemID.ObsidianShield))
+                {
+                    recipe.AddIngredient(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>());
+                }
+			}
+		}
+        public override void AddRecipes() {
 			// EXCLUDES: Unsafe Wall Recipes, DD2 Sentry Staff Conversion, Ancient Armor, Downgrading. They may be added later? Make a PR if you want them sooner.
 			Recipe shimmer0 = Recipe.Create(ModContent.ItemType<Tiles.ShimmerBallItem>()); shimmer0.AddIngredient(ItemID.CrystalBall); shimmer0.AddTile<Tiles.ShimmerBallTile>(); shimmer0.Register();
 			Recipe shimmer1 = Recipe.Create(ItemID.AegisCrystal); shimmer1.AddIngredient(ItemID.LifeCrystal); shimmer1.AddTile<Tiles.ShimmerBallTile>(); shimmer1.Register();
@@ -114,11 +126,6 @@ namespace TLR.Content.Core
 			Recipe shimmer85 = Recipe.Create(ItemID.Pumpkin); shimmer85.AddIngredient(ItemID.Cactus); shimmer85.AddTile<Tiles.ShimmerBallTile>(); shimmer85.Register();
 			Recipe shimmer86 = Recipe.Create(ItemID.CobaltShield); shimmer86.AddIngredient(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>()); shimmer86.AddTile<Tiles.ShimmerBallTile>(); shimmer86.Register();
 			Recipe shimmer87 = Recipe.Create(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>()); shimmer87.AddIngredient(ItemID.CobaltShield); shimmer87.AddTile<Tiles.ShimmerBallTile>(); shimmer87.Register();
-			Recipe integrate = Recipe.Create(ItemID.ObsidianShield);
-			integrate.AddIngredient(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>());
-			integrate.AddIngredient(ItemID.ObsidianSkull);
-			integrate.AddTile(TileID.TinkerersWorkbench);
-			integrate.Register();
 			Recipe recipe = Recipe.Create(ItemID.BoneWelder);
 			recipe.AddIngredient(ItemID.Bone, 100);
 			recipe.AddTile(TileID.DemonAltar);

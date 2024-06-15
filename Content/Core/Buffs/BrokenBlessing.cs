@@ -5,7 +5,7 @@ using Terraria.ID;
 
 namespace TLR.Content.Core.Buffs
 {
-	public class BlessingCooldown : ModBuff
+	public class BrokenBlessing : ModBuff
 	{
         public override void SetStaticDefaults()
         {
@@ -15,7 +15,7 @@ namespace TLR.Content.Core.Buffs
 			BuffID.Sets.LongerExpertDebuff[Type] = false;
         }
 		public override void Update(Player player, ref int buffIndex) {
-			player.GetModPlayer<TLRPlayer>().hallowGloveCD = true;
+			player.statDefense /= 2;
 		}
 	}
 }

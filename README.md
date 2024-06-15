@@ -1,13 +1,13 @@
 # The Light Reveals (TLR)
 The Light Reveals adds basically all sorts of stuff I think of.
 
-Also a new mechanic and class, Style!
+Three new subclasses, Style, Cookie and Support.
 
-Gain Style by doing stylish things, such as killing bosses, using specific accessories, etc.
+Style focuses on gaining or losing STYLE via their actions. STYLE weapons and accessories benefit from a good style, and suffer from a bad style.
 
-Style can be used by STYLE weapons and accessories! These benefit from having a positive style count, and suffer from having a negative one!
+Cookie is not a clicker class... It's the Cookie Clicker class! Automate making cookies, or make them manually. Use the cookies to buff the cookie weapons!
 
-Style can be lost by doing UNSTYLISH things such as dying and taking damage!
+Support is weaker on their own, but focuses on buffing, healing and restoring mana to allies!
 ### Compats:
 - Secrets of the Shadows
 ### Credits:

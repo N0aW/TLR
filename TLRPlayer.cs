@@ -4,19 +4,18 @@ using Terraria.ID;
 using TLR.Content.Core.Buffs;
 using Terraria.DataStructures;
 using Terraria.ModLoader.IO;
+using Terraria.Social.Steam;
 namespace TLR
 {
     public class TLRPlayer : ModPlayer
     {
         public bool hallowGlove = false;
-        public bool hallowGloveCD = false;
         public bool spookyGlove = false;
         public int healPotionAdd = 0;
         public int manaPotionAdd = 0;
         public override void ResetEffects()
         {
             hallowGlove = false;
-            hallowGloveCD = false;
             spookyGlove = false;
             healPotionAdd = 0;
             manaPotionAdd = 0;
@@ -25,11 +24,26 @@ namespace TLR
         {
             if (item.DamageType == DamageClass.Melee)
             {
-                if (hallowGlove == true && hallowGloveCD == false) {
-                    Player.AddBuff(ModContent.BuffType<BlessedDefense>(), 300, true, false);
+                if (hallowGlove && hit.Crit) {
+                    if ((target.life / target.lifeMax) <= 0.1) {
+                        target.life = 0;
+                    }
+                    else {
+                        target.AddBuff(BuffID.BrokenArmor, 5, false);
+                    }
                 }
-                if (spookyGlove == true && !Player.HasBuff(BuffID.MoonLeech)) {
-                    Player.Heal(damageDone / 20);
+                if (spookyGlove && hit.Crit) {
+                    if ((target.life / target.lifeMax) <= 0.1) {
+                        Player.statLife += target.lifeMax / 5;
+                        target.life = 0;
+                    }
+                    else {
+                        Player.statLife += Player.statLifeMax2 / 20;
+                        target.AddBuff(BuffID.BrokenArmor, 5, false);
+                        target.AddBuff(BuffID.CursedInferno, 5, false);
+                        target.AddBuff(BuffID.Ichor, 5, false);
+                        target.AddBuff(BuffID.OnFire, 5, false);
+                    }
                 }
             }
         }
@@ -37,20 +51,27 @@ namespace TLR
         {
             if (proj.DamageType == DamageClass.Melee)
             {
-                if (hallowGlove == true && hallowGloveCD == false) {
-                    Player.AddBuff(ModContent.BuffType<BlessedDefense>(), 300, true, false);
+                if (hallowGlove && hit.Crit) {
+                    if ((target.life / target.lifeMax) <= 0.1) {
+                        target.life = 0;
+                    }
+                    else {
+                        target.AddBuff(BuffID.BrokenArmor, 5, false);
+                    }
                 }
-                if (spookyGlove == true && !Player.HasBuff(BuffID.MoonLeech)) {
-                    Player.Heal(damageDone / 20);
+                if (spookyGlove && hit.Crit) {
+                    if ((target.life / target.lifeMax) <= 0.1) {
+                        Player.statLife += target.lifeMax / 5;
+                        target.life = 0;
+                    }
+                    else {
+                        Player.statLife += Player.statLifeMax2 / 20;
+                        target.AddBuff(BuffID.BrokenArmor, 5, false);
+                        target.AddBuff(BuffID.CursedInferno, 5, false);
+                        target.AddBuff(BuffID.Ichor, 5, false);
+                        target.AddBuff(BuffID.OnFire, 5, false);
+                    }
                 }
-            }
-        }
-        public override void OnHitByNPC(NPC npc, Player.HurtInfo hurtInfo)
-        {
-            if (Player.HasBuff(ModContent.BuffType<BlessedDefense>()))
-            {
-                Player.AddBuff(ModContent.BuffType<BlessingCooldown>(), 600, true, false);
-                Player.ClearBuff(ModContent.BuffType<BlessedDefense>());
             }
         }
         public override void GetHealLife(Item item, bool quickHeal, ref int healValue)
