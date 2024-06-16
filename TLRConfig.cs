@@ -19,12 +19,15 @@ using tModPorter;
 
 namespace TLR
 {
-    /*
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
+        [Header("goofymodes")]
+        [DefaultValue(false)]
+        public bool Emoji;
+        [DefaultValue(false)]
+        public bool Sigma;
     }
-    */
     public class TLRConfigClient : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;

@@ -24,8 +24,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Magic) += 0.05f;
-			player.GetDamage(DamageClass.Summon) += 0.05f;
+            player.GetDamage(DamageClass.Generic) += 0.04f;
             player.noKnockback = true;
         }
 	}
