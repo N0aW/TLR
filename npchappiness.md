@@ -2,15 +2,18 @@
 - Robber (Upcoming)
 - Engineer (Upcoming)
 # Charts
-## Robber
+## 🦹‍♂️ Robber
+- Requirements: Have at least 4 NPCs and an item with a sell value of 5 gold or higher
 - Liked Biome: Underground, Desert
 - Disliked Biome: Hallow
+- (has a bad sense of morals, superiority complex.)
+- (sells wares from angler, traveling merchant etc for really expensive prices)
 
 | | Loves | Likes | Neutral | Dislikes | Hates |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Loved By | | Princess |
 | Liked By | Arms Dealer | Pirate |
-| Neutral | | |
+| Neutral |   |   |
 | Disliked By |   |   |   | Angler | Guide |
 | Hated By |   |   | Merchant, Tax Collector |   |  |
 
@@ -25,7 +28,7 @@
 - Robber > Arms Dealer: "The (Arms Dealer) sells me wares for my business and hell, I don't even wanna steal form him!"
 - Robber > Pirate: "The (Pirate) knows the art of stealing, which I admire."
 - Robber > Princess: "The (Princess) hasn't even put me in jail yet! I can appriciate that."
-- Robber > Angler: "The (Angler) tried to make me go on his stupid quests, people like him deserve to be robbed!
+- Robber > Angler: "The (Angler) tried to make me go on his stupid quests, people like him deserve to be robbed.
 - Robber > Guide: "The (Guide) has nothing worth my time! How is one even that poor?"
 - Arms Dealer > Robber: "Yeah I like the (Robber), they supply some special gun parts for me."
 - Princess > Robber: "(Robber) always gives me exotic wares for free!" (skeleton? adjust)
@@ -36,14 +39,18 @@
 ---
 Random Quotes
 - "This place is better than the Emoji Movie at least."
-## Engineer
+## 🧑‍🔧 Engineer
+- Requirements: Have any item with a rarity of Light Red or higher
 - Liked Biome: Underground
 - Disliked Biome: Hallow
+(airheaded. has the skills but lack of ideas)
 
 | | Loves | Likes | Neutral | Dislikes | Hates |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Loved By |
-| Liked By | | Goblin Tinkerer
-| Neutral |
+| Liked By | Goblin Tinkerer |   |
+| Neutral |   | Mechanic |
 | Disliked By |
 | Hated By |
+
+-

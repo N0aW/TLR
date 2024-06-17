@@ -274,7 +274,20 @@ Buffs: {
 }
 
 Configs: {
-	TLRConfigServer.DisplayName: TLR Config Server
+	TLRConfigServer: {
+		DisplayName: TLR Config Server
+		Headers.goofymodes: goofymodes Header
+
+		Emoji: {
+			Label: Emoji
+			Tooltip: ""
+		}
+
+		Sigma: {
+			Label: Sigma
+			Tooltip: ""
+		}
+	}
 
 	TLRConfigClient: {
 		DisplayName: TLR Config Client
