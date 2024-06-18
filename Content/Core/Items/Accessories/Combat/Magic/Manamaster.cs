@@ -31,6 +31,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
             player.manaMagnet = true;
             player.starCloakItem = Item;
             player.starCloakItem_manaCloakOverrideItem = Item;
+			player.AddBuff(BuffID.Clairvoyance, 1);
         }
 
         public override void AddRecipes()
@@ -40,6 +41,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
 			recipe.AddIngredient(ItemID.StarCloak);
 			recipe.AddIngredient(ItemID.MagicCuffs);
             recipe.AddIngredient(ItemID.CelestialEmblem);
+			recipe.AddIngredient(ItemID.CrystalBall);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
             Recipe recipe2 = CreateRecipe();
@@ -47,6 +49,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
 			recipe2.AddIngredient(ItemID.PutridScent);
 			recipe2.AddIngredient(ItemID.MagicCuffs);
             recipe2.AddIngredient(ItemID.CelestialEmblem);
+			recipe2.AddIngredient(ItemID.CrystalBall);
 			recipe2.AddTile(TileID.TinkerersWorkbench);
 			recipe2.Register();
             Recipe recipe3 = CreateRecipe();
@@ -54,6 +57,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
 			recipe3.AddIngredient(ItemID.PutridScent);
 			recipe3.AddIngredient(ItemID.CelestialCuffs);
             recipe3.AddIngredient(ItemID.AvengerEmblem);
+			recipe3.AddIngredient(ItemID.CrystalBall);
 			recipe3.AddTile(TileID.TinkerersWorkbench);
 			recipe3.Register();
 			Recipe recipe4 = CreateRecipe();
@@ -62,6 +66,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
 			recipe4.AddIngredient(ItemID.PutridScent);
 			recipe4.AddIngredient(ItemID.MagicCuffs);
 			recipe4.AddIngredient(ItemID.AvengerEmblem);
+			recipe4.AddIngredient(ItemID.CrystalBall);
 			recipe4.AddTile(TileID.TinkerersWorkbench);
 			recipe4.Register();
 		}

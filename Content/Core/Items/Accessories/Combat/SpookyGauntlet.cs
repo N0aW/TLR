@@ -37,6 +37,9 @@ namespace TLR.Content.Core.Items.Accessories.Combat
             player.maxMinions += 2;
             player.maxTurrets += 2;
             player.GetKnockback(DamageClass.Summon) += 2f;
+			player.AddBuff(BuffID.Sharpened, 1);
+			player.AddBuff(BuffID.Bewitched, 1);
+			player.AddBuff(BuffID.WarTable, 1);
         }
 
         public override void AddRecipes()

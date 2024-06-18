@@ -26,6 +26,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Summon
             player.maxMinions += 2;
             player.maxTurrets += 1;
             player.GetKnockback(DamageClass.Summon) += 2f;
+			player.AddBuff(BuffID.Bewitched, 1);
+			player.AddBuff(BuffID.WarTable, 1);
         }
 
         public override void AddRecipes()
@@ -35,6 +37,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Summon
 			recipe.AddIngredient(ItemID.PygmyNecklace);
 			recipe.AddRecipeGroup("TLR:T2DD2Accessory", 1);
             recipe.AddIngredient(ItemID.AvengerEmblem);
+			recipe.AddIngredient(ItemID.BewitchingTable);
+			recipe.AddIngredient(ItemID.WarTable);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
 		}

@@ -30,6 +30,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
 			player.GetDamage(DamageClass.Ranged) += 0.15f;
 			player.GetCritChance(DamageClass.Ranged) += 15;
 			player.aggro -= 400;
+			player.AddBuff(BuffID.AmmoBox, 1);
         }
 
         public override void AddRecipes()
@@ -37,6 +38,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.ReconScope);
 			recipe.AddIngredient(ItemID.MoltenQuiver);
+			recipe.AddIngredient(ItemID.AmmoBox);
 			recipe.AddIngredient(ItemID.SoulofSight, 15);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();

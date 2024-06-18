@@ -10,17 +10,8 @@ Items: {
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
 			Enemies are less likely to target you
+			Grants permanent Ammo Box
 			'''
-	}
-
-	EndlessRocketIBelt: {
-		Tooltip: ""
-		DisplayName: Endless Rocket I Belt
-	}
-
-	EndlessDartBag: {
-		Tooltip: ""
-		DisplayName: Endless Dart Bag
 	}
 
 	HallowedGauntlet: {
@@ -36,32 +27,7 @@ Items: {
 			Smitten enemies get instantly defeated when under 10% HP
 			Otherwise the smitten enemys defense is halved for 5 seconds
 			Enemies are more likely to target you
-			'''
-	}
-
-	EndlessPoisonDartBag: {
-		DisplayName: Endless Poison Dart Bag
-		Tooltip: ""
-	}
-
-	Exoskeleton: {
-		DisplayName: Lightrevealer Exoskeleton
-		Tooltip:
-			'''
-			Allows the user to quadruple jump and auto-jump, increases jump height and speed, and negates fall damage
-			Grants the ability to swim and greatly extends underwater breathing
-			Provides extra mobility on ice and improved vision
-			Provides a vibrant glow when worn
-			Increases mining speed by 25% and increases block & wall placement speed
-			Increases block placement and tool range by 3, and pickup range for items
-			Automatically paints, coats or actuates placed items
-			Hold Up to reach higher
-			Fishing line will never break, decreases chance of bait consumption, increases fishing power by 20
-			Allows fishing in lava and grants you a fishing bobber
-			Allows the ability to climb walls
-			Increases movement speed and acceleration
-			Grants you wire vision and measurement lines on screen for block placement
-			'Gave to the miners, fishers and explorers of the Lightrevealers.'
+			Grants permanent Sharpened
 			'''
 	}
 
@@ -93,23 +59,8 @@ Items: {
 			Stars restore mana when collected
 			Restores mana when damaged
 			Enemies are less likely to target you
+			Grants permanent Clairvoyance
 			'''
-	}
-
-	ManamasterX: {
-		Tooltip:
-			'''
-			15% increased magic damage and critical strike chance
-			12% reduced mana cost
-			Automatically use mana potions when needed
-			Increases maximum mana by 60
-			Increases pickup range for mana stars
-			Causes stars to fall after taking damage
-			Stars restore mana when collected
-			Mana is restored when you land critical strikes or are damaged
-			Enemies are less likely to target you
-			'''
-		DisplayName: Manamaster 3000
 	}
 
 	PotionBundle: {
@@ -122,47 +73,13 @@ Items: {
 			'''
 	}
 
-	FlashbyBoots: {
-		DisplayName: Flash-By Boots
-		Tooltip:
-			'''
-			Provides tremendous acceleration while running
-			Also provides flight and extra mobility on ice
-			Increases movement speed greatly
-			Allows the ability to dash, climb walls, swim, auto-jump and slow fall
-			Grants a chance to dodge attacks
-			Increases jump speed
-			Allows walking on water, lava and honey
-			Grants immunity to fire blocks and 30 seconds of immunity to lava
-			Negates fall damage and reduces damage from touching lava
-			Running causes you to blast forward, granting higher speed and acceleration
-			This blast cannot be controlled
-			'''
-	}
-
-	EmojiShoes: {
-		Tooltip:
-			'''
-			Provides tremendous acceleration while running
-			Also provides flight and extra mobility on ice
-			Increases movement speed greatly
-			Allows the ability to dash, climb walls, swim and auto-jump
-			Grants a chance to dodge attacks
-			Increases jump speed
-			Allows walking on water, lava and honey
-			Grants immunity to fire blocks and 1 minute of immunity to lava
-			Negates fall damage and reduces damage from touching lava
-			Double tap dash while on the ground to blast forward, granting higher speed and acceleration
-			'''
-		DisplayName: Emoji Shoes
-	}
-
 	SpookyStory: {
 		Tooltip:
 			'''
 			20% increased summon damage
 			Increases minion slots by 2 and sentry slots by 1
 			Increased minion knockback
+			Grants permanent Bewitched and Strategist
 			'Berry loved to play in the snow. But so did the meat worm.'
 			'''
 		DisplayName: Spooky Story
@@ -182,6 +99,7 @@ Items: {
 			Spooking enemies under 10% HP will kill them and steal 20% of their max health
 			Otherwise heals the user and grants a plethora of debuffs to the enemy
 			Enemies are more likely to target you
+			Grants permanent Sharpened, Bewitched and Strategist
 			'''
 		DisplayName: Spooky Gauntlet
 	}
@@ -198,26 +116,10 @@ Items: {
 			Increases maximum mana by 100
 			Increases pickup range for mana stars
 			Mana-restoring stars fall if you take damage, mana is also restored
-			Enemies are far less likely to target you
+			Enemies are far less likely to target 
+			Grants permanent Ammo Box and Clairvoyance
 			'''
 		DisplayName: Star Scope
-	}
-
-	PolarBoots: {
-		Tooltip:
-			'''
-			Provides tremendous acceleration while running
-			Also provides flight and extra mobility on ice
-			Increases movement speed greatly
-			Allows the ability to swim, auto-jump and slow fall
-			Increases jump speed
-			Allows walking on water, lava and honey
-			Grants immunity to fire blocks and 20 seconds of immunity to lava
-			Negates fall damage and reduces damage from touching lava
-			Running causes you to blast forward, granting higher speed and acceleration
-			This blast cannot be controlled
-			'''
-		DisplayName: Polar Boots
 	}
 
 	AvatarBoots: {
@@ -257,18 +159,8 @@ Items: {
 AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
 
 Buffs: {
-	BlessedDefense: {
-		DisplayName: Blessed Defense
-		Description: Increases defense by 10
-	}
-
-	BlessingCooldown: {
-		DisplayName: Blessing Cooldown
-		Description: Cannot get Blessed Defense
-	}
-
 	BrokenBlessing: {
-		Description: Mods.TLR.Buffs.BrokenBlessing.Description
+		Description: Your defense is halved
 		DisplayName: Broken Blessing
 	}
 }
@@ -276,15 +168,15 @@ Buffs: {
 Configs: {
 	TLRConfigServer: {
 		DisplayName: TLR Config Server
-		Headers.goofymodes: goofymodes Header
+		Headers.goofymodes: Goofy Modes
 
 		Emoji: {
-			Label: Emoji
+			Label: Emoji Additions
 			Tooltip: ""
 		}
 
 		Sigma: {
-			Label: Sigma
+			Label: Sigma Additions
 			Tooltip: ""
 		}
 	}

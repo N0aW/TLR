@@ -44,6 +44,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat
             player.manaMagnet = true;
             player.starCloakItem = Item;
             player.starCloakItem_manaCloakOverrideItem = Item;
+			player.AddBuff(BuffID.AmmoBox, 1);
+			player.AddBuff(BuffID.Clairvoyance, 1);
         }
 
         public override void AddRecipes()

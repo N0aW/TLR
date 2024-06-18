@@ -3,11 +3,12 @@
 - Engineer (Upcoming)
 # Charts
 ## 🦹‍♂️ Robber
+- Adult Male
 - Requirements: Have at least 4 NPCs and an item with a sell value of 5 gold or higher
+- Purpose: Sells items from Angler's fishing quests and the Traveling Merchant, but for a higher price
 - Liked Biome: Underground, Desert
 - Disliked Biome: Hallow
 - (has a bad sense of morals, superiority complex.)
-- (sells wares from angler, traveling merchant etc for really expensive prices)
 
 | | Loves | Likes | Neutral | Dislikes | Hates |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -40,17 +41,57 @@
 Random Quotes
 - "This place is better than the Emoji Movie at least."
 ## 🧑‍🔧 Engineer
+- Adult Male
 - Requirements: Have any item with a rarity of Light Red or higher
+- Purpose: Duping of items, mostly weapons and accessories
 - Liked Biome: Underground
-- Disliked Biome: Hallow
-(airheaded. has the skills but lack of ideas)
+- Disliked Biome: Desert
+- (airheaded. has the skills but lack of ideas)
 
 | | Loves | Likes | Neutral | Dislikes | Hates |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Loved By |
+| Loved By |   | Princess |
 | Liked By | Goblin Tinkerer |   |
-| Neutral |   | Mechanic |
+| Neutral |   | Guide |
 | Disliked By |
 | Hated By |
+- Neutral: "I'm content."
+- Underground: "I love the Underground, the amount of loot is amazing!"
+- Desert: "I dislike the desert, there's not really anything that useful here."
+- Homeless: "I need somewhere to place my crafting table and furnace... What?"
+- Far from Home: "I don't like my home being this far away since I left my ore in the furnace! It's going to burn!"
+- Sparse Area: "Not many people around here to share my loot with... I like that."
+- Overcrowded: "I don't like the amount of people here, I can't come up with anything!"
+- Corrupt/Crimson/Dungeon: "The (biome) is horrible, how can I focus on gathering loot if everything is trying to kill me?"
+- Engineer > Goblin Tinkerer: "The (Goblin Tinkerer) gifted me this amazing workbench, I appriciate that!"
+- Engine
+## 🧑‍🍳 Chef
+- Adult Male
+- Requirements. Have a Cooking Pot in your inventory
+- Purpose: Getting Food items easier
+- Liked Biome: Ocean
+- Disliked Biome: Desert
 
--
+| | Loves | Likes | Neutral | Dislikes | Hates |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Loved By |   | Princess |
+| Liked By | Angler | Guide |
+| Neutral |   | Tavernkeep |
+| Disliked By |   |   | Truffle |   |   |
+| Hated By |   |   |   |   |   |
+## 🧙‍♀️ Sorcerer
+- Adult Female
+- Requirements: Beat the Queen Slime
+- Purpose: Allows you to gather (Biome) Essence by killing the specific enemy.
+    - The biome essence can be used to buy the biome's respective items from the Sorcerer...
+    - After defeating Plantera, she sells a Conjuring Bench that allows you to craft the items with the essence.
+- Liked Biome: Hallow
+- Disliked Biome: Underground
+
+| | Loves | Likes | Neutral | Dislikes | Hates |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| Loved By | Wizard | Princess |
+| Liked By |   |   |
+| Neutral |   | Guide |
+| Disliked By |
+| Hated By |

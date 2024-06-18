@@ -8,8 +8,8 @@ Style focuses on gaining or losing STYLE via their actions. STYLE weapons and ac
 Cookie is not a clicker class... It's the Cookie Clicker class! Automate making cookies, or make them manually. Use the cookies to buff the cookie weapons!
 
 Support is weaker on their own, but focuses on buffing, healing and restoring mana to allies!
-### Compats:
-- Secrets of the Shadows
+### Add-Ons:
+- The Shadowrevealer (SOTS compats)
 ### Credits:
 - VortexOfRainbows
     - For giving the source code to SOTS.

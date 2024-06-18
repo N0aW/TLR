@@ -34,6 +34,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
             player.yoyoGlove = true;
             player.counterWeight = 556 + Main.rand.Next(6);
             player.GetModPlayer<TLRPlayer>().hallowGlove = true;
+			player.AddBuff(BuffID.Sharpened, 1);
         }
 
         public override void AddRecipes()
@@ -42,10 +43,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 			recipe.AddIngredient(ItemID.FireGauntlet);
 			recipe.AddIngredient(ItemID.YoyoBag);
             recipe.AddIngredient(ItemID.FleshKnuckles);
+			recipe.AddIngredient(ItemID.SharpeningStation);
 			recipe.AddIngredient(ItemID.HallowedBar, 15);
-            recipe.AddIngredient(ItemID.SoulofMight, 10);
-            recipe.AddIngredient(ItemID.SoulofSight, 10);
-            recipe.AddIngredient(ItemID.SoulofFright, 10);
 			recipe.AddTile(TileID.MythrilAnvil);
             recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();
@@ -54,10 +53,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 			recipe2.AddIngredient(ItemID.AvengerEmblem);
 			recipe2.AddIngredient(ItemID.MagmaStone);
 			recipe2.AddIngredient(ItemID.YoyoBag);
+			recipe2.AddIngredient(ItemID.SharpeningStation);
 			recipe2.AddIngredient(ItemID.HallowedBar, 15);
-            recipe2.AddIngredient(ItemID.SoulofMight, 10);
-            recipe2.AddIngredient(ItemID.SoulofSight, 10);
-            recipe2.AddIngredient(ItemID.SoulofFright, 10);
 			recipe2.AddTile(TileID.MythrilAnvil);
             recipe2.AddTile(TileID.TinkerersWorkbench);
 			recipe2.Register();
