@@ -14,8 +14,8 @@
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Loved By | | Princess |
 | Liked By | Arms Dealer | Pirate |
-| Neutral |   |   |
-| Disliked By |   |   |   | Angler | Guide |
+| Neutral |   |   |   |   | Guide |
+| Disliked By |   |   |   | Angler |   |
 | Hated By |   |   | Merchant, Tax Collector |   |  |
 
 - Neutral: "I could go stealin' some wares right now!"
@@ -36,13 +36,13 @@
 - Pirate > Robber: "(Robber) is like a land pirate, Y'arr!" (skeleton)
 - Merchant > Robber: "The parasite (Robber) has no respect for capitalism!" (slight skeleton)
 - Tax Collector > Robber: "Bah! The useless (Robber) never pays his taxes!" (slight skeleton)
-- Angler > Robber "I hate the (Robber), he hates fishing!" (skeleton)
+- Angler > Robber "I hate the (Robber), every time he's around my gear seems to disappear!" (skeleton)
 ---
 Random Quotes
 - "This place is better than the Emoji Movie at least."
 ## 🧑‍🔧 Engineer
 - Adult Male
-- Requirements: Have any item with a rarity of Light Red or higher
+- Requirements: Defeat the Scrapped
 - Purpose: Duping of items, mostly weapons and accessories
 - Liked Biome: Underground
 - Disliked Biome: Desert
@@ -64,7 +64,7 @@ Random Quotes
 - Overcrowded: "I don't like the amount of people here, I can't come up with anything!"
 - Corrupt/Crimson/Dungeon: "The (biome) is horrible, how can I focus on gathering loot if everything is trying to kill me?"
 - Engineer > Goblin Tinkerer: "The (Goblin Tinkerer) gifted me this amazing workbench, I appriciate that!"
-- Engine
+- Engineer > Princess: "The (Princess) told me 
 ## 🧑‍🍳 Chef
 - Adult Male
 - Requirements. Have a Cooking Pot in your inventory
@@ -75,7 +75,7 @@ Random Quotes
 | | Loves | Likes | Neutral | Dislikes | Hates |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Loved By |   | Princess |
-| Liked By | Angler | Guide |
+| Liked By | Angler | Guide, Robber |
 | Neutral |   | Tavernkeep |
 | Disliked By |   |   | Truffle |   |   |
 | Hated By |   |   |   |   |   |
@@ -83,8 +83,9 @@ Random Quotes
 - Adult Female
 - Requirements: Beat the Queen Slime
 - Purpose: Allows you to gather (Biome) Essence by killing the specific enemy.
+    - The Sorcerer sells a consumable item for 1 platinum that allows you to gather essence from the enemies of that world.
     - The biome essence can be used to buy the biome's respective items from the Sorcerer...
-    - After defeating Plantera, she sells a Conjuring Bench that allows you to craft the items with the essence.
+    - After defeating the mechanical bosses, she sells a Conjuring Bench that allows you to craft the items with the essence. (costs 2 platinum)
 - Liked Biome: Hallow
 - Disliked Biome: Underground
 
@@ -92,6 +93,6 @@ Random Quotes
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | Loved By | Wizard | Princess |
 | Liked By |   |   |
-| Neutral |   | Guide |
-| Disliked By |
-| Hated By |
+| Neutral |   |   |
+| Disliked By |   |   |   |
+| Hated By |   |   |   | Tax Collector |   |
