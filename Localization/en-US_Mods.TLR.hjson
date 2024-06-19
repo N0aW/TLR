@@ -154,6 +154,71 @@ Items: {
 			'''
 		DisplayName: Palladium Shield
 	}
+
+	ForestEssence: {
+		DisplayName: Forest Essence
+		Tooltip: Can be conjured into items from the Forest
+	}
+
+	SorcererPearl: {
+		DisplayName: Sorcerer Pearl
+		Tooltip: Allows the gathering of essence in the world it is used in
+	}
+
+	CorruptEssence: {
+		DisplayName: Corrupt Essence
+		Tooltip: ""
+	}
+
+	CrimsonEssence: {
+		DisplayName: Crimson Essence
+		Tooltip: ""
+	}
+
+	DesertEssence: {
+		DisplayName: Desert Essence
+		Tooltip: ""
+	}
+
+	DungeonEssence: {
+		DisplayName: Dungeon Essence
+		Tooltip: ""
+	}
+
+	DungeonEssence2: {
+		DisplayName: Dungeon Essence2
+		Tooltip: ""
+	}
+
+	GlowshroomEssence: {
+		DisplayName: Glowshroom Essence
+		Tooltip: ""
+	}
+
+	HallowEssence: {
+		DisplayName: Hallow Essence
+		Tooltip: ""
+	}
+
+	JungleEssence: {
+		DisplayName: Jungle Essence
+		Tooltip: ""
+	}
+
+	OceanEssence: {
+		DisplayName: Ocean Essence
+		Tooltip: ""
+	}
+
+	SnowEssence: {
+		DisplayName: Snow Essence
+		Tooltip: ""
+	}
+
+	UnderworldEssence: {
+		DisplayName: Underworld Essence
+		Tooltip: ""
+	}
 }
 
 AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
@@ -168,17 +233,19 @@ Buffs: {
 Configs: {
 	TLRConfigServer: {
 		DisplayName: TLR Config Server
-		Headers.goofymodes: Goofy Modes
 
-		Emoji: {
-			Label: Emoji Additions
-			Tooltip: ""
+		Spriteless: {
+			Tooltip:
+				'''
+				Enables items without proper sprites
+					0 - Items require an item sprite, and a on-player sprite when equipped 
+					1 - Items need item sprites, but do not require on-player sprites
+					2 - Items don't require neither of those sprites
+				'''
+			Label: Spriteless
 		}
 
-		Sigma: {
-			Label: Sigma Additions
-			Tooltip: ""
-		}
+		Headers.wipcontent: Developer Options
 	}
 
 	TLRConfigClient: {
@@ -186,13 +253,7 @@ Configs: {
 
 		ShimmerInfo: {
 			Label: Shimmer Info
-			Tooltip:
-				'''
-				Shows what most items shimmer into 
-					0 - None 
-					1 - Mod Items 
-					UPCOMING | 2 - All
-				'''
+			Tooltip: Shows what modded items shimmer into
 		}
 	}
 }
@@ -223,3 +284,25 @@ DamageClasses: {
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
 Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile
+
+NPCs: {
+	Sorcerer: {
+		TownNPCMood: {
+			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			LoveNPC: I love {NPCName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			HateCrowded: I hate how crowded I am.
+			Content: I am content.
+			NoHome: I hate not having a home.
+			FarFromHome: I am too far from home.
+			LoveSpace: I love having so much space.
+			DislikeCrowded: I dislike how crowded I am.
+		}
+
+		DisplayName: Sorcerer
+		Census.SpawnCondition: Conditions unknown
+	}
+}

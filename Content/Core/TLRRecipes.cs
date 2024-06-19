@@ -130,6 +130,15 @@ namespace TLR.Content.Core
 			Recipe shimmer85 = Recipe.Create(ItemID.Pumpkin); shimmer85.AddIngredient(ItemID.Cactus); shimmer85.AddTile<ShimmerBallTile>(); shimmer85.Register();
 			Recipe shimmer86 = Recipe.Create(ItemID.CobaltShield); shimmer86.AddIngredient(ModContent.ItemType<PalladiumShield>()); shimmer86.AddTile<ShimmerBallTile>(); shimmer86.Register();
 			Recipe shimmer87 = Recipe.Create(ModContent.ItemType<PalladiumShield>()); shimmer87.AddIngredient(ItemID.CobaltShield); shimmer87.AddTile<ShimmerBallTile>(); shimmer87.Register();
+			if (ModLoader.TryGetMod("BInfoAcc", out Mod BINFO) && BINFO.TryFind<ModItem>("FortuneMirror", out ModItem FortuneMirror)
+				&& BINFO.TryFind<ModItem>("SmartHeart", out ModItem SmartHeart) && BINFO.TryFind<ModItem>("BiomeCrystal", out ModItem BiomeCrystal)) {
+				Recipe mshimmer0 = Recipe.Create(FortuneMirror.Type); mshimmer0.AddIngredient(ItemID.MagicMirror); mshimmer0.AddTile<ShimmerBallTile>(); mshimmer0.Register();
+				Recipe mshimmer1 = Recipe.Create(ItemID.MagicMirror); mshimmer1.AddIngredient(FortuneMirror.Type); mshimmer1.AddTile<ShimmerBallTile>(); mshimmer1.Register();
+				Recipe mshimmer2 = Recipe.Create(SmartHeart.Type); mshimmer2.AddIngredient(ItemID.BandofRegeneration); mshimmer2.AddTile<ShimmerBallTile>(); mshimmer2.Register();
+				Recipe mshimmer3 = Recipe.Create(ItemID.BandofRegeneration); mshimmer3.AddIngredient(SmartHeart.Type); mshimmer3.AddTile<ShimmerBallTile>(); mshimmer3.Register();
+				Recipe mshimmer4 = Recipe.Create(BiomeCrystal.Type); mshimmer4.AddIngredient(ItemID.TeleportationPylonPurity); mshimmer4.AddTile<ShimmerBallTile>(); mshimmer4.Register();
+				Recipe mshimmer5 = Recipe.Create(ItemID.TeleportationPylonPurity); mshimmer5.AddIngredient(BiomeCrystal.Type); mshimmer5.AddTile<ShimmerBallTile>(); mshimmer5.Register();
+			}
 			Recipe integrate = Recipe.Create(ItemID.ObsidianShield);
 			integrate.AddIngredient(ModContent.ItemType<PalladiumShield>());
 			integrate.AddIngredient(ItemID.ObsidianSkull);
@@ -238,7 +247,7 @@ namespace TLR.Content.Core
 			recipe13b.AddIngredient(ItemID.GlowingMushroom, 360);
 			recipe13b.AddTile(TileID.Autohammer);
 			recipe13b.Register();
-			Recipe recipe13c = Recipe.Create(ItemID.TurtleLeggings);
+			Recipe recipe13c = Recipe.Create(ItemID.ShroomiteLeggings);
 			recipe13c.AddIngredient(ItemID.ChlorophyteGreaves);
 			recipe13c.AddIngredient(ItemID.GlowingMushroom, 270);
 			recipe13c.AddTile(TileID.Autohammer);

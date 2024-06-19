@@ -22,17 +22,16 @@ namespace TLR
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
-        [Header("goofymodes")]
-        [DefaultValue(false)]
-        public bool Emoji;
-        [DefaultValue(false)]
-        public bool Sigma;
+        [Header("wipcontent")]
+        [DefaultValue(1)]
+        [Range(0, 2)]
+        [ReloadRequired]
+        public int Spriteless;
     }
     public class TLRConfigClient : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
-        [Range (0, 1)]
-        [DefaultValue(1)]
-        public int ShimmerInfo;
+        [DefaultValue(true)]
+        public bool ShimmerInfo;
     }
 }

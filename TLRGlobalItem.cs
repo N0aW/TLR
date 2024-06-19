@@ -34,7 +34,7 @@ namespace TLR
             if (item.type == ItemID.CobaltShield) {
                 tooltips.Add(new(Mod, "Tooltip1", "Increases movement speed by 8%"));
             }
-            if (ModContent.GetInstance<TLRConfigClient>().ShimmerInfo != 0) {
+            if (ModContent.GetInstance<TLRConfigClient>().ShimmerInfo) {
                 if (item.type == ItemID.CobaltShield) {
                     tooltips.Add(new(Mod, "Tooltip2", "[i:" + ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>() + "] Shimmers into Palladium Shield"));
                 }

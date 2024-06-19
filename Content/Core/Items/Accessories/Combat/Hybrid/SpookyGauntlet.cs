@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TLR.Content.Core.Items.Accessories.Combat
+namespace TLR.Content.Core.Items.Accessories.Combat.Hybrid
 { 
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:
@@ -11,6 +11,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat
 	public class SpookyGauntlet : ModItem
 	{
         // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
+        public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless != 0;
         public override void SetDefaults()
 		{
 			Item.width = 22;

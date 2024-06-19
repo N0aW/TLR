@@ -13,6 +13,7 @@ namespace TLR
         public bool spookyGlove = false;
         public int healPotionAdd = 0;
         public int manaPotionAdd = 0;
+        public int cookies = 0;
         public override void ResetEffects()
         {
             hallowGlove = false;
@@ -20,6 +21,13 @@ namespace TLR
             healPotionAdd = 0;
             manaPotionAdd = 0;
         }
+        public override void LoadData(TagCompound tag) {
+			cookies = tag.GetInt("cookies");
+		}
+
+		public override void SaveData(TagCompound tag) {
+			tag["cookies"] = cookies;
+		}
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (item.DamageType == DamageClass.Melee)
@@ -86,5 +94,6 @@ namespace TLR
                 healValue += manaPotionAdd;
             }
 		}
+        
     }
 }

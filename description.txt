@@ -8,4 +8,8 @@ Cookie is not a clicker class... It's the Cookie Clicker class! Automate making 
 
 Support is weaker on their own, but focuses on buffing, healing and restoring mana to allies!
 
-Install "The Shadowrevealer" mod for SOTS compats!
+Install "The Light Reveals +" mod for additional mod compats!
+
+Mods that are compatatible:
+    - Secrets of the Shadows (Install "The Shadowrevealer")
+    - Block's Info Accessories
