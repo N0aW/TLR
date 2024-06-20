@@ -23,7 +23,7 @@ namespace TLR.Content.Core.NPCs
 	[AutoloadHead]
 	public class Sorcerer : ModNPC
 	{
-        public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless == 2;
+        public override bool IsLoadingEnabled(Mod mod) => false;
         public const string ShopName = "Shop";
 		public const string ConjName = "Conjuration";
 		public int NumberOfTimesTalkedTo = 0;
@@ -63,11 +63,14 @@ namespace TLR.Content.Core.NPCs
 			// Set Example Person's biome and neighbor preferences with the NPCHappiness hook. You can add happiness text and remarks with localization (See an example in ExampleMod/Localization/en-US.lang).
 			// NOTE: The following code uses chaining - a style that works due to the fact that the SetXAffection methods return the same NPCHappiness instance they're called on.
 			NPC.Happiness
-				.SetBiomeAffection<HallowBiome>(AffectionLevel.Like) // Example Person prefers the forest.
-				.SetBiomeAffection<UndergroundBiome>(AffectionLevel.Dislike) // Example Person dislikes the snow.
+				.SetBiomeAffection<ForestBiome>(AffectionLevel.Love) // Example Person prefers the forest.
+				.SetBiomeAffection<UndergroundBiome>(AffectionLevel.Like) // Example Person dislikes the snow.
+				.SetBiomeAffection<HallowBiome>(AffectionLevel.Dislike) // Example Person prefers the forest.
 				.SetNPCAffection(NPCID.Wizard, AffectionLevel.Love) // Loves living near the dryad.
-				// .SetNPCAffection(NPCID.Guide, AffectionLevel.Like) // Likes living near the guide.
-				.SetNPCAffection(NPCID.TaxCollector, AffectionLevel.Dislike) // Dislikes living near the merchant.
+				.SetNPCAffection(NPCID.Guide, AffectionLevel.Like)
+				.SetNPCAffection(NPCID.Truffle, AffectionLevel.Like)
+				.SetNPCAffection(NPCID.Cyborg, AffectionLevel.Dislike)
+				.SetNPCAffection(NPCID.WitchDoctor, AffectionLevel.Hate) // Dislikes living near the merchant.
 				// .SetNPCAffection(NPCID.Demolitionist, AffectionLevel.Hate) // Hates living near the demolitionist.
 			; // < Mind the semicolon!
 
@@ -99,10 +102,10 @@ namespace TLR.Content.Core.NPCs
 			bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
 				// Sets the preferred biomes of this town NPC listed in the bestiary.
 				// With Town NPCs, you usually set this to what biome it likes the most in regards to NPC happiness.
-				BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheHallow,
+				BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
 
 				// Sets your NPC's flavor text in the bestiary.
-				new FlavorTextBestiaryInfoElement("From another world, the Sorcerer got lost, and your power has drawn her to this world."),
+				new FlavorTextBestiaryInfoElement("From another world with more boxes and more dimensions, she got lost in our world."),
 
 				// You can add multiple elements if you really wanted to
 				// You can also use localization keys (see Localization/en-US.lang)
@@ -168,7 +171,9 @@ namespace TLR.Content.Core.NPCs
 		public override List<string> SetNPCNameList() {
 			return new List<string>() {
 				"Alaine",
-				"Socras"
+				"Socras",
+				"Alex",
+				"Magaline"
 			};
 		}
 
@@ -189,18 +194,14 @@ namespace TLR.Content.Core.NPCs
 
 			int wizard = NPC.FindFirstNPC(NPCID.Wizard);
 			if (wizard >= 0 && Main.rand.NextBool(4)) {
-				chat.Add("");
+				chat.Add("Has " + Main.npc[wizard].GivenName + " talked about me lately?");
 			}
 			// These are things that the NPC has a chance of telling you when you talk to it.
 			chat.Add("Where the hell am I...");
-            chat.Add("Have you seen my sprite anywhere...?", 0.2);
-
-			NumberOfTimesTalkedTo++;
-			if (NumberOfTimesTalkedTo >= 10) {
-				//This counter is linked to a single instance of the NPC, so if ExamplePerson is killed, the counter will reset.
-				chat.Add(Language.GetTextValue("Mods.ExampleMod.Dialogue.ExamplePerson.TalkALot"));
-			}
-
+			chat.Add("This place has one less dimension than the last place...");
+			chat.Add("Can you not see them? Beyond the wall of glass? What do you mean you can't!?");
+			chat.Add("Hmh. Even with the lack of the third dimension... this place does have alot more stuff...")
+;
 			string chosenChat = chat; // chat is implicitly cast to a string. This is where the random choice is made.
 
 			// Here is some additional logic based on the chosen chat line. In this case, we want to display an item in the corner for StandardDialogue4.
@@ -253,10 +254,72 @@ namespace TLR.Content.Core.NPCs
             */
 			npcShop.Register(); // Name of this shop tab
 			var npcShop2 = new NPCShop(Type, ConjName)
-				.Add(new Item(ItemID.SlimeStaff) { shopCustomPrice = 500, shopSpecialCurrency = TLR.ForestEssenceId });
-				//.Add<EquipMaterial>()
-				//.Add<BossItem>()
-                /*
+				// Forest Loot
+				.Add(new Item(ItemID.SlimeStaff) { shopCustomPrice = 500, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.ZombieArm) { shopCustomPrice = 50, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.Gel) { shopCustomPrice = 1, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.TatteredCloth) { shopCustomPrice = 20, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.Lens) { shopCustomPrice = 5, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.BlackLens) { shopCustomPrice = 25, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.SpiffoPlush) { shopCustomPrice = 500, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.Shackle) { shopCustomPrice = 75, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.LivingWoodWand) { shopCustomPrice = 100, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.LeafWand) { shopCustomPrice = 100, shopSpecialCurrency = TLR.ForestEssenceId })
+				.Add(new Item(ItemID.EucaluptusSap) { shopCustomPrice = 2500, shopSpecialCurrency = TLR.ForestEssenceId })
+				// Hardmode Forest Loot
+				.Add(new Item(ItemID.MoonCharm) { shopCustomPrice = 200, shopSpecialCurrency = TLR.ForestEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.AdhesiveBandage) { shopCustomPrice = 200, shopSpecialCurrency = TLR.ForestEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.FastClock) { shopCustomPrice = 200, shopSpecialCurrency = TLR.ForestEssenceId }, Condition.Hardmode)
+				// Desert Loot
+				.Add(new Item(ItemID.DungeonDesertKey) { shopCustomPrice = 2500, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.FastClock) { shopCustomPrice = 200, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.AntlionMandible) { shopCustomPrice = 5, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.DungeonDesertKey) { shopCustomPrice = 2500, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.BananaSplit) { shopCustomPrice = 200, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.FossilOre) { shopCustomPrice = 5, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.FriedEgg) { shopCustomPrice = 5, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.AncientCloth) { shopCustomPrice = 10, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.DjinnLamp) { shopCustomPrice = 200, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.DjinnsCurse) { shopCustomPrice = 200, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.DjinnLamp) { shopCustomPrice = 200, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.LamiaHat) { shopCustomPrice = 250, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.LamiaShirt) { shopCustomPrice = 250, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.LamiaPants) { shopCustomPrice = 250, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.SunMask) { shopCustomPrice = 250, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.MoonMask) { shopCustomPrice = 250, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.AncientHorn) { shopCustomPrice = 300, shopSpecialCurrency = TLR.DesertEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.AncientChisel) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.SandBoots) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.ThunderSpear) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.ThunderStaff) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.MagicConch) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.EncumberingStone) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.CatBast) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				.Add(new Item(ItemID.MysticCoilSnake) { shopCustomPrice = 150, shopSpecialCurrency = TLR.DesertEssenceId })
+				// Snow Loot
+				.Add(new Item(ItemID.FrozenKey) { shopCustomPrice = 2500, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.EskimoHood) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.EskimoCoat) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.EskimoPants) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.PedguinHat) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.PedguinShirt) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.PedguinPants) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.SnowHat) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.IceCream) { shopCustomPrice = 200, shopSpecialCurrency = TLR.SnowEssenceId })
+				.Add(new Item(ItemID.WolfMountItem) { shopCustomPrice = 100, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.FrostStaff) { shopCustomPrice = 100, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.IceSickle) { shopCustomPrice = 150, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.Amarok) { shopCustomPrice = 300, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.HamBat) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.Bacon) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.PigronMinecart) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.KitePigron) { shopCustomPrice = 250, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.FrozenTurtleShell) { shopCustomPrice = 100, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				.Add(new Item(ItemID.Frostbrand) { shopCustomPrice = 350, shopSpecialCurrency = TLR.SnowEssenceId }, Condition.Hardmode)
+				// Underground Loot
+
+				/*
+				.Add(new Item(ItemID.ZombieArm) { shopCustomPrice = 50, shopSpecialCurrency = TLR.ForestEssenceId })
 				.Add(new Item(ModContent.ItemType<Items.Placeable.Furniture.ExampleWorkbench>()) { shopCustomPrice = Item.buyPrice(copper: 15) }) // This example sets a custom price, ExampleNPCShop.cs has more info on custom prices and currency. 
 				.Add<Items.Placeable.Furniture.ExampleChair>()
 				.Add<Items.Consumables.ExampleHealingPotion>(new Condition("Mods.ExampleMod.Conditions.PlayerHasLifeforceBuff", () => Main.LocalPlayer.HasBuff(BuffID.Lifeforce)))

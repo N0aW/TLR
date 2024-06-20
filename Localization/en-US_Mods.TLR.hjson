@@ -167,57 +167,62 @@ Items: {
 
 	CorruptEssence: {
 		DisplayName: Corrupt Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Corruption
 	}
 
 	CrimsonEssence: {
 		DisplayName: Crimson Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Crimson
 	}
 
 	DesertEssence: {
 		DisplayName: Desert Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Desert
 	}
 
 	DungeonEssence: {
 		DisplayName: Dungeon Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Dungeon
 	}
 
 	DungeonEssence2: {
-		DisplayName: Dungeon Essence2
-		Tooltip: ""
+		DisplayName: Spectral Dungeon Essence
+		Tooltip: Can be conjured into items from the Post-Plantera Dungeon
 	}
 
 	GlowshroomEssence: {
-		DisplayName: Glowshroom Essence
-		Tooltip: ""
+		DisplayName: Glowing Mushroom Essence
+		Tooltip: Can be conjured into items from the Glowing Mushroom biome
 	}
 
 	HallowEssence: {
 		DisplayName: Hallow Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Hallow
 	}
 
 	JungleEssence: {
 		DisplayName: Jungle Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Jungle
 	}
 
 	OceanEssence: {
 		DisplayName: Ocean Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Ocean
 	}
 
 	SnowEssence: {
 		DisplayName: Snow Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Tundra
 	}
 
 	UnderworldEssence: {
 		DisplayName: Underworld Essence
-		Tooltip: ""
+		Tooltip: Can be conjured into items from the Underworld
+	}
+
+	UndergroundEssence: {
+		Tooltip: Can be conjured into items from the Underground/Cavern layers
+		DisplayName: Underground Essence
 	}
 }
 
@@ -290,16 +295,19 @@ NPCs: {
 		TownNPCMood: {
 			Princess_LovesNPC: I like {NPCName}.
 			LikeNPC_Princess: I like {NPCName}.
-			DislikeNPC: I dislike {NPCName}.
-			LoveNPC: I love {NPCName}.
-			DislikeBiome: I dislike {BiomeName}.
-			LikeBiome: I like {BiomeName}.
-			HateCrowded: I hate how crowded I am.
-			Content: I am content.
-			NoHome: I hate not having a home.
-			FarFromHome: I am too far from home.
-			LoveSpace: I love having so much space.
-			DislikeCrowded: I dislike how crowded I am.
+			DislikeNPC: I don't like {NPCName}, why can't they just accept the existence of magic?
+			LoveNPC: I love {NPCName}, they have a magical aura around them.
+			DislikeBiome: I don't like {BiomeName} that much... I have never seen anything like it before.
+			LikeBiome: I like {BiomeName}, it reminds me of going mining with my friends at home.
+			HateCrowded: I want back home with the amount of people here.
+			Content: I am getting used to this new dimension.
+			NoHome: Where should I put my conjuration bench without a home?.
+			FarFromHome: I can't do spells if my home is all the way over there!
+			LoveSpace: The amount of space is getting me used to these two dimensions.
+			DislikeCrowded: The amount of people here... I miss the third dimension.
+			HateNPC: I hate {NPCName}, he should not be doing what he is doing....
+			LikeNPC: I like {NPCName}, he seems to know more than the others.
+			LoveBiome: I love {BiomeName}, it reminds me of where my old home was...
 		}
 
 		DisplayName: Sorcerer

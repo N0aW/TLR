@@ -77,7 +77,7 @@ namespace TLR.Content.Core
 			Recipe shimmer32 = Recipe.Create(ItemID.CorruptionChest); shimmer32.AddIngredient(ItemID.CorruptionKey); shimmer32.AddTile<ShimmerBallTile>(); shimmer32.Register();
 			Recipe shimmer33 = Recipe.Create(ItemID.CrimsonChest); shimmer33.AddIngredient(ItemID.CrimsonKey); shimmer33.AddTile<ShimmerBallTile>(); shimmer33.Register();
 			Recipe shimmer34 = Recipe.Create(ItemID.HallowedChest); shimmer34.AddIngredient(ItemID.HallowedKey); shimmer34.AddTile<ShimmerBallTile>(); shimmer34.Register();
-			Recipe shimmer35 = Recipe.Create(ItemID.IceChest); shimmer35.AddIngredient(ItemID.FrozenKey); shimmer35.AddTile<ShimmerBallTile>(); shimmer35.Register();
+			Recipe shimmer35 = Recipe.Create(ItemID.FrozenChest); shimmer35.AddIngredient(ItemID.FrozenKey); shimmer35.AddTile<ShimmerBallTile>(); shimmer35.Register();
 			Recipe shimmer36 = Recipe.Create(ItemID.JungleChest); shimmer36.AddIngredient(ItemID.JungleKey); shimmer36.AddTile<ShimmerBallTile>(); shimmer36.Register();
 			Recipe shimmer37 = Recipe.Create(ItemID.DesertChest); shimmer37.AddIngredient(ItemID.DungeonDesertKey); shimmer37.AddTile<ShimmerBallTile>(); shimmer37.Register();
 			Recipe shimmer38 = Recipe.Create(ItemID.WoodenCrate); shimmer38.AddIngredient(ItemID.WoodenCrateHard); shimmer38.AddTile<ShimmerBallTile>(); shimmer38.Register();

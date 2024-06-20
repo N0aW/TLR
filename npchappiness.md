@@ -91,8 +91,8 @@ Random Quotes
 
 | | Loves | Likes | Neutral | Dislikes | Hates |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Loved By | Wizard | Princess |
-| Liked By |   |   |
-| Neutral |   |   |
-| Disliked By |   |   |   |
-| Hated By |   |   |   | Tax Collector |   |
+| Loved By | Wizard | Princess, Guide |
+| Liked By |   | Truffle |   |  
+| Neutral |   |   |   |   |   |
+| Disliked By |   |   |   |   | Witch Doctor |
+| Hated By |   |   | Cyborg |   |   |

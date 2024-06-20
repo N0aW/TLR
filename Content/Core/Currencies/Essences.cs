@@ -10,6 +10,13 @@ namespace TLR.Content.Core.Currencies
 			CurrencyTextColor = Color.LightGreen;
 		}
 	}
+	public class UndergroundEssence : CustomCurrencySingleCoin
+	{
+		public UndergroundEssence(int coinItemID, long currencyCap, string CurrencyTextKey) : base(coinItemID, currencyCap) {
+			this.CurrencyTextKey = CurrencyTextKey;
+			CurrencyTextColor = Color.Brown;
+		}
+	}
     public class SnowEssence : CustomCurrencySingleCoin
 	{
 		public SnowEssence(int coinItemID, long currencyCap, string CurrencyTextKey) : base(coinItemID, currencyCap) {

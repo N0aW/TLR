@@ -10,6 +10,8 @@ Support is weaker on their own, but focuses on buffing, healing and restoring ma
 
 Install "The Light Reveals +" mod for additional mod compats!
 
+The mod "Shop Expander" is RECOMMENDED! (albeit rquired!)
+
 Mods that are compatatible:
     - Secrets of the Shadows (Install "The Shadowrevealer")
     - Block's Info Accessories

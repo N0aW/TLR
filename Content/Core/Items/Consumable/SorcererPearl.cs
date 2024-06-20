@@ -11,6 +11,7 @@ namespace TLR.Content.Core.Items.Consumable
 	public class SorcererPearl : ModItem
 	{
         // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
+        public override bool IsLoadingEnabled(Mod mod) => false;
         public override void SetDefaults()
 		{
 			Item.width = 30;
@@ -21,10 +22,9 @@ namespace TLR.Content.Core.Items.Consumable
 			Item.maxStack = 9999;
             Item.consumable = true;
 		}
-        public override void UpdateAccessory(Player player, bool hideVisual)
+        public override void OnConsumeItem(Player player)
         {
-            player.GetDamage(DamageClass.Generic) += 0.04f;
-            player.noKnockback = true;
+            base.OnConsumeItem(player);
         }
-	}
+    }
 }
