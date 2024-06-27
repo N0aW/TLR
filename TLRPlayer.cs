@@ -5,29 +5,80 @@ using TLR.Content.Core.Buffs;
 using Terraria.DataStructures;
 using Terraria.ModLoader.IO;
 using Terraria.Social.Steam;
+using System;
 namespace TLR
 {
     public class TLRPlayer : ModPlayer
     {
+        public static TLRPlayer ModPlayer(Player player) {
+			return player.GetModPlayer<TLRPlayer>();
+		}
         public bool hallowGlove = false;
         public bool spookyGlove = false;
         public int healPotionAdd = 0;
         public int manaPotionAdd = 0;
-        public int cookies = 0;
+        public int style = 0;
+        public int[] cookies = [0, 0, 0, 0, 0, 0, 0];
+        // -, K, M, T, Qa, Qi
+        // Regular, Thousand, Million, Billion, Trillion, Quadrillion, Quintillion
+        public int cookieBaking = 0;
+        // How many cookies are based per second
+        public int cookieBakeProgress = 0;
+        public bool displayCookies = false;
+        // Increases by 1, every tick
+        // When at 60, cooks cookies
+        public int lifeCostMult = 1;
         public override void ResetEffects()
         {
             hallowGlove = false;
             spookyGlove = false;
             healPotionAdd = 0;
             manaPotionAdd = 0;
+            lifeCostMult = 1;
+            cookieBaking = 0;
+            displayCookies = false;
         }
         public override void LoadData(TagCompound tag) {
-			cookies = tag.GetInt("cookies");
+			cookies = tag.GetIntArray("cookies");
+            style = tag.GetInt("style");
 		}
 
 		public override void SaveData(TagCompound tag) {
 			tag["cookies"] = cookies;
+            tag["style"] = style;
 		}
+        public override void PostUpdate()
+        {
+            cookieBakeProgress += 1;
+            if (cookieBakeProgress >= 60) {
+                cookies[0] += cookieBaking;
+                cookieBakeProgress -= 60;
+            }
+            if (cookies[0] > 1000) {
+                cookies[1] += 1;
+                cookies[0] -= 1000;
+            }
+            if (cookies[1] > 1000) {
+                cookies[2] += 1;
+                cookies[1] -= 1000;
+            }
+            if (cookies[2] > 1000) {
+                cookies[3] += 1;
+                cookies[2] -= 1000;
+            }
+            if (cookies[3] > 1000) {
+                cookies[4] += 1;
+                cookies[3] -= 1000;
+            }
+            if (cookies[4] > 1000) {
+                cookies[5] += 1;
+                cookies[4] -= 1000;
+            }
+            if (cookies[5] > 1000) {
+                cookies[6] += 1;
+                cookies[5] -= 1000;
+            }
+        }
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (item.DamageType == DamageClass.Melee)

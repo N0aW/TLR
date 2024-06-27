@@ -29,12 +29,4 @@ namespace TLR.Content.Core.Rarities
 			return Type; // no 'higher' tier to go to, so return the type of this rarity.
 		}
 	}
-	public class Essence : ModRarity
-	{
-		public override Color RarityColor => new Color(181, 43, 151);
-
-		public override int GetPrefixedRarity(int offset, float valueMult) {
-			return Type; // no 'higher' tier to go to, so return the type of this rarity.
-		}
-	}
 }

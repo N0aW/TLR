@@ -155,74 +155,9 @@ Items: {
 		DisplayName: Palladium Shield
 	}
 
-	ForestEssence: {
-		DisplayName: Forest Essence
-		Tooltip: Can be conjured into items from the Forest
-	}
-
-	SorcererPearl: {
-		DisplayName: Sorcerer Pearl
-		Tooltip: Allows the gathering of essence in the world it is used in
-	}
-
-	CorruptEssence: {
-		DisplayName: Corrupt Essence
-		Tooltip: Can be conjured into items from the Corruption
-	}
-
-	CrimsonEssence: {
-		DisplayName: Crimson Essence
-		Tooltip: Can be conjured into items from the Crimson
-	}
-
-	DesertEssence: {
-		DisplayName: Desert Essence
-		Tooltip: Can be conjured into items from the Desert
-	}
-
-	DungeonEssence: {
-		DisplayName: Dungeon Essence
-		Tooltip: Can be conjured into items from the Dungeon
-	}
-
-	DungeonEssence2: {
-		DisplayName: Spectral Dungeon Essence
-		Tooltip: Can be conjured into items from the Post-Plantera Dungeon
-	}
-
-	GlowshroomEssence: {
-		DisplayName: Glowing Mushroom Essence
-		Tooltip: Can be conjured into items from the Glowing Mushroom biome
-	}
-
-	HallowEssence: {
-		DisplayName: Hallow Essence
-		Tooltip: Can be conjured into items from the Hallow
-	}
-
-	JungleEssence: {
-		DisplayName: Jungle Essence
-		Tooltip: Can be conjured into items from the Jungle
-	}
-
-	OceanEssence: {
-		DisplayName: Ocean Essence
-		Tooltip: Can be conjured into items from the Ocean
-	}
-
-	SnowEssence: {
-		DisplayName: Snow Essence
-		Tooltip: Can be conjured into items from the Tundra
-	}
-
-	UnderworldEssence: {
-		DisplayName: Underworld Essence
-		Tooltip: Can be conjured into items from the Underworld
-	}
-
-	UndergroundEssence: {
-		Tooltip: Can be conjured into items from the Underground/Cavern layers
-		DisplayName: Underground Essence
+	Hatred: {
+		DisplayName: IMPERFECT HATRED
+		Tooltip: Grants Wrath and Rage when hitting enemies
 	}
 }
 
@@ -250,7 +185,21 @@ Configs: {
 			Label: Spriteless
 		}
 
-		Headers.wipcontent: Developer Options
+		Headers: {
+			wipcontent: Developer Options
+			npcchanges: NPC Changes
+			goofyadds: Goofy Additions
+		}
+
+		LoadbearerKillForGood: {
+			Label: Loadbearer Kills For Good
+			Tooltip: The Loadbearer erases your character when defeated in Expert Mode
+		}
+
+		SigmaMode: {
+			Tooltip: Adds joke content. They are balanced... but the sprites stick out like a sore thumb
+			Label: Sigmadditions
+		}
 	}
 
 	TLRConfigClient: {
@@ -285,32 +234,24 @@ DamageClasses: {
 	CookieMelee.DisplayName: cookie + melee damage
 	CookieMagic.DisplayName: cookie + magic damage
 	Cookie.DisplayName: cookie damage
+	SacrificalSummonWhip.DisplayName: sacrifical + summon damage
+	SacrificalSummon.DisplayName: sacrifical + summon damage
+	SacrificalRanged.DisplayName: sacrifical + ranged damage
+	SacrificalMeleeNoSpeed.DisplayName: sacrifical + melee damage
+	SacrificalMelee.DisplayName: sacrifical + melee damage
+	SacrificalMagic.DisplayName: sacrifical + magic damage
+	Sacrifical.DisplayName: sacrifical damage
+	SacrificalGeneric.DisplayName: Sacrifical Generic
+	CookieGeneric.DisplayName: Cookie Generic
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
-Projectiles.SubspaceBoosterProj.DisplayName: Subspace Booster Projectile
 
-NPCs: {
-	Sorcerer: {
-		TownNPCMood: {
-			Princess_LovesNPC: I like {NPCName}.
-			LikeNPC_Princess: I like {NPCName}.
-			DislikeNPC: I don't like {NPCName}, why can't they just accept the existence of magic?
-			LoveNPC: I love {NPCName}, they have a magical aura around them.
-			DislikeBiome: I don't like {BiomeName} that much... I have never seen anything like it before.
-			LikeBiome: I like {BiomeName}, it reminds me of going mining with my friends at home.
-			HateCrowded: I want back home with the amount of people here.
-			Content: I am getting used to this new dimension.
-			NoHome: Where should I put my conjuration bench without a home?.
-			FarFromHome: I can't do spells if my home is all the way over there!
-			LoveSpace: The amount of space is getting me used to these two dimensions.
-			DislikeCrowded: The amount of people here... I miss the third dimension.
-			HateNPC: I hate {NPCName}, he should not be doing what he is doing....
-			LikeNPC: I like {NPCName}, he seems to know more than the others.
-			LoveBiome: I love {BiomeName}, it reminds me of where my old home was...
-		}
-
-		DisplayName: Sorcerer
-		Census.SpawnCondition: Conditions unknown
-	}
+Prefixes: {
+	Flowing.DisplayName: Flowing
+	Cataclystic.DisplayName: Cataclystic
+	Overflowing.DisplayName: Overflowing
+	Sacrifical.DisplayName: Sacrifical
 }
+
+InfoDisplays.CookieInfo.DisplayName: Cookie Info

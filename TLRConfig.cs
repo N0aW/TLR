@@ -22,6 +22,12 @@ namespace TLR
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
+        [Header("goofyadds")]
+        [DefaultValue(false)]
+        public bool SigmaMode;
+        [Header("npcchanges")]
+        [DefaultValue(true)]
+        public bool LoadbearerKillForGood;
         [Header("wipcontent")]
         [DefaultValue(1)]
         [Range(0, 2)]
