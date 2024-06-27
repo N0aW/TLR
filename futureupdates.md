@@ -3,7 +3,7 @@
     - Sacrifical needs more
     - Cookie needs more
     - Style needs more
-    - 
+    - Support needs more
 - [ ] Added Cookie Oven (Cookie)
     - Shows cookie amount
     - +1 cookies/s
