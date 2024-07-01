@@ -68,6 +68,7 @@ namespace TLR
         }
         public override void PostUpdate()
         {
+            if (!ModContent.GetInstance<TLRConfigServer>().NegativeStyle && style < 0) { style = 0; }
             cookieBakeProgress += 1;
             if (cookieBakeProgress >= 60) {
                 cookies[0] += cookieBaking;

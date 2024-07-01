@@ -150,7 +150,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants immunity to knockback
-			Increases magic and ranged damage by 5%
+			Increases damage by 4%
 			'''
 		DisplayName: Palladium Shield
 	}
@@ -251,7 +251,7 @@ Items: {
 
 	LifeSapper: {
 		DisplayName: Life Sapper
-		Tooltip: "Heals you by 25% of the damage dealt"
+		Tooltip: Heals you by 25% of the damage dealt
 	}
 }
 
@@ -283,6 +283,8 @@ Configs: {
 			wipcontent: Developer Options
 			npcchanges: NPC Changes
 			goofyadds: Goofy Additions
+			gameplaychanges: Gameplay Changes
+			corechanges: Core Changes
 		}
 
 		LoadbearerKillForGood: {
@@ -293,6 +295,22 @@ Configs: {
 		SigmaMode: {
 			Tooltip: Adds joke content. They are balanced... but the sprites stick out like a sore thumb
 			Label: Sigmadditions
+		}
+
+		NegativeStyle: {
+			Tooltip: "Your style can go into the negatives"
+			Label: Negative Style
+		}
+
+		RiskSlider: {
+			Tooltip:
+				'''
+				What you can lose during a game.
+					0 - Nothing can seriously be lost, ideal for casual gameplay
+					1 - Wrong choices can cost your character, even in Non-Hardcore worlds
+					2 - Your entire player and world can be deleted
+				'''
+			Label: Risk Slider
 		}
 	}
 
@@ -370,3 +388,5 @@ Projectiles: {
 	Cookie.DisplayName: Cookie
 	CritBullet.DisplayName: Crit Bullet
 }
+
+NPCs.SkibidiEye.DisplayName: Skibidi Eye

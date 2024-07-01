@@ -14,6 +14,12 @@ Sacrifical uses their own Health for greater damage!
 A new stat, Vampirism!
 Basically, vampirism allows you to recover life every time you hit an enemy.
 Vampirism is DIFFERENT from Lifesteal because it has no cooldown but has greatly decreased healing.
+
+Use the RISK slider to change gameplay!
+
+Higher RISK can cause in:
+- Permanent loss of characters or worlds
+- Permanent loss of save data
 #### Will this work in multiplayer?
 I have no idea since none of my friends play Terraria 😔
 Due to this most support weapons are made to give yourself heals, mana and buffs etc

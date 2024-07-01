@@ -1,6 +1,7 @@
-## v0.8 - Sigma Time!
-- [ ] Added Sigma Additions, which are joke-based items. (Can be enabled/disabled)
-    - Developer Note: Also allows me to test out code without need for sprites. It's time for Rave Rick.
+## v0.8 - Very Unofficial Minecraft Collab
+- [ ] Adds Minecraft additions, which are minecraft based items. (Can be enabled/disabled) 
+    - Developer Note: The sprites will be in the minecraft style... so they will be simplified and have less detailed sprites.
+    - This does not stop them from being balanced
 ### v0.8.1 - Forging & Working
 - [ ] Added new reforges
     - Sacrifical needs more
@@ -23,7 +24,3 @@
     - Ranged, Magic & Summon
 - [ ] Added support weapons for the other classes
     - Ranged, Magic & Summon
-## v0.9 - Very Unofficial Minecraft Collab
-- [ ] Adds Minecraft additions, which are minecraft based items. (Can be enabled/disabled) 
-    - Developer Note: The sprites will be in the minecraft style... so they will be simplified and have less detailed sprites.
-    - This does not stop them from being balanced

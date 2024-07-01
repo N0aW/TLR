@@ -12,6 +12,8 @@ Sacrifical uses their own HEALTH to deliver higher damage.
 
 Install "The Light Reveals +" mod for additional mod compats!
 
+Use the RISK SLIDER in the settings to adjust your gameplay!
+
 Mods that are compatatible:
     - Secrets of the Shadows (Install "The Shadowrevealer")
     - Block's Info Accessories (Shimmer Ball Recipes)

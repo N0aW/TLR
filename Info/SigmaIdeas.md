@@ -1,35 +1,10 @@
 # Items
-## Armor
-### Ultrakiller Helmet
-#### Rarity: 4 | Any Cobalt Helmet + Blood 2 (10) + Ultrabright Helmet
-#### SET BONUS: The faster you move, the better your stats
-- "I feel so sigma!"
-- 4 Defense
-- 5% increase to damage, 10% increase to critical strike chance
-- 33% increase to movement speed
-- Increases vampirism by 1
-- Allows the effects of the Ultrabright Helmet
-### Ultrakiller Chestplate
-#### Rarity: 4 | Any Cobalt Chestplate + Blood 2 (10) + Any Pre-Mech Wings
-#### SET BONUS: The faster you move, the better your stats
-- "I am going to sugarcoat it (NO PARRIES?)"
-- 12 Defense
-- 8% increase to damage, 10% increase to knockback
-- 33% increase to movement speed
-- Allows flight and slow fall
-- Increases vampirism by 1
-- Allows the effects of the Ultrabright Helmet
-### Ultrakiller Pantaloons
-#### Rarity: 4 | Any Cobalt Leggings + Blood 2 (10) + Hermes Boots
-#### SET BONUS: The faster you move, the better your stats
-- "No sliding... only dash"
-- 9 Defense
-- 4% increase to damage, 10% increase to attack speed
-- 33% increase to movement speed
-- Allows dashing and negates fall damage
-- Allows ground slams
-- Increases vampirism by 1
-- Allows the effects of the Ultrabright Helmet
+## NPCs
+### The Eye of Skibbidi
+- Holy Shit
+- Post Moon Lord
+- One Shots you
+- Drops the Shield of Skibbidilthu
 ## Materisls
 ### Blood
 - Dropped by pre-hardmode Blood Moon enemies
