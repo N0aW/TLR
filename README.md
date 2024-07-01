@@ -16,6 +16,7 @@ Basically, vampirism allows you to recover life every time you hit an enemy.
 Vampirism is DIFFERENT from Lifesteal because it has no cooldown but has greatly decreased healing.
 #### Will this work in multiplayer?
 I have no idea since none of my friends play Terraria 😔
+Due to this most support weapons are made to give yourself heals, mana and buffs etc
 ### Add-Ons:
 - The Light Reveals + (SOTS and Storm Diver's compats)
 ### Credits/Special Thanks:
@@ -23,3 +24,4 @@ I have no idea since none of my friends play Terraria 😔
     - I used code from Example Mod.
 - [Terraria Public Sprite House](https://forums.terraria.org/index.php?threads/public-sprite-house-a-place-that-has-public-sprites-and-where-people-can-request-and-make.43701/)
     - The Sprite for IMPERFECT HATRED
+    - The Sprite for Life Sapper

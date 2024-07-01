@@ -36,6 +36,7 @@ namespace TLR
         public float useCookieAmmoChance = 1f;
         public float styleGain = 1f;
         public float supportHealMult = 1f;
+        public bool cloverLuck = false;
         public override void ResetEffects()
         {
             hallowGlove = false;
@@ -51,6 +52,7 @@ namespace TLR
             useCookieAmmoChance = 1f;
             styleGain = 1f;
             supportHealMult = 1f;
+            cloverLuck = false;
         }
         public override void LoadData(TagCompound tag) {
 			cookies = tag.GetIntArray("cookies");
@@ -98,6 +100,7 @@ namespace TLR
         }
         public override void PreUpdate()
         {
+            if (cloverLuck) { Player.luck += 0.05f; }
             if (cookies[0] < 0 && cookies[1] > 0) {
                 cookies[1] -= 1;
                 cookies[0] += 1000;

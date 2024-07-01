@@ -28,6 +28,21 @@ namespace TLR.Content.Core.Items.Weapons.Sacrifical.Melee.Imperfections
 			Item.useStyle = ItemUseStyleID.Swing; Item.UseSound = SoundID.Item1;
 			// Uses 8 life on hit to grant Rage and Wrath for 5 seconds
 		}
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ItemID.LightsBane);
+			recipe.AddIngredient(ItemID.DemoniteBar, 10);
+			recipe.AddIngredient(ItemID.ShadowScale, 15);
+			recipe.AddTile(TileID.DemonAltar);
+			recipe.Register();
+			Recipe recipe2 = CreateRecipe();
+			recipe2.AddIngredient(ItemID.BloodButcherer);
+			recipe2.AddIngredient(ItemID.CrimtaneBar, 10);
+			recipe2.AddIngredient(ItemID.TissueSample, 15);
+			recipe2.AddTile(TileID.DemonAltar);
+			recipe2.Register();
+        }
         public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
 			TLRItem tLRItem = ModContent.GetInstance<TLRItem>();

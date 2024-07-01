@@ -16,7 +16,7 @@ namespace TLR.Content.Core.Items.Weapons.Cookie.Ranged
 	public class CookieCannon : ModItem
 	{
         // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
-		public int cookieCost = 1;
+		public int cookieCost = 10;
 		public int cookieBaking = 1;
 		public float cookieConsumptionChance = 1f;
         public override void SetDefaults()
@@ -25,19 +25,19 @@ namespace TLR.Content.Core.Items.Weapons.Cookie.Ranged
 			Item.value = Item.sellPrice(0, 0, 30, 0); Item.rare = ItemRarityID.Blue;
 			Item.ResearchUnlockCount = 1; Item.maxStack = 1;
 			Item.DamageType = ModContent.GetInstance<CookieRanged>();
-			Item.damage = 14; Item.crit = 0; Item.knockBack = 1f;
-			Item.useTime = 19; Item.useAnimation = 19; Item.autoReuse = true;
+			Item.damage = 34; Item.crit = 0; Item.knockBack = 6f;
+			Item.useTime = 40; Item.useAnimation = 40; Item.autoReuse = true;
 			Item.useStyle = ItemUseStyleID.Shoot; Item.UseSound = SoundID.Item11;
-			Item.accessory = true;
+			Item.accessory = true; Item.noMelee = true;
 			Item.shoot = ModContent.ProjectileType<Projectiles.Cookie.Ranged.Cookie>(); Item.shootSpeed = 11f;
+            Item.reuseDelay = 40;
 		}
-        public override void UpdateInventory(Player player)
+        public override void UpdateInfoAccessory(Player player)
         {
             player.GetModPlayer<TLRPlayer>().displayCookies = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetModPlayer<TLRPlayer>().displayCookies = true;
 			player.GetModPlayer<TLRPlayer>().cookieBaking += cookieBaking;
         }
         public override void AddRecipes()

@@ -22,7 +22,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Style
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.luck += 0.05f;
+            player.GetModPlayer<TLRPlayer>().cloverLuck = true;
 			player.GetModPlayer<TLRPlayer>().styleGain += 0.10f;
 			player.GetModPlayer<TLRPlayer>().styleGain += player.luck;
         }

@@ -192,9 +192,9 @@ Items: {
 	CookieCannon: {
 		Tooltip:
 			'''
-			Shoots out blazing hot cookies
+			Shoots out a blazing hot cookie
 			When equipped in an accessory slot, will bake 1 cookie per second.
-			Consumes 1 cookie
+			Consumes 10 cookies
 			'''
 		DisplayName: Cookie Cannon
 	}
@@ -236,7 +236,22 @@ Items: {
 
 	LuckyClover: {
 		DisplayName: Lucky Clover
-		Tooltip: ""
+		Tooltip:
+			'''
+			Increases luck by 0.05 and style gain by 10%
+			Style Gain is increased by 1% per 0.01 luck
+			'Eh, close enough.'
+			'''
+	}
+
+	CritRevolver: {
+		DisplayName: Sharpshooter Revolver
+		Tooltip: Increases critical strike chance the higher your style is
+	}
+
+	LifeSapper: {
+		DisplayName: Life Sapper
+		Tooltip: "Heals you by 25% of the damage dealt"
 	}
 }
 
@@ -351,4 +366,7 @@ Keybinds: {
 	CursorTeleport.DisplayName: Teleport to Cursor
 }
 
-Projectiles.Cookie.DisplayName: Cookie
+Projectiles: {
+	Cookie.DisplayName: Cookie
+	CritBullet.DisplayName: Crit Bullet
+}
