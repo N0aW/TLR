@@ -30,26 +30,11 @@
 - 8 Defense
 - Converts debuffs into buffs
 - Immunity to knockback and fire blocks
-###
-### Mecha Boots
-#### Rarity: 8 | Terraspark Boots + Ancient Cog (12)
-- Allows super fast running, flight and extra mobility on ice
-- 12% increased movement speed
-- Allows immunity to fire blocks and lava for 10 seconds
-- Allows ability to walk on liquids
-- Reduces damage from lava
-### Lobotomizer
-#### Rarity: Expert | Expert Drop from Scrapped
-- Your attacks can hurt town NPCs
-- 50% increased damage
-- Your defense and damage reduction are nullified
-- -20 HP/s, you cannot die from the health drain
-# NPCs
-## Bosses
-### Scrapped
-- Fought between the Mechs and Plantera
-- Is a mechanical brain that fires rockets, bullets, etc
-- Drops Ancient Cogs on death
+## Consumables
+### Solar Heart
+#### Rarity: MASTER | 100% drop from Golem
+- Increases accessory slots by 1 permanently
+- Increases damage by 10% permanently
 # Events
 ## Natural
 ### Acid Rain

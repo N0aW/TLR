@@ -24,7 +24,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
         {
             player.hasMoltenQuiver = true;
 			player.magicQuiver = true;
-			if (player.HeldItem.DamageType == DamageClass.Ranged) {
+			if (player.HeldItem.DamageType.CountsAsClass(DamageClass.Ranged)) {
 				player.scope = true;
 			}
 			player.GetDamage(DamageClass.Ranged) += 0.15f;

@@ -24,7 +24,7 @@ namespace TLR.Content.Core.Items.Weapons.Sacrifical.Melee.Imperfections
 			Item.ResearchUnlockCount = 1; Item.maxStack = 1;
 			Item.DamageType = ModContent.GetInstance<SacrificalMelee>();
 			Item.damage = 28; Item.crit = 6; Item.knockBack = 5.5f;
-			Item.useTime = 16; Item.useAnimation = 16;
+			Item.useTime = 16; Item.useAnimation = 16; Item.autoReuse = true;
 			Item.useStyle = ItemUseStyleID.Swing; Item.UseSound = SoundID.Item1;
 			// Uses 8 life on hit to grant Rage and Wrath for 5 seconds
 		}

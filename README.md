@@ -10,6 +10,12 @@ Cookie is not a clicker class... It's the Cookie Clicker class! Automate making 
 Support is weaker on their own, but focuses on buffing, healing and restoring mana to allies!
 
 Sacrifical uses their own Health for greater damage!
+
+A new stat, Vampirism!
+Basically, vampirism allows you to recover life every time you hit an enemy.
+Vampirism is DIFFERENT from Lifesteal because it has no cooldown but has greatly decreased healing.
+#### Will this work in multiplayer?
+I have no idea since none of my friends play Terraria 😔
 ### Add-Ons:
 - The Light Reveals + (SOTS and Storm Diver's compats)
 ### Credits/Special Thanks:

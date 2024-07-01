@@ -159,6 +159,85 @@ Items: {
 		DisplayName: IMPERFECT HATRED
 		Tooltip: Grants Wrath and Rage when hitting enemies
 	}
+
+	MechaBoots: {
+		Tooltip:
+			'''
+			Allows super fast running, extended flight and extra mobility on ice
+			16% increased movement speed
+			Provides the ability to swim, walk on liquids and slow fall
+			Allows extended underwater breathing
+			Grants immunity to fire blocks and 10 seconds of lava
+			Reduces damage from lava greatly, reduces 4% of all damage taken
+			Hold UP to boost
+			'''
+		DisplayName: Mecha Boots
+	}
+
+	Shroomts: {
+		Tooltip:
+			'''
+			Allows hyper fast running, extended flight and extra mobility on ice
+			33% increased movement speed
+			Provides the ability to swim, walk on liquids and slow fall
+			Allows extended underwater breathing, dashing and climbing walls
+			Grants a chance to dodge attacks
+			Grants immunity to fire blocks and 15 seconds of lava
+			Reduces damage from lava greatly, reduces 6% of all damage taken
+			Hold DOWN to hover
+			'''
+		DisplayName: Shroomts
+	}
+
+	CookieCannon: {
+		Tooltip:
+			'''
+			Shoots out blazing hot cookies
+			When equipped in an accessory slot, will bake 1 cookie per second.
+			Consumes 1 cookie
+			'''
+		DisplayName: Cookie Cannon
+	}
+
+	StellarStreads: {
+		Tooltip:
+			'''
+			Allows ultra fast running, infinite flight and extra mobility on ice
+			66% increased movement speed
+			Provides the ability to swim, walk on liquids and slow fall
+			Allows extended underwater breathing, dashing and climbing walls
+			Grants a chance to dodge attacks
+			Grants immunity to fire blocks and lava
+			Reduces damage from lava greatly, reduces 8% of all damage taken
+			Hold UP to boost, DOWN to hover and G to switch gravity
+			'''
+		DisplayName: Stellar Streads
+	}
+
+	DimensionalBlazers: {
+		Tooltip:
+			'''
+			Allows insanely fast running, extended flight and extra mobility on ice
+			100% increased movement speed
+			Provides the ability to swim, walk on liquids and slow fall
+			Allows extended underwater breathing, dashing and climbing walls
+			Grants a chance to dodge attacks
+			Grants immunity to fire blocks and lava
+			Reduces damage from lava greatly, reduces 10% of all damage taken
+			Hold UP to boost, DOWN to hover, G to swtich gravity and X to teleport to cursor
+			'''
+		DisplayName: Dimensional Blazers
+	}
+
+	ResetCookie: {
+		DisplayName: Reset Cookie
+		Tooltip: Resets your style and cookies
+	}
+
+	LuckyClover: {
+		DisplayName: Lucky Clover
+		Tooltip: ""
+	}
 }
 
 AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
@@ -241,8 +320,10 @@ DamageClasses: {
 	SacrificalMelee.DisplayName: sacrifical + melee damage
 	SacrificalMagic.DisplayName: sacrifical + magic damage
 	Sacrifical.DisplayName: sacrifical damage
-	SacrificalGeneric.DisplayName: Sacrifical Generic
-	CookieGeneric.DisplayName: Cookie Generic
+	SacrificalGeneric.DisplayName: sacrifical damage
+	CookieGeneric.DisplayName: cookie damage
+	SupportGeneric.DisplayName: support damage
+	StyleGeneric.DisplayName: style damage
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
@@ -252,6 +333,22 @@ Prefixes: {
 	Cataclystic.DisplayName: Cataclystic
 	Overflowing.DisplayName: Overflowing
 	Sacrifical.DisplayName: Sacrifical
+	Warm.DisplayName: Warm
+	Heated.DisplayName: Heated
+	Cool.DisplayName: Cool
+	Stylish.DisplayName: Stylish
+	Lovely.DisplayName: Lovely
+	Comforting.DisplayName: Comforting
 }
 
-InfoDisplays.CookieInfo.DisplayName: Cookie Info
+InfoDisplays: {
+	CookieInfo.DisplayName: Cookies
+	StyleInfo.DisplayName: Style
+}
+
+Keybinds: {
+	SwitchGravity.DisplayName: Switch Gravity
+	CursorTeleport.DisplayName: Teleport to Cursor
+}
+
+Projectiles.Cookie.DisplayName: Cookie
