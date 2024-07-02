@@ -14,7 +14,7 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
         public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless >= 1;
         public override void SetDefaults()
 		{
-            Item.CloneDefaults(ItemID.Jetpack);
+            if (ModContent.GetInstance<TLRConfigServer>().WingedBoots) { Item.CloneDefaults(ItemID.Jetpack); }
 			Item.width = 32;
 			Item.height = 32;
 			Item.value = Item.sellPrice(gold: 20);
@@ -43,7 +43,7 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ItemID.TerrasparkBoots);
-            recipe.AddIngredient(ItemID.Jetpack);
+            if (ModContent.GetInstance<TLRConfigServer>().WingedBoots) { recipe.AddIngredient(ItemID.Jetpack); }
 			recipe.AddIngredient(ItemID.SoulofFright, 10);
             recipe.AddIngredient(ItemID.SoulofFlight, 20);
 			recipe.AddTile(TileID.TinkerersWorkbench);

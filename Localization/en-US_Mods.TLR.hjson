@@ -298,7 +298,7 @@ Configs: {
 		}
 
 		NegativeStyle: {
-			Tooltip: "Your style can go into the negatives"
+			Tooltip: Your style can go into the negatives
 			Label: Negative Style
 		}
 
@@ -384,9 +384,4 @@ Keybinds: {
 	CursorTeleport.DisplayName: Teleport to Cursor
 }
 
-Projectiles: {
-	Cookie.DisplayName: Cookie
-	CritBullet.DisplayName: Crit Bullet
-}
-
-NPCs.SkibidiEye.DisplayName: Skibidi Eye
+Projectiles.Cookie.DisplayName: Cookie

@@ -16,3 +16,5 @@
 ### v0.7.1 - Config Galore
 - Added the RISK SLIDER config
 - Added the option for style to not go to negatives
+### v0.7.2 - Dewinged
+- Added the config option to remove the wings from your boots

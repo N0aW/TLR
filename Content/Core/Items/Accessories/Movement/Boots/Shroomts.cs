@@ -14,7 +14,7 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
         public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless >= 1;
         public override void SetDefaults()
 		{
-            Item.CloneDefaults(ItemID.Hoverboard);
+            if (ModContent.GetInstance<TLRConfigServer>().WingedBoots) { Item.CloneDefaults(ItemID.Hoverboard); }
 			Item.width = 32;
 			Item.height = 28;
 			Item.value = Item.sellPrice(gold: 25);
@@ -46,7 +46,7 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 		{
 			Recipe recipe = CreateRecipe();
 			recipe.AddIngredient(ModContent.ItemType<MechaBoots>());
-            recipe.AddIngredient(ItemID.Hoverboard);
+            if (ModContent.GetInstance<TLRConfigServer>().WingedBoots) { recipe.AddIngredient(ItemID.Hoverboard); }
 			recipe.AddIngredient(ItemID.MasterNinjaGear);
 			recipe.AddTile(TileID.TinkerersWorkbench);
 			recipe.Register();

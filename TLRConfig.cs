@@ -29,6 +29,9 @@ namespace TLR
         [Header("gameplaychanges")]
         [DefaultValue(true)]
         public bool NegativeStyle;
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool WingedBoots;
         [Header("wipcontent")]
         [DefaultValue(1)]
         [Range(0, 2)]
