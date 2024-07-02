@@ -1,3 +1,18 @@
+#### v0.7.2.1 - Wing Tips
+- [ ] The slow fall / hold to boost/hover won't display if the wings are removed from the boots.
+### v0.7.3 - DPS Testing
+- [ ] Sharpeye Revolver
+    - It should have more DPS than the revolver at high style.
+    - It should have less/equal DPS than the revolver at low style.
+    - It should be held correctly
+- [ ] Cookie Cannon
+    - It should have more DPS than the Snowball Cannon
+- [ ] IMPERFECT HATRED
+    - It should have more DPS than the Light's Bane/Blood Butcherer
+    - THis is due to it costing your life
+- [ ] Life Sapper
+    - It should have less DPS than the Light's Bane/Blood Butcherer
+    - This is due to it recovering your life
 ## v0.8 - Very Unofficial Minecraft Collab
 - [ ] Adds Minecraft additions, which are minecraft based items. (Can be enabled/disabled) 
     - Developer Note: The sprites will be in the minecraft style... so they will be simplified and have less detailed sprites.

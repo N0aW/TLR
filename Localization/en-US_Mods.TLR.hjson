@@ -312,6 +312,15 @@ Configs: {
 				'''
 			Label: Risk Slider
 		}
+
+		WingedBoots: {
+			Label: Winged Boots
+			Tooltip:
+				'''
+				Modded boots can have wings in their recipe/use.
+				Disable to use boots and wings at the same time.
+				'''
+		}
 	}
 
 	TLRConfigClient: {
