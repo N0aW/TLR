@@ -18,3 +18,7 @@
 - Added the option for style to not go to negatives
 ### v0.7.2 - Dewinged
 - Added the config option to remove the wings from your boots
+#### v0.7.2.1 - lang.dewinged
+- Added translations for the Dewinging Config
+## v0.8 - New Beginnings
+- Removed the four old subclasses.

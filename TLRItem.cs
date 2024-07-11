@@ -10,7 +10,6 @@ using Terraria.GameContent.UI.Chat;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Utilities;
-using TLR.Content.Core.Classes.Sacrifical;
 using tModPorter;
 
 namespace TLR
@@ -20,8 +19,6 @@ namespace TLR
 	// See other GlobalItem classes in ExampleMod to see other ways that GlobalItem can be used.
 	public class TLRItem : GlobalItem
 	{
-        public override bool InstancePerEntity => true;
-        public float healthCostMultiplier = 1.0f;
         public override void SetStaticDefaults()
         {
             ItemID.Sets.ShimmerTransformToItem[ItemID.CrystalBall] = ModContent.ItemType<Content.Core.Tiles.ShimmerBallItem>();
@@ -39,17 +36,6 @@ namespace TLR
         {
             if (item.type == ItemID.CobaltShield) {
                 tooltips.Add(new(Mod, "Tooltip1", "Increases movement speed by 8%"));
-            }
-            if (ModContent.GetInstance<TLRConfigClient>().ShimmerInfo) {
-                if (item.type == ItemID.CobaltShield) {
-                    tooltips.Add(new(Mod, "Tooltip2", "[i:" + ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>() + "] Shimmers into Palladium Shield"));
-                }
-                if (item.type == ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>()) {
-                    tooltips.Add(new(Mod, "Tooltip2", "[i:" + ItemID.CobaltShield + "] Shimmers into Cobalt Shield"));
-                }
-                if (item.type == ItemID.CrystalBall) {
-                    tooltips.Add(new(Mod, "Tooltip0", "[i:" + ModContent.ItemType<Content.Core.Tiles.ShimmerBallItem>() + "] Shimmers into Shimmer Ball"));
-                }
             }
         }
     }

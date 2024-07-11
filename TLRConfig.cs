@@ -23,12 +23,8 @@ namespace TLR
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
         [Header("corechanges")]
-        [DefaultValue(0)]
-        [Range (0, 2)]
         public int RiskSlider;
         [Header("gameplaychanges")]
-        [DefaultValue(true)]
-        public bool NegativeStyle;
         [DefaultValue(true)]
         [ReloadRequired]
         public bool WingedBoots;
@@ -41,7 +37,5 @@ namespace TLR
     public class TLRConfigClient : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
-        [DefaultValue(true)]
-        public bool ShimmerInfo;
     }
 }

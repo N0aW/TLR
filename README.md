@@ -1,33 +1,15 @@
 # The Light Reveals (TLR)
 The Light Reveals adds basically all sorts of stuff I think of.
 
-Four new subclasses, Style, Cookie, Support and Sacrifical!
+Inspiration taken from Hotline Miami, Enter the Gungeon, ULTRAKILL & Brawl Stars.
 
-Style focuses on gaining or losing STYLE via their actions. STYLE weapons and accessories benefit from a good style, and suffer from a bad style.
+Adds actually a ton of content from brawl stars. A new class, new gadgets, new star powers, hypercharges etc...
 
-Cookie is not a clicker class... It's the Cookie Clicker class! Automate making cookies, or make them manually. Use the cookies to buff the cookie weapons!
+I do not own any of the content from the above games, and if an item is a straight reference, i will mark it.
 
-Support is weaker on their own, but focuses on buffing, healing and restoring mana to allies!
-
-Sacrifical uses their own Health for greater damage!
-
-A new stat, Vampirism!
-Basically, vampirism allows you to recover life every time you hit an enemy.
-Vampirism is DIFFERENT from Lifesteal because it has no cooldown but has greatly decreased healing.
-
-Use the RISK slider to change gameplay!
-
-Higher RISK can cause in:
-- Permanent loss of characters or worlds
-- Permanent loss of save data
 #### Will this work in multiplayer?
 I have no idea since none of my friends play Terraria 😔
 Due to this most support weapons are made to give yourself heals, mana and buffs etc
 ### Add-Ons:
 - The Light Reveals + (SOTS and Storm Diver's compats)
 ### Credits/Special Thanks:
-- Example Mod
-    - I used code from Example Mod.
-- [Terraria Public Sprite House](https://forums.terraria.org/index.php?threads/public-sprite-house-a-place-that-has-public-sprites-and-where-people-can-request-and-make.43701/)
-    - The Sprite for IMPERFECT HATRED
-    - The Sprite for Life Sapper

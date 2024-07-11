@@ -1,19 +1,13 @@
-The Light Reveals is an mod that adds all sorts of stuff I think of, such as...
+The Light Reveals is an mod that adds all sorts of stuff I think of.
 
-Four new subclasses, Style, Cookie, Support and Sacrifical.
+I take inspiration from a ton of different games.
 
-Style focuses on gaining or losing STYLE via their actions. STYLE weapons and accessories benefit from a good style, and suffer from a bad style.
+These games include:
+    - ULTRAKILL
+    - Enter the Gungeon
+    - Brawl Stars
+    - Hotline Miami
 
-Cookie is not a clicker class... It's the Cookie Clicker class! Automate making cookies, or make them manually. Use the cookies to buff the cookie weapons!
-
-Support is weaker on their own, but focuses on buffing, healing and restoring mana to allies!
-
-Sacrifical uses their own HEALTH to deliver higher damage.
+I do not own any of the content from the above games, and if an item is a straight reference, i will mark it.
 
 Install "The Light Reveals +" mod for additional mod compats!
-
-Use the RISK SLIDER in the settings to adjust your gameplay!
-
-Mods that are compatatible:
-    - Secrets of the Shadows (Install "The Shadowrevealer")
-    - Block's Info Accessories (Shimmer Ball Recipes)

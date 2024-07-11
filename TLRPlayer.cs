@@ -8,6 +8,7 @@ using Terraria.Social.Steam;
 using System;
 using System.Security.Policy;
 using Terraria.GameInput;
+using System.Collections;
 namespace TLR
 {
     public class TLRPlayer : ModPlayer
@@ -19,117 +20,47 @@ namespace TLR
         public bool spookyGlove = false;
         public int healPotionAdd = 0;
         public int manaPotionAdd = 0;
-        public int style = 0;
-        public int[] cookies = [0, 0, 0, 0, 0, 0, 0];
-        // -, K, M, T, Qa, Qi
-        // Regular, Thousand, Million, Billion, Trillion, Quadrillion, Quintillion
-        public int cookieBaking = 0;
-        // How many cookies are based per second
-        public int cookieBakeProgress = 0;
-        // Increases by 1, every tick
-        // When at 60, cooks cookies
-        public bool displayCookies = false;
-        public bool displayStyle = false;
-        public int lifeCostMult = 1;
         public bool CanSwitchGravity = false;
         public bool CanTPCursor = false;
-        public float useCookieAmmoChance = 1f;
-        public float styleGain = 1f;
-        public float supportHealMult = 1f;
-        public bool cloverLuck = false;
+        public int points = 0;
+        public float pointGainMult = 0f;
+        public int equippedGadget = 0;
+        public int equippedStarPower = 0;
+        public int equippedHypercharge = 0;
+        public bool brawlSlots = true;
         public override void ResetEffects()
         {
             hallowGlove = false;
             spookyGlove = false;
             healPotionAdd = 0;
             manaPotionAdd = 0;
-            lifeCostMult = 1;
-            cookieBaking = 0;
-            displayCookies = false;
-            displayStyle = false;
             CanSwitchGravity = false;
             CanTPCursor = false;
-            useCookieAmmoChance = 1f;
-            styleGain = 1f;
-            supportHealMult = 1f;
-            cloverLuck = false;
+            pointGainMult = 0f;
+            equippedGadget = 0;
+            equippedStarPower = 0;
+            equippedHypercharge = 0;
+            brawlSlots = true;
         }
         public override void LoadData(TagCompound tag) {
-			cookies = tag.GetIntArray("cookies");
-            style = tag.GetInt("style");
+			points = tag.GetInt("points");
 		}
 
 		public override void SaveData(TagCompound tag) {
-			tag["cookies"] = cookies;
-            tag["style"] = style;
+		    tag["points"] = points;
 		}
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-        }
-        public override void PostUpdate()
-        {
-            if (!ModContent.GetInstance<TLRConfigServer>().NegativeStyle && style < 0) { style = 0; }
-            cookieBakeProgress += 1;
-            if (cookieBakeProgress >= 60) {
-                cookies[0] += cookieBaking;
-                cookieBakeProgress -= 60;
-            }
-            if (cookies[0] > 1000) {
-                cookies[1] += 1;
-                cookies[0] -= 1000;
-            }
-            if (cookies[1] > 1000) {
-                cookies[2] += 1;
-                cookies[1] -= 1000;
-            }
-            if (cookies[2] > 1000) {
-                cookies[3] += 1;
-                cookies[2] -= 1000;
-            }
-            if (cookies[3] > 1000) {
-                cookies[4] += 1;
-                cookies[3] -= 1000;
-            }
-            if (cookies[4] > 1000) {
-                cookies[5] += 1;
-                cookies[4] -= 1000;
-            }
-            if (cookies[5] > 1000) {
-                cookies[6] += 1;
-                cookies[5] -= 1000;
-            }
-        }
-        public override void PreUpdate()
-        {
-            if (cloverLuck) { Player.luck += 0.05f; }
-            if (cookies[0] < 0 && cookies[1] > 0) {
-                cookies[1] -= 1;
-                cookies[0] += 1000;
-            }
-            if (cookies[1] < 0 && cookies[2] > 0) {
-                cookies[2] -= 1;
-                cookies[1] += 1000;
-            }
-            if (cookies[2] < 0 && cookies[3] > 0) {
-                cookies[3] -= 1;
-                cookies[2] += 1000;
-            }
-            if (cookies[3] < 0 && cookies[4] > 0) {
-                cookies[4] -= 1;
-                cookies[3] += 1000;
-            }
-            if (cookies[4] < 0 && cookies[5] > 0) {
-                cookies[5] -= 1;
-                cookies[4] += 1000;
-            }
-            if (cookies[5] < 0 && cookies[6] > 0) {
-                cookies[6] -= 1;
-                cookies[5] += 1000;
+            if (TLRKeybinds.UseBrawlGadget.JustPressed) {
+                switch(equippedGadget) {
+                    case 1:
+                        Player.AddBuff(BuffID.Invisibility, 180);
+                        break;
+                }
             }
         }
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            style += (int)(2 * styleGain);
             if (item.DamageType.CountsAsClass(DamageClass.Melee))
             {
                 if (hallowGlove && hit.Crit) {
@@ -157,7 +88,6 @@ namespace TLR
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            style += (int)(1 * styleGain);
             if (proj.DamageType.CountsAsClass(DamageClass.Melee))
             {
                 if (hallowGlove && hit.Crit) {
@@ -183,14 +113,6 @@ namespace TLR
                 }
             }
         }
-        public override void OnHitByNPC(NPC npc, Player.HurtInfo hurtInfo)
-        {
-            style -= (int)(5 / styleGain);
-        }
-        public override void OnHitByProjectile(Projectile proj, Player.HurtInfo hurtInfo)
-        {
-            style -= (int)(2 / styleGain);
-        }
         public override void GetHealLife(Item item, bool quickHeal, ref int healValue)
         {
             if (healValue > 0) {
@@ -203,10 +125,5 @@ namespace TLR
                 healValue += manaPotionAdd;
             }
 		}
-        public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genDust, ref PlayerDeathReason damageSource)
-        {
-            style -= (int)(1000 / styleGain);
-            return true;
-        }
     }
 }

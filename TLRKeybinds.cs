@@ -9,12 +9,18 @@ namespace TLR
 	{
 		public static ModKeybind SwitchGravity { get; private set; }
         public static ModKeybind CursorTeleport { get; private set; }
+		public static ModKeybind UseBrawlSuper { get; private set; }
+		public static ModKeybind UseBrawlGadget { get; private set; }
+		public static ModKeybind UseBrawlHyper { get; private set; }
 
 		public override void Load() {
 			// Registers a new keybind
 			// We localize keybinds by adding a Mods.{ModName}.Keybind.{KeybindName} entry to our localization files. The actual text displayed to English users is in en-US.hjson
 			SwitchGravity = KeybindLoader.RegisterKeybind(Mod, "SwitchGravity", "G");
-            CursorTeleport = KeybindLoader.RegisterKeybind(Mod, "CursorTeleport", "X");
+            CursorTeleport = KeybindLoader.RegisterKeybind(Mod, "CursorTeleport", "Z");
+			UseBrawlSuper = KeybindLoader.RegisterKeybind(Mod, "UseBrawlSuper", "X");
+			UseBrawlGadget = KeybindLoader.RegisterKeybind(Mod, "UseBrawlGadget", "C");
+			UseBrawlHyper = KeybindLoader.RegisterKeybind(Mod, "UseBrawlHyper", "V");
 		}
 
 		// Please see ExampleMod.cs' Unload() method for a detailed explanation of the unloading process.
@@ -22,6 +28,9 @@ namespace TLR
 			// Not required if your AssemblyLoadContext is unloading properly, but nulling out static fields can help you figure out what's keeping it loaded.
 			SwitchGravity = null;
             CursorTeleport = null;
+			UseBrawlSuper = null;
+			UseBrawlGadget = null;
+			UseBrawlHyper = null;
 		}
 	}
 }
