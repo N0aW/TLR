@@ -70,3 +70,6 @@
         - 🔵 Price reduced to 15 gold
     - Buffed the Spooky Story
         - 🟢 Increased max setries by 2 instead of 1
+#### v0.8.0.1 - Simplicity is Better
+- Removed the Info folder, as only changelog.md was inside of it.
+    - Crazy how files were removed one by one until only the changelog remained
