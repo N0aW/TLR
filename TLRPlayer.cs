@@ -9,6 +9,7 @@ using System;
 using System.Security.Policy;
 using Terraria.GameInput;
 using System.Collections;
+using TLR.Content.Core.Items.Accessories.Combat.Defensive;
 namespace TLR
 {
     public class TLRPlayer : ModPlayer
@@ -17,7 +18,7 @@ namespace TLR
 			return player.GetModPlayer<TLRPlayer>();
 		}
         public bool hallowGlove = false;
-        public bool spookyGlove = false;
+        public bool cyberScope = false;
         public int healPotionAdd = 0;
         public int manaPotionAdd = 0;
         public bool CanSwitchGravity = false;
@@ -25,22 +26,16 @@ namespace TLR
         public int points = 0;
         public float pointGainMult = 0f;
         public int equippedGadget = 0;
-        public int equippedStarPower = 0;
-        public int equippedHypercharge = 0;
-        public bool brawlSlots = true;
         public override void ResetEffects()
         {
             hallowGlove = false;
-            spookyGlove = false;
+            cyberScope = false;
             healPotionAdd = 0;
             manaPotionAdd = 0;
             CanSwitchGravity = false;
             CanTPCursor = false;
             pointGainMult = 0f;
             equippedGadget = 0;
-            equippedStarPower = 0;
-            equippedHypercharge = 0;
-            brawlSlots = true;
         }
         public override void LoadData(TagCompound tag) {
 			points = tag.GetInt("points");
@@ -51,13 +46,18 @@ namespace TLR
 		}
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-            if (TLRKeybinds.UseBrawlGadget.JustPressed) {
+            /*
+            if (TLRKeybinds.UseGadget.JustPressed) {
                 switch(equippedGadget) {
-                    case 1:
-                        Player.AddBuff(BuffID.Invisibility, 180);
+                    case 0:
                         break;
                 }
             }
+            */
+        }
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            if (cyberScope && modifiers.DamageType.CountsAsClass(DamageClass.Ranged)) { modifiers.CritDamage += 0.25f; }
         }
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
@@ -68,20 +68,7 @@ namespace TLR
                         target.life = 0;
                     }
                     else {
-                        target.AddBuff(BuffID.BrokenArmor, 5, false);
-                    }
-                }
-                if (spookyGlove && hit.Crit) {
-                    if ((target.life / target.lifeMax) <= 0.1) {
-                        Player.statLife += target.lifeMax / 5;
-                        target.life = 0;
-                    }
-                    else {
-                        Player.statLife += Player.statLifeMax2 / 20;
-                        target.AddBuff(BuffID.BrokenArmor, 5, false);
-                        target.AddBuff(BuffID.CursedInferno, 5, false);
-                        target.AddBuff(BuffID.Ichor, 5, false);
-                        target.AddBuff(BuffID.OnFire, 5, false);
+                        target.AddBuff(ModContent.BuffType<BrokenBlessing>(), 300, false);
                     }
                 }
             }
@@ -95,20 +82,7 @@ namespace TLR
                         target.life = 0;
                     }
                     else {
-                        target.AddBuff(BuffID.BrokenArmor, 5, false);
-                    }
-                }
-                if (spookyGlove && hit.Crit) {
-                    if ((target.life / target.lifeMax) <= 0.1) {
-                        Player.statLife += target.lifeMax / 5;
-                        target.life = 0;
-                    }
-                    else {
-                        Player.statLife += Player.statLifeMax2 / 20;
-                        target.AddBuff(BuffID.BrokenArmor, 5, false);
-                        target.AddBuff(BuffID.CursedInferno, 5, false);
-                        target.AddBuff(BuffID.Ichor, 5, false);
-                        target.AddBuff(BuffID.OnFire, 5, false);
+                        target.AddBuff(ModContent.BuffType<BrokenBlessing>(), 300, false);
                     }
                 }
             }

@@ -7,6 +7,7 @@ Items: {
 			'''
 			Increases view range for ranged weapons (Right-click to zoom out)
 			15% increased ranged damage and critical strike chance
+			25% increased ranged critical strike damage
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
 			Enemies are less likely to target you
@@ -31,21 +32,6 @@ Items: {
 			'''
 	}
 
-	KungFuShoes: {
-		DisplayName: Kung-Fu Shoes
-		Tooltip:
-			'''
-			Allows flight, super fast running and extra mobility on ice
-			16% increased movement speed
-			Provides the ability to walk on liquids
-			Grants immunity to fire blocks and 15 seconds of immunity to lava
-			Allows the ability to climb walls, dash, swim, auto-jump and slow fall
-			Increases jump speed
-			Gives a chance to dodge attacks
-			Negates fall damage and reduces damage from touching lava
-			'''
-	}
-
 	Manamaster: {
 		DisplayName: Manamaster 2000
 		Tooltip:
@@ -53,7 +39,7 @@ Items: {
 			15% increased magic damage
 			12% reduced mana cost
 			Automatically use mana potions when needed
-			Increases maximum mana by 20
+			Increases maximum mana by 40
 			Increases pickup range for mana stars
 			Causes stars to fall after taking damage
 			Stars restore mana when collected
@@ -63,21 +49,11 @@ Items: {
 			'''
 	}
 
-	PotionBundle: {
-		DisplayName: Potion Bundle
-		Tooltip:
-			'''
-			Increases healing from potions by 40
-			Increases mana gain from potions by 40
-			Grants permanent Ironskin, Regeneration and Swiftness
-			'''
-	}
-
 	SpookyStory: {
 		Tooltip:
 			'''
 			20% increased summon damage
-			Increases minion slots by 2 and sentry slots by 1
+			Increases minion and sentry slots by 2
 			Increased minion knockback
 			Grants permanent Bewitched and Strategist
 			'Berry loved to play in the snow. But so did the meat worm.'
@@ -97,8 +73,8 @@ Items: {
 	PalladiumShield: {
 		Tooltip:
 			'''
-			Grants immunity to knockback
-			Increases damage by 4%
+			Grants super fast running
+			When running above 30 mph and grounded, grants immunity to knockback and reduces damage by 30%
 			'''
 		DisplayName: Palladium Shield
 	}
@@ -106,13 +82,13 @@ Items: {
 	MechaBoots: {
 		Tooltip:
 			'''
-			Allows super fast running, extended flight and extra mobility on ice
-			16% increased movement speed
+			Allows super fast running, flight and extra mobility on ice
+			12% increased movement speed
 			Provides the ability to swim, walk on liquids and slow fall
+			Increases jump speed and allows auto-jump
 			Allows extended underwater breathing
 			Grants immunity to fire blocks and 10 seconds of lava
-			Reduces damage from lava greatly, reduces 4% of all damage taken
-			Hold UP to boost
+			Reduces damage from lava greatly and negates fall damage
 			'''
 		DisplayName: Mecha Boots
 	}
@@ -120,56 +96,27 @@ Items: {
 	Shroomts: {
 		Tooltip:
 			'''
-			Allows hyper fast running, extended flight and extra mobility on ice
-			33% increased movement speed
+			Allows hyper fast running, flight and extra mobility on ice
+			16% increased movement speed
 			Provides the ability to swim, walk on liquids and slow fall
+			Increases jump speed and allows auto-jump
 			Allows extended underwater breathing, dashing and climbing walls
 			Grants a chance to dodge attacks
-			Grants immunity to fire blocks and 15 seconds of lava
-			Reduces damage from lava greatly, reduces 6% of all damage taken
-			Hold DOWN to hover
+			Grants immunity to fire blocks and 10 seconds of lava
+			Reduces damage from lava greatly and negates fall damage
 			'''
 		DisplayName: Shroomts
 	}
 
-	StellarStreads: {
+	BalladShield: {
+		DisplayName: Ballad Shield
 		Tooltip:
 			'''
-			Allows ultra fast running, infinite flight and extra mobility on ice
-			66% increased movement speed
-			Provides the ability to swim, walk on liquids and slow fall
-			Allows extended underwater breathing, dashing and climbing walls
-			Grants a chance to dodge attacks
-			Grants immunity to fire blocks and lava
-			Reduces damage from lava greatly, reduces 8% of all damage taken
-			Hold UP to boost, DOWN to hover and G to switch gravity
+			Grants super fast running
+			When running above 30 mph and grounded, grants immunity to knockback and reduces damage by 30%
+			Allows the player to dash into the enemy
+			Double tap a direction
 			'''
-		DisplayName: Stellar Streads
-	}
-
-	DimensionalBlazers: {
-		Tooltip:
-			'''
-			Allows insanely fast running, extended flight and extra mobility on ice
-			100% increased movement speed
-			Provides the ability to swim, walk on liquids and slow fall
-			Allows extended underwater breathing, dashing and climbing walls
-			Grants a chance to dodge attacks
-			Grants immunity to fire blocks and lava
-			Reduces damage from lava greatly, reduces 10% of all damage taken
-			Hold UP to boost, DOWN to hover, G to swtich gravity and X to teleport to cursor
-			'''
-		DisplayName: Dimensional Blazers
-	}
-
-	CardboardBox: {
-		Tooltip: Makes you invisible for 3 seconds when used
-		DisplayName: Cardboard Box
-	}
-
-	DamageGear: {
-		DisplayName: Damage Gear
-		Tooltip: Increases damage by 15% when under 50% HP
 	}
 }
 
@@ -192,31 +139,12 @@ Configs: {
 				Enables items without proper sprites
 					0 - Items require an item sprite, and a on-player sprite when equipped 
 					1 - Items need item sprites, but do not require on-player sprites
-					2 - Items don't require neither of those sprites
+					2 - Items can use vanilla sprites with unclean color modifications
 				'''
 			Label: Spriteless
 		}
 
-		Headers: {
-			wipcontent: Developer Options
-			npcchanges: NPC Changes
-			gameplaychanges: Gameplay Changes
-			corechanges: Core Changes
-		}
-
-		WingedBoots: {
-			Label: Winged Boots
-			Tooltip:
-				'''
-				Modded boots can have wings in their recipe/use.
-				Disable to use boots and wings at the same time.
-				'''
-		}
-
-		RiskSlider: {
-			Tooltip: ""
-			Label: Risk Slider
-		}
+		Headers.wipcontent: Developer Options
 	}
 
 	TLRConfigClient: {
@@ -234,9 +162,7 @@ Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
 Keybinds: {
 	SwitchGravity.DisplayName: Switch Gravity
 	CursorTeleport.DisplayName: Teleport to Cursor
-	UseBrawlHyper.DisplayName: Use Hypercharge
-	UseBrawlGadget.DisplayName: Use Gadget
-	UseBrawlSuper.DisplayName: Use Super
+	UseGadget.DisplayName: Use Gadget
 }
 
-DamageClasses.RangedMagicHybrid.DisplayName: Ranged Magic Hybrid
+DamageClasses.RangedMagicHybrid.DisplayName: ranged + magic damage

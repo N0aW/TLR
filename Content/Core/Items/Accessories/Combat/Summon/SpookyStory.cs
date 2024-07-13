@@ -24,7 +24,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Summon
         {
             player.GetDamage(DamageClass.Summon) += 20f / 100f;
             player.maxMinions += 2;
-            player.maxTurrets += 1;
+            player.maxTurrets += 2;
             player.GetKnockback(DamageClass.Summon) += 2f;
 			player.AddBuff(BuffID.Bewitched, 1);
 			player.AddBuff(BuffID.WarTable, 1);

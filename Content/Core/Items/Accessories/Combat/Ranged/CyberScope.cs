@@ -14,7 +14,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
 		{
 			Item.width = 30;
 			Item.height = 30;
-			Item.value = Item.sellPrice(gold: 17, silver: 50);
+			Item.value = Item.sellPrice(gold: 15);
 			Item.rare = ItemRarityID.Yellow;
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
@@ -31,17 +31,18 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
 			player.GetCritChance(DamageClass.Ranged) += 15;
 			player.aggro -= 400;
 			player.AddBuff(BuffID.AmmoBox, 1);
+			player.GetModPlayer<TLRPlayer>().cyberScope = true;
         }
 
         public override void AddRecipes()
 		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.ReconScope);
-			recipe.AddIngredient(ItemID.MoltenQuiver);
-			recipe.AddIngredient(ItemID.AmmoBox);
-			recipe.AddIngredient(ItemID.SoulofSight, 15);
-			recipe.AddTile(TileID.TinkerersWorkbench);
-			recipe.Register();
+			CreateRecipe()
+				.AddIngredient(ItemID.ReconScope)
+				.AddIngredient(ItemID.MoltenQuiver)
+				.AddIngredient(ItemID.AmmoBox)
+				.AddIngredient(ItemID.AmmoBox)
+				.AddTile(TileID.TinkerersWorkbench)
+				.Register();
 		}
 	}
 }

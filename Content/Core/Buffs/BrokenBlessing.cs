@@ -15,7 +15,7 @@ namespace TLR.Content.Core.Buffs
 			BuffID.Sets.LongerExpertDebuff[Type] = false;
         }
 		public override void Update(Player player, ref int buffIndex) {
-			player.statDefense /= 2;
+			player.statDefense *= 0.5f;
 		}
 	}
 }

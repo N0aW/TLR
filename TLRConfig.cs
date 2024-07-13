@@ -22,14 +22,8 @@ namespace TLR
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
-        [Header("corechanges")]
-        public int RiskSlider;
-        [Header("gameplaychanges")]
-        [DefaultValue(true)]
-        [ReloadRequired]
-        public bool WingedBoots;
         [Header("wipcontent")]
-        [DefaultValue(1)]
+        [DefaultValue(2)]
         [Range(0, 2)]
         [ReloadRequired]
         public int Spriteless;

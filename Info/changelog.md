@@ -22,3 +22,51 @@
 - Added translations for the Dewinging Config
 ## v0.8 - New Beginnings
 - Removed the four old subclasses.
+- Removed the Winged Boots compat, for it is now always disabled.
+- New changelog format when buffing/nerfing items.
+    - 🟢 Green circles are for BUFFS.
+    - 🔵 Blue circles are for REWORKS. (Not necessarily good/bad)
+    - 🔴 Red circles are for NERFS.
+    - 🔧 Wrenches are for bugfixes.
+- Adds new items
+    - Ballad Shield
+        - Shield of Cthulhu + Palladium Shield
+- Removed the Potion Bundle
+- Removed futureupdates.md
+- Changed how item recipes are registered for compactness.
+- Changes to most items
+    - Reworked the Mecha Boots
+        - 🟢 Added the Amphibian Boots to the recipe
+        - 🟢 Now regates fall damage
+        - 🔵 Removed the Jetpack from the recipe
+        - 🔴 Movement speed increase went from 16% to 12%
+        - 🔴 No longer grants damage reduction
+        - 🔴 Now requires all mechs to be defeated to craft
+    - Reworked the Shroomts
+        - 🟢 Gets buffs from Amphibian Boots
+        - 🟢 Now regates fall damage
+        - 🔵 Removed the Hoverboard from the recipe
+        - 🔴 Movement speed increase went from 33% to 16%
+        - 🔴 No longer grants damage reduction
+        - 🔴 Only grants 10 seconds of lava immunity instead of 15
+        - 🔴 Now requires Shroomite Bars to craft
+    - Reworked the Palladium Shield
+        - 🟢 Grants super fast running
+        - 🟢 When running at >30 mph and are grounded, grants a 30% damage reduction
+        - 🔵 Is used in the Ballad Shield instead of the Obsidian Shield
+        - 🔴 Only grants knockback immunity when running over >30mph and grounded
+        - 🔴 No longer grants the 4% damage boost
+    - Removed the buffs from Cobalt Shield
+        - 🔴 No longer increases movement speed by 8%
+    - Reworked the Hallowed Gauntlet
+        - 🟢 Now causes Broken Blessing instead of Broken Armor.
+        - 🔵 Price reduced to 15 gold
+        - 🔧 The Broken Armor lasts for 5 seconds instead of 5 ticks.
+    - Buffed the Cyber Scope
+        - 🟢 Ranged Critical Strikes deal 25% more damage
+        - 🔵 Price reduced to 15 gold
+    - Buffed the Manamaster
+        - 🟢 Increases max mana by 40 instead of 20
+        - 🔵 Price reduced to 15 gold
+    - Buffed the Spooky Story
+        - 🟢 Increased max setries by 2 instead of 1

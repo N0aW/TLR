@@ -25,18 +25,5 @@ namespace TLR
             ItemID.Sets.ShimmerTransformToItem[ItemID.CobaltShield] = ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>();
             ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>()] = ItemID.CobaltShield;
         }
-        public override void UpdateAccessory(Item item, Player player, bool hideVisual)
-        {
-            if (item.type == ItemID.CobaltShield) {
-                player.noKnockback = true;
-                player.moveSpeed += 0.08f;
-            }
-        }
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
-        {
-            if (item.type == ItemID.CobaltShield) {
-                tooltips.Add(new(Mod, "Tooltip1", "Increases movement speed by 8%"));
-            }
-        }
     }
 }

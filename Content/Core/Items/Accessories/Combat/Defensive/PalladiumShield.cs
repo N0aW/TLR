@@ -24,8 +24,11 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Generic) += 0.04f;
-            player.noKnockback = true;
+			player.accRunSpeed = 6f;
+			if ((player.velocity.X >= 6 || player.velocity.X <= -6) && player.velocity.Y == 0) { // Around 30 mph.
+				player.endurance = 0.3f;
+				player.noKnockback = true;
+			}
         }
 	}
 }
