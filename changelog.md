@@ -73,3 +73,8 @@
 #### v0.8.0.1 - Simplicity is Better
 - Removed the Info folder, as only changelog.md was inside of it.
     - Crazy how files were removed one by one until only the changelog remained
+#### v0.8.0.2 - Palladium Changes
+- Buffed the Ballad Shield
+    - 🟢 Now gives total immunity to knockback
+- Fixes to the Palladium Shield
+    - 🔧 Can no longer be used in the Obsidian Shield

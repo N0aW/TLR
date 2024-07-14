@@ -74,7 +74,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants super fast running
-			When running above 30 mph and grounded, grants immunity to knockback and reduces damage by 30%
+			When running above 30 mph and grounded, grants immunity to knockback and reduces damage taken by 30%
 			'''
 		DisplayName: Palladium Shield
 	}
@@ -112,8 +112,8 @@ Items: {
 		DisplayName: Ballad Shield
 		Tooltip:
 			'''
-			Grants super fast running
-			When running above 30 mph and grounded, grants immunity to knockback and reduces damage by 30%
+			Grants super fast running and immunity to knockback
+			When running above 30 mph and grounded, reduces damage taken by 30%
 			Allows the player to dash into the enemy
 			Double tap a direction
 			'''
@@ -163,6 +163,7 @@ Keybinds: {
 	SwitchGravity.DisplayName: Switch Gravity
 	CursorTeleport.DisplayName: Teleport to Cursor
 	UseGadget.DisplayName: Use Gadget
+	UseBrawlGadget.DisplayName: Use Brawl Gadget
 }
 
 DamageClasses.RangedMagicHybrid.DisplayName: ranged + magic damage

@@ -10,6 +10,7 @@ using System.Security.Policy;
 using Terraria.GameInput;
 using System.Collections;
 using TLR.Content.Core.Items.Accessories.Combat.Defensive;
+using log4net.Repository.Hierarchy;
 namespace TLR
 {
     public class TLRPlayer : ModPlayer
@@ -46,14 +47,12 @@ namespace TLR
 		}
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
-            /*
             if (TLRKeybinds.UseGadget.JustPressed) {
                 switch(equippedGadget) {
-                    case 0:
+                    default:
                         break;
                 }
             }
-            */
         }
         public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
         {

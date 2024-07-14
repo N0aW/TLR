@@ -35,9 +35,9 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
         {
 			player.accRunSpeed = 6.25f;
             player.dashType = 2;
+            player.noKnockback = true;
             if ((player.velocity.X >= 6 || player.velocity.X <= -6) && player.velocity.Y == 0) {
 				player.endurance = 0.3f;
-				player.noKnockback = true;
 			}
         }
         public override void AddRecipes()

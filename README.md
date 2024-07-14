@@ -1,4 +1,5 @@
 # The Light Reveals (TLR)
+## Version: `v0.8.0.2`
 The Light Reveals adds basically all sorts of stuff I think of.
 
 Inspiration taken from Hotline Miami, Enter the Gungeon, ULTRAKILL & Brawl Stars.

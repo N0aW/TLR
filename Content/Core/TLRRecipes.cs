@@ -139,11 +139,6 @@ namespace TLR.Content.Core
 				Recipe mshimmer4 = Recipe.Create(BiomeCrystal.Type); mshimmer4.AddIngredient(ItemID.TeleportationPylonPurity); mshimmer4.AddTile<ShimmerBallTile>(); mshimmer4.Register();
 				Recipe mshimmer5 = Recipe.Create(ItemID.TeleportationPylonPurity); mshimmer5.AddIngredient(BiomeCrystal.Type); mshimmer5.AddTile<ShimmerBallTile>(); mshimmer5.Register();
 			}
-			Recipe integrate = Recipe.Create(ItemID.ObsidianShield);
-			integrate.AddIngredient(ModContent.ItemType<PalladiumShield>());
-			integrate.AddIngredient(ItemID.ObsidianSkull);
-			integrate.AddTile(TileID.TinkerersWorkbench);
-			integrate.Register();
 			Recipe recipe = Recipe.Create(ItemID.BoneWelder);
 			recipe.AddIngredient(ItemID.Bone, 100);
 			recipe.AddTile(TileID.DemonAltar);
