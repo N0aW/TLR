@@ -31,6 +31,10 @@ namespace TLR
         public bool MasochismEnabled;
         [DefaultValue(true)]
         public bool ItemReclassing;
+        [Header ("itemsettings")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool Gamebreakers;
         [Header("wipcontent")]
         [DefaultValue(2)]
         [Range(0, 2)]

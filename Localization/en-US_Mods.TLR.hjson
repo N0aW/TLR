@@ -118,6 +118,18 @@ Items: {
 			Double tap a direction
 			'''
 	}
+
+	BrokenHeart: {
+		Tooltip:
+			'''
+			Increases all damage by 20%
+			Gives a bonus 15% bonus to masochistic damage
+			Health is drained extremely quickly
+			Hit an enemy to restore 10 HP
+			'So Lame.'
+			'''
+		DisplayName: Broken Heart
+	}
 }
 
 AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
@@ -147,6 +159,7 @@ Configs: {
 		Headers: {
 			wipcontent: Developer Options
 			classsettings: classsettings Header
+			itemsettings: itemsettings Header
 		}
 
 		ItemReclassing: {
@@ -162,6 +175,11 @@ Configs: {
 		SadismEnabled: {
 			Tooltip: Enables the Sadism subclass, which benefits from hurting allies.
 			Label: Sadism Enabled
+		}
+
+		Gamebreakers: {
+			Label: Gamebreakers
+			Tooltip: Items with the power to break the game/world.
 		}
 	}
 
@@ -201,3 +219,5 @@ DamageClasses: {
 	MasochistMagic.DisplayName: masochist + magic damage
 	MasochistGeneric.DisplayName: masochist damage
 }
+
+Conditions.HoldHammer: Holding hammer

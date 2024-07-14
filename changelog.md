@@ -13,12 +13,12 @@
 - Added Mecha Boots and Shroomts
 - Cookies can now be displayed, gained and used
 - Style can now be displayed, gained and used
-### v0.7.1 - Config Galore
+### v0.7.1
 - Added the RISK SLIDER config
 - Added the option for style to not go to negatives
-### v0.7.2 - Dewinged
+### v0.7.2
 - Added the config option to remove the wings from your boots
-#### v0.7.2.1 - lang.dewinged
+#### v0.7.2.1
 - Added translations for the Dewinging Config
 ## v0.8 - New Beginnings
 - Removed the four old subclasses.
@@ -70,26 +70,34 @@
         - 🔵 Price reduced to 15 gold
     - Buffed the Spooky Story
         - 🟢 Increased max setries by 2 instead of 1
-#### v0.8.0.1 - Simplicity is Better
+#### v0.8.0.1
 - Removed the Info folder, as only changelog.md was inside of it.
     - Crazy how files were removed one by one until only the changelog remained
-#### v0.8.0.2 - Palladium Changes
+#### v0.8.0.2
 - Buffed the Ballad Shield
     - 🟢 Now gives total immunity to knockback
 - Fixes to the Palladium Shield
     - 🔧 Can no longer be used in the Obsidian Shield
-#### v0.8.0.3 - Be sighty, not mighty!
+#### v0.8.0.3
 - Fixes to the Mecha Boots
     - 🔧 Now requires 10 souls of sights instead of 10 extra souls of might
-#### v0.8.0.4 - Small Fixes
+#### v0.8.0.4
 - Fixes to the Mecha Boots
     - 🔧 The tooltip no longer mentions the ability to slow fall
 - Fixes to the Shroomts
     - 🔧 The tooltip no longer mentions the ability to slow fall
-## v0.8.1 - Inflicting Pain
+### v0.8.1
 - Added the Sadist and Masochist subclasses.
 - Changes to Flymeal
     - 🔵 Went into the Sadist + Melee class instead of Melee.
 - Buffs to Hallowed Gauntlet
     - 🟢 Broken Blessing lasts for 10 seconds if the hit was truly melee
     - 🟢 Enemies under 15% HP will be instasmited if the hit was truly melee
+### v0.8.2
+- Added the Broken Heart
+- Fixes to sadist/masochistic classes
+    - 🔧 The sadist class benefits from generic bonuses
+    - 🔧 The masochistic class benefits from generic bonuses
+- Added Gamebreakers.
+- Added the roadmap.
+- Update names are now given only to bigger updates.

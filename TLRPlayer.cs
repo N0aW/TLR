@@ -27,6 +27,7 @@ namespace TLR
         public int points = 0;
         public float pointGainMult = 0f;
         public int equippedGadget = 0;
+        public bool brokenHeart = false;
         public override void ResetEffects()
         {
             hallowGlove = false;
@@ -37,6 +38,7 @@ namespace TLR
             CanTPCursor = false;
             pointGainMult = 0f;
             equippedGadget = 0;
+            brokenHeart = false;
         }
         public override void LoadData(TagCompound tag) {
 			points = tag.GetInt("points");
@@ -60,6 +62,7 @@ namespace TLR
         }
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
+            if (brokenHeart) { Player.statLife += 10; }
             if (item.DamageType.CountsAsClass(DamageClass.Melee))
             {
                 if (hallowGlove && hit.Crit) {
@@ -74,6 +77,7 @@ namespace TLR
         }
         public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
+            if (brokenHeart) { Player.statLife += 10; }
             if (proj.DamageType.CountsAsClass(DamageClass.Melee))
             {
                 if (hallowGlove && hit.Crit) {
@@ -98,5 +102,9 @@ namespace TLR
                 healValue += manaPotionAdd;
             }
 		}
+        public override void PostUpdate()
+        {
+            if (brokenHeart) { Player.statLife -= 1; }
+        }
     }
 }

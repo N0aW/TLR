@@ -28,7 +28,9 @@ namespace TLR
         }
         public override void SetDefaults(Item entity)
         {
-            if (entity.type == ItemID.Flymeal) { entity.DamageType = ModContent.GetInstance<SadistMelee>(); }
+            if (entity.type == ItemID.Flymeal && ModContent.GetInstance<TLRConfigServer>().ItemReclassing) {
+                entity.DamageType = ModContent.GetInstance<SadistMelee>();
+            }
         }
     }
 }

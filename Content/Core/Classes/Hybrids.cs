@@ -8,12 +8,12 @@ namespace TLR.Content.Core.Classes
 	public class RangedMagicHybrid : DamageClass
 	{
 		public override StatInheritanceData GetModifierInheritance(DamageClass damageClass) {
-			if (damageClass == Ranged || damageClass == Magic) { return StatInheritanceData.Full; }
+			if (damageClass == Ranged || damageClass == Magic || damageClass == Generic) { return StatInheritanceData.Full; }
 			return StatInheritanceData.None;
 		}
 
 		public override bool GetEffectInheritance(DamageClass damageClass) {
-            if (damageClass == Ranged || damageClass == Magic) { return true;}
+            if (damageClass == Ranged || damageClass == Magic || damageClass == Generic) { return true;}
             return false;
         }
 		public override bool UseStandardCritCalcs => true;
