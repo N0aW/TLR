@@ -47,7 +47,7 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 				.AddIngredient(ItemID.AmphibianBoots)
 				.AddIngredient(ItemID.SoulofMight, 10)
 				.AddIngredient(ItemID.SoulofFright, 10)
-				.AddIngredient(ItemID.SoulofMight, 10)
+				.AddIngredient(ItemID.SoulofSight, 10)
 				.AddTile(TileID.TinkerersWorkbench)
 				.Register();
 		}

@@ -78,3 +78,6 @@
     - 🟢 Now gives total immunity to knockback
 - Fixes to the Palladium Shield
     - 🔧 Can no longer be used in the Obsidian Shield
+#### v0.8.0.3 - Be sighty, not mighty!
+- Fixes to the Mecha Boots
+    - 🔧 Now requires 10 souls of sights instead of 10 extra souls of might
