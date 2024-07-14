@@ -86,3 +86,10 @@
     - 🔧 The tooltip no longer mentions the ability to slow fall
 - Fixes to the Shroomts
     - 🔧 The tooltip no longer mentions the ability to slow fall
+## v0.8.1 - Inflicting Pain
+- Added the Sadist and Masochist subclasses.
+- Changes to Flymeal
+    - 🔵 Went into the Sadist + Melee class instead of Melee.
+- Buffs to Hallowed Gauntlet
+    - 🟢 Broken Blessing lasts for 10 seconds if the hit was truly melee
+    - 🟢 Enemies under 15% HP will be instasmited if the hit was truly melee

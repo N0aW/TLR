@@ -144,7 +144,25 @@ Configs: {
 			Label: Spriteless
 		}
 
-		Headers.wipcontent: Developer Options
+		Headers: {
+			wipcontent: Developer Options
+			classsettings: classsettings Header
+		}
+
+		ItemReclassing: {
+			Tooltip: Allows vanilla items to be reclassed into the two new subclasses.
+			Label: Item Reclassing
+		}
+
+		MasochismEnabled: {
+			Tooltip: Enables the Masochism subclass, which benefits from hurting oneself.
+			Label: Masochism Enabled
+		}
+
+		SadismEnabled: {
+			Tooltip: Enables the Sadism subclass, which benefits from hurting allies.
+			Label: Sadism Enabled
+		}
 	}
 
 	TLRConfigClient: {
@@ -166,4 +184,20 @@ Keybinds: {
 	UseBrawlGadget.DisplayName: Use Brawl Gadget
 }
 
-DamageClasses.RangedMagicHybrid.DisplayName: ranged + magic damage
+DamageClasses: {
+	RangedMagicHybrid.DisplayName: ranged + magic damage
+	SadistSummonMeleeSpeed.DisplayName: sadist + summon damage
+	SadistSummon.DisplayName: sadist + summon damage
+	SadistRanged.DisplayName: sadist + ranged damage
+	SadistMeleeNoSpeed.DisplayName: sadist + melee damage
+	SadistMelee.DisplayName: sadist + melee damage
+	SadistMagic.DisplayName: sadist + magic damage
+	SadistGeneric.DisplayName: sadist damage
+	MasochistSummonMeleeSpeed.DisplayName: masochist + summon damage
+	MasochistSummon.DisplayName: masochist + summon damage
+	MasochistRanged.DisplayName: masochist + ranged damage
+	MasochistMeleeNoSpeed.DisplayName: masochist + melee damage
+	MasochistMelee.DisplayName: masochist + melee damage
+	MasochistMagic.DisplayName: masochist + magic damage
+	MasochistGeneric.DisplayName: masochist damage
+}

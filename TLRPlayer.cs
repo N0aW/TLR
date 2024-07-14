@@ -63,11 +63,11 @@ namespace TLR
             if (item.DamageType.CountsAsClass(DamageClass.Melee))
             {
                 if (hallowGlove && hit.Crit) {
-                    if ((target.life / target.lifeMax) <= 0.1) {
+                    if ((target.life / target.lifeMax) <= 0.15) {
                         target.life = 0;
                     }
                     else {
-                        target.AddBuff(ModContent.BuffType<BrokenBlessing>(), 300, false);
+                        target.AddBuff(ModContent.BuffType<BrokenBlessing>(), 600, false);
                     }
                 }
             }

@@ -22,6 +22,15 @@ namespace TLR
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
+        [Header ("classsettings")]
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool SadismEnabled;
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool MasochismEnabled;
+        [DefaultValue(true)]
+        public bool ItemReclassing;
         [Header("wipcontent")]
         [DefaultValue(2)]
         [Range(0, 2)]

@@ -10,6 +10,7 @@ using Terraria.GameContent.UI.Chat;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Utilities;
+using TLR.Content.Core.Classes;
 using tModPorter;
 
 namespace TLR
@@ -24,6 +25,10 @@ namespace TLR
             ItemID.Sets.ShimmerTransformToItem[ItemID.CrystalBall] = ModContent.ItemType<Content.Core.Tiles.ShimmerBallItem>();
             ItemID.Sets.ShimmerTransformToItem[ItemID.CobaltShield] = ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>();
             ItemID.Sets.ShimmerTransformToItem[ModContent.ItemType<Content.Core.Items.Accessories.Combat.Defensive.PalladiumShield>()] = ItemID.CobaltShield;
+        }
+        public override void SetDefaults(Item entity)
+        {
+            if (entity.type == ItemID.Flymeal) { entity.DamageType = ModContent.GetInstance<SadistMelee>(); }
         }
     }
 }
