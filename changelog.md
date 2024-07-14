@@ -81,3 +81,8 @@
 #### v0.8.0.3 - Be sighty, not mighty!
 - Fixes to the Mecha Boots
     - 🔧 Now requires 10 souls of sights instead of 10 extra souls of might
+#### v0.8.0.4 - Small Fixes
+- Fixes to the Mecha Boots
+    - 🔧 The tooltip no longer mentions the ability to slow fall
+- Fixes to the Shroomts
+    - 🔧 The tooltip no longer mentions the ability to slow fall

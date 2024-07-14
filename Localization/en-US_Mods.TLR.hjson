@@ -84,7 +84,7 @@ Items: {
 			'''
 			Allows super fast running, flight and extra mobility on ice
 			12% increased movement speed
-			Provides the ability to swim, walk on liquids and slow fall
+			Provides the ability to swim and walk on liquids
 			Increases jump speed and allows auto-jump
 			Allows extended underwater breathing
 			Grants immunity to fire blocks and 10 seconds of lava
@@ -98,7 +98,7 @@ Items: {
 			'''
 			Allows hyper fast running, flight and extra mobility on ice
 			16% increased movement speed
-			Provides the ability to swim, walk on liquids and slow fall
+			Provides the ability to swim and walk on liquids
 			Increases jump speed and allows auto-jump
 			Allows extended underwater breathing, dashing and climbing walls
 			Grants a chance to dodge attacks
