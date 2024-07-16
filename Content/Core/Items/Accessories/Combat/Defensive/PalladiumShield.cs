@@ -4,13 +4,9 @@ using Terraria.ModLoader;
 
 namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
 { 
-	// This is a basic item template.
-	// Please see tModLoader's ExampleMod for every other example:
-	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
     [AutoloadEquip(EquipType.Shield)]
 	public class PalladiumShield : ModItem
 	{
-        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
         public override void SetDefaults()
 		{
 			Item.width = 30;

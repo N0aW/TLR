@@ -9,5 +9,3 @@ These games include:
     - Hotline Miami
 
 Adds Sadistic and Masochistic subclasses.
-
-Install "The Light Reveals +" mod for additional mod compats!

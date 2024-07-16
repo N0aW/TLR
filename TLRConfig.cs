@@ -41,8 +41,4 @@ namespace TLR
         [ReloadRequired]
         public int Spriteless;
     }
-    public class TLRConfigClient : ModConfig
-    {
-        public override ConfigScope Mode => ConfigScope.ClientSide;
-    }
 }

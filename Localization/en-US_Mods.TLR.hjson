@@ -182,25 +182,9 @@ Configs: {
 			Tooltip: Items with the power to break the game/world.
 		}
 	}
-
-	TLRConfigClient: {
-		DisplayName: TLR Config Client
-
-		ShimmerInfo: {
-			Label: Shimmer Info
-			Tooltip: Shows what modded items shimmer into
-		}
-	}
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
-
-Keybinds: {
-	SwitchGravity.DisplayName: Switch Gravity
-	CursorTeleport.DisplayName: Teleport to Cursor
-	UseGadget.DisplayName: Use Gadget
-	UseBrawlGadget.DisplayName: Use Brawl Gadget
-}
 
 DamageClasses: {
 	RangedMagicHybrid.DisplayName: ranged + magic damage

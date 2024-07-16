@@ -4,13 +4,9 @@ using Terraria.ModLoader;
 
 namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 { 
-	// This is a basic item template.
-	// Please see tModLoader's ExampleMod for every other example:
-	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
     [AutoloadEquip(EquipType.Shoes)]
 	public class MechaBoots : ModItem
 	{
-        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
         public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless >= 1;
         public override void SetDefaults()
 		{

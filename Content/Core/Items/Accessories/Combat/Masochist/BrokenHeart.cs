@@ -4,15 +4,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using TLR.Content.Core.Classes;
 
-namespace TLR.Content.Core.Items.Accessories.Combat.Masochism
+namespace TLR.Content.Core.Items.Accessories.Combat.Masochist
 { 
-	// This is a basic item template.
-	// Please see tModLoader's ExampleMod for every other example:
-	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
 	public class BrokenHeart : ModItem
 	{
-        // The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.TLR.hjson' file.
         public override void SetDefaults()
 		{
 			Item.width = 30;
@@ -27,6 +24,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Masochism
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetModPlayer<TLRPlayer>().brokenHeart = true;
+            player.GetDamage(DamageClass.Generic) += 0.2f;
+            player.GetDamage(ModContent.GetInstance<MasochistGeneric>()) += 0.15f;
         }
         public override void AddRecipes()
         {

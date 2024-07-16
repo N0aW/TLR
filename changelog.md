@@ -101,3 +101,13 @@
 - Added Gamebreakers.
 - Added the roadmap.
 - Update names are now given only to bigger updates.
+## v0.9 - Githupdate
+- Removed the roadmap
+- Marked that this is a BETA and more will be to come
+- Made the project public on Github
+- Removed obsolete stuff.
+- Fixes to Broken Heart
+    - 🔧 Now gives the damage buffs that were promised
+- Changes to Shroomts
+    - 🔵 Price reduced to 20 gold
+- Removed the leftover ExampleMod comments

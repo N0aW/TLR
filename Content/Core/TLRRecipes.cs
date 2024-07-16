@@ -8,11 +8,8 @@ using tModPorter.Rewriters;
 
 namespace TLR.Content.Core
 {
-	// This class contains thoughtful examples of item recipe creation.
-	// Recipes are explained in detail on the https://github.com/tModLoader/tModLoader/wiki/Basic-Recipes and https://github.com/tModLoader/tModLoader/wiki/Intermediate-Recipes wiki pages. Please visit the wiki to learn more about recipes if anything is unclear.
 	public class TLRRecipes : ModSystem
 	{
-		// A place to store the recipe group so we can easily use it later
 		public static RecipeGroup group;
 
 		public override void Unload() {
@@ -26,21 +23,8 @@ namespace TLR.Content.Core
 			});
 			RecipeGroup.RegisterGroup("TLR:T2DD2Accessory", group);
 		}
-		/*
-		public override void PostAddRecipes()
-        {
-            for (int i = 0; i < Recipe.numRecipes; i++)
-            {
-                Recipe recipe = Main.recipe[i];
-
-                if (recipe.HasResult(ItemID.ObsidianShield))
-                {
-                    recipe.AddIngredient(ModContent.ItemType<Items.Accessories.Combat.Defensive.PalladiumShield>());
-                }
-			}
-		}
-		*/
         public override void AddRecipes() {
+			// TO-DO: OPTIMIZE THIS BY USING Recipe.Create() .AddIngredient()!!!
 			// EXCLUDES: Unsafe Wall Recipes, DD2 Sentry Staff Conversion, Ancient Armor, Downgrading. They may be added later? Make a PR if you want them sooner.
 			Recipe shimmer0 = Recipe.Create(ModContent.ItemType<ShimmerBallItem>()); shimmer0.AddIngredient(ItemID.CrystalBall); shimmer0.AddTile<ShimmerBallTile>(); shimmer0.Register();
 			Recipe shimmer1 = Recipe.Create(ItemID.AegisCrystal); shimmer1.AddIngredient(ItemID.LifeCrystal); shimmer1.AddTile<ShimmerBallTile>(); shimmer1.Register();
