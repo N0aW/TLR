@@ -10,7 +10,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Defensive
 	public class BalladShield : ModItem
 	{
         public override string Texture => "TLR/Content/Core/Items/Accessories/Combat/Defensive/PalladiumShield";
-        public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless >= 2;
+        public override bool IsLoadingEnabled(Mod mod) => false;
         public override void SetDefaults()
 		{
             Item.damage = 40;

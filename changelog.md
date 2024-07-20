@@ -111,3 +111,19 @@
 - Changes to Shroomts
     - 🔵 Price reduced to 20 gold
 - Removed the leftover ExampleMod comments
+### v0.10 - Crashed Update
+- Added Stellar Streads
+- Added items with the ability to purposefully crash your game (Can be toggled)
+- Removed Sadistic and Masochistic subclasses.
+- Items will no longer have their file name changed so you cant lose items
+- Changes to Hallowed Gauntlet
+    - 🟢 Inflicts Frostbite instead of On Fire!
+    - 🟢 No longer requires 10 hallowed bars
+    - 🟢 Grants 10 defense instead of 8
+    - 🔵 Name changed to Frosted Gauntlet
+    - 🔵 Sprite changed to match the name
+    - 🔴 Now requires a Frozen Turtle Shell
+    - 🔴 Melee damage & speed increase went from 15% to 12%
+- Removed the Spriteless config.
+- Removed the Broken Heart.
+- Ballad Shield is temporarily removed until I make a sprite for it.

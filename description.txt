@@ -1,11 +1,3 @@
 The Light Reveals is an mod that adds all sorts of stuff I think of.
 
-I take inspiration from different games.
-
-These games include:
-    - ULTRAKILL
-    - Enter the Gungeon
-    - Brawl Stars
-    - Hotline Miami
-
-Adds Sadistic and Masochistic subclasses.
+Inspired off Secrets of the Shadows.

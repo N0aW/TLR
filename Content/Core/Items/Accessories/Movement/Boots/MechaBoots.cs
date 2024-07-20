@@ -7,7 +7,6 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
     [AutoloadEquip(EquipType.Shoes)]
 	public class MechaBoots : ModItem
 	{
-        public override bool IsLoadingEnabled(Mod mod) => ModContent.GetInstance<TLRConfigServer>().Spriteless >= 1;
         public override void SetDefaults()
 		{
 			Item.width = 32;

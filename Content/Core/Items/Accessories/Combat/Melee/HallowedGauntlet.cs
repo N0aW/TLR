@@ -17,14 +17,13 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
 			Item.maxStack = 1;
-            Item.defense = 8;
+            Item.defense = 10;
 		}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.aggro += 400;
-            player.magmaStone = true;
-			player.GetDamage(DamageClass.Melee) += 0.15f;
-			player.GetAttackSpeed(DamageClass.Melee) += 0.15f;
+			player.GetDamage(DamageClass.Melee) += 0.12f;
+			player.GetAttackSpeed(DamageClass.Melee) += 0.12f;
 			player.autoReuseGlove = true;
             player.kbGlove = true;
             player.yoyoGlove = true;
@@ -40,7 +39,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 				.AddIngredient(ItemID.YoyoBag)
 				.AddIngredient(ItemID.FleshKnuckles)
 				.AddIngredient(ItemID.SharpeningStation)
-				.AddIngredient(ItemID.HallowedBar, 18)
+				.AddIngredient(ItemID.FrozenTurtleShell)
 				.AddTile(TileID.TinkerersWorkbench)
 				.AddTile(TileID.MythrilAnvil)
 				.Register();
@@ -50,7 +49,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 				.AddIngredient(ItemID.AvengerEmblem)
 				.AddIngredient(ItemID.MagmaStone)
 				.AddIngredient(ItemID.SharpeningStation)
-				.AddIngredient(ItemID.HallowedBar, 18)
+				.AddIngredient(ItemID.FrozenTurtleShell)
 				.AddTile(TileID.TinkerersWorkbench)
 				.AddTile(TileID.MythrilAnvil)
 				.Register();

@@ -7,7 +7,6 @@ Items: {
 			'''
 			Increases view range for ranged weapons (Right-click to zoom out)
 			15% increased ranged damage and critical strike chance
-			25% increased ranged critical strike damage
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
 			Enemies are less likely to target you
@@ -16,17 +15,15 @@ Items: {
 	}
 
 	HallowedGauntlet: {
-		DisplayName: Hallowed Gauntlet
+		DisplayName: Frosted Gauntlet
 		Tooltip:
 			'''
-			Increases melee knockback and melee attacks inflict fire damage
-			15% increased melee damage and speed
+			Increases melee knockback and melee attacks inflict Frostbite
+			12% increased melee damage and speed
 			Enabled auto-swing for melee weapons
 			Increases size for melee weapons
 			Gives the user master yoyo skills
-			Hitting an enemy with a melee critical strike smites them
-			Smitten enemies get instantly defeated when under 10% HP
-			Otherwise the smitten enemys defense is halved for 5 seconds
+			Hitting an enemy with a melee critical strike freezes them
 			Enemies are more likely to target you
 			Grants permanent Sharpened
 			'''
@@ -108,6 +105,21 @@ Items: {
 		DisplayName: Shroomts
 	}
 
+	StellarStreads: {
+		Tooltip:
+			'''
+			Allows ultra fast running, infinite flight and extra mobility on ice
+			20% increased movement speed
+			Provides the ability to swim and walk on liquids
+			Increases jump speed and allows auto-jump
+			Allows extended underwater breathing, dashing and climbing walls
+			Grants a chance to dodge attacks
+			Grants total immunity to fire blocks and lava
+			Reduces damage from lava greatly and negates fall damage
+			'''
+		DisplayName: Stellar Streads
+	}
+
 	BalladShield: {
 		DisplayName: Ballad Shield
 		Tooltip:
@@ -158,50 +170,38 @@ Configs: {
 
 		Headers: {
 			wipcontent: Developer Options
-			classsettings: classsettings Header
 			itemsettings: itemsettings Header
-		}
-
-		ItemReclassing: {
-			Tooltip: Allows vanilla items to be reclassed into the two new subclasses.
-			Label: Item Reclassing
-		}
-
-		MasochismEnabled: {
-			Tooltip: Enables the Masochism subclass, which benefits from hurting oneself.
-			Label: Masochism Enabled
-		}
-
-		SadismEnabled: {
-			Tooltip: Enables the Sadism subclass, which benefits from hurting allies.
-			Label: Sadism Enabled
 		}
 
 		Gamebreakers: {
 			Label: Gamebreakers
 			Tooltip: Items with the power to break the game/world.
 		}
+
+		Gamecrashers: {
+			Label: Gamecrashers
+			Tooltip: ""
+		}
 	}
 }
 
 Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
+Conditions.HoldHammer: Holding hammer
 
 DamageClasses: {
-	RangedMagicHybrid.DisplayName: ranged + magic damage
-	SadistSummonMeleeSpeed.DisplayName: sadist + summon damage
-	SadistSummon.DisplayName: sadist + summon damage
-	SadistRanged.DisplayName: sadist + ranged damage
-	SadistMeleeNoSpeed.DisplayName: sadist + melee damage
-	SadistMelee.DisplayName: sadist + melee damage
-	SadistMagic.DisplayName: sadist + magic damage
-	SadistGeneric.DisplayName: sadist damage
-	MasochistSummonMeleeSpeed.DisplayName: masochist + summon damage
-	MasochistSummon.DisplayName: masochist + summon damage
-	MasochistRanged.DisplayName: masochist + ranged damage
-	MasochistMeleeNoSpeed.DisplayName: masochist + melee damage
-	MasochistMelee.DisplayName: masochist + melee damage
-	MasochistMagic.DisplayName: masochist + magic damage
-	MasochistGeneric.DisplayName: masochist damage
+	MasochistGeneric.DisplayName: Masochist Generic
+	MasochistMagic.DisplayName: Masochist Magic
+	MasochistMelee.DisplayName: Masochist Melee
+	MasochistMeleeNoSpeed.DisplayName: Masochist Melee No Speed
+	MasochistRanged.DisplayName: Masochist Ranged
+	MasochistSummon.DisplayName: Masochist Summon
+	MasochistSummonMeleeSpeed.DisplayName: Masochist Summon Melee Speed
+	RangedMagicHybrid.DisplayName: Ranged Magic Hybrid
+	SadistGeneric.DisplayName: Sadist Generic
+	SadistMagic.DisplayName: Sadist Magic
+	SadistMelee.DisplayName: Sadist Melee
+	SadistMeleeNoSpeed.DisplayName: Sadist Melee No Speed
+	SadistRanged.DisplayName: Sadist Ranged
+	SadistSummon.DisplayName: Sadist Summon
+	SadistSummonMeleeSpeed.DisplayName: Sadist Summon Melee Speed
 }
-
-Conditions.HoldHammer: Holding hammer
