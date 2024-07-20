@@ -111,7 +111,7 @@
 - Changes to Shroomts
     - 🔵 Price reduced to 20 gold
 - Removed the leftover ExampleMod comments
-### v0.10 - Crashed Update
+## v0.10 - Crashed Update
 - Added Stellar Streads
 - Added items with the ability to purposefully crash your game (Can be toggled)
 - Removed Sadistic and Masochistic subclasses.
