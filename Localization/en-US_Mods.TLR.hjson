@@ -187,19 +187,16 @@ Configs: {
 			Label: Spriteless
 		}
 
-		Headers: {
-			wipcontent: Developer Options
-			itemsettings: itemsettings Header
+		Headers.overhauls: Vanilla Overhauls
+
+		UselessOverhauls: {
+			Label: Useless Overhauls
+			Tooltip: Overhauls useless items (ec. Pearlwood Items) to be more useful.
 		}
 
-		Gamebreakers: {
-			Label: Gamebreakers
-			Tooltip: Items with the power to break the game/world.
-		}
-
-		Gamecrashers: {
-			Label: Gamecrashers
-			Tooltip: ""
+		ToolOverhauls: {
+			Tooltip: Overhauls tools to be actually viable weapons, (ec. hammers deal more damage with less speed.)
+			Label: Tool Overhauls
 		}
 	}
 }

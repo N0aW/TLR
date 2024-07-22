@@ -25,7 +25,7 @@ namespace TLR
         [Header ("overhauls")]
         [DefaultValue(true)]
         [ReloadRequired]
-        public bool PearlwoodOverhauls;
+        public bool ToolOverhauls;
         [DefaultValue(true)]
         [ReloadRequired]
         public bool UselessOverhauls;
