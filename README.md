@@ -1,5 +1,5 @@
 # The Light Reveals (TLR)
-## Version: `v0.10`
+## Version: `v0.10,1-beta.1`
 The Light Reveals adds basically all sorts of stuff I think of.
 
 The mod serves to add more combinations for existing accessories (etc. Yoyo Bag), new concepts and QoL features!

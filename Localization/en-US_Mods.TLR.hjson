@@ -142,6 +142,20 @@ Items: {
 			'''
 		DisplayName: Broken Heart
 	}
+
+	GoldenOneItem: {
+		Tooltip:
+			'''
+			When equipped or near the tile, grants the following buffs:
+			Increases defense by 1 and DR by 1%
+			Increases damage, crit chance and attack speed by 1%, knockback by 1
+			Increases minion and sentry slots by 1
+			Increases luck by 0.01, movement speed by 1%
+			Increases max life, max mana, life regen and mana regen by 1
+			Reduces mana cost by 1%
+			'''
+		DisplayName: The Big One
+	}
 }
 
 AddRecipeGroups.T2DD2Accessory: " Tier 2 DD2 Accessory"
@@ -150,6 +164,11 @@ Buffs: {
 	BrokenBlessing: {
 		Description: Your defense is halved
 		DisplayName: Broken Blessing
+	}
+
+	TheBigOne: {
+		Description: Most stats increased by 1 or 1%
+		DisplayName: The Big One
 	}
 }
 
@@ -185,7 +204,11 @@ Configs: {
 	}
 }
 
-Tiles.ShimmerBallTile.MapEntry: Shimmer Ball
+Tiles: {
+	ShimmerBallTile.MapEntry: Shimmer Ball
+	GoldenOneTile.MapEntry: The Big One
+}
+
 Conditions.HoldHammer: Holding hammer
 
 DamageClasses: {

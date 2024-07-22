@@ -127,3 +127,7 @@
 - Removed the Spriteless config.
 - Removed the Broken Heart.
 - Ballad Shield is temporarily removed until I make a sprite for it.
+### v0.10.1
+- Added The Big One!
+- Changes to Shimmer Ball
+    - 🟢 Can be shimmered back to a Crystal Ball.

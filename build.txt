@@ -1,4 +1,4 @@
 displayName = [c/32ff82:The Light Reveals] (BETA)
 author = N0aW
-version = 0.10
+version = 0.10.1
 weakReferences = BInfoAcc@1.2.2.4

@@ -2,6 +2,7 @@
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using TLR.Content.Core.Buffs;
 using TLR.Content.Core.Items.Accessories.Combat.Defensive;
 using TLR.Content.Core.Tiles;
 using tModPorter.Rewriters;
@@ -26,7 +27,10 @@ namespace TLR.Content.Core
         public override void AddRecipes() {
 			// TO-DO: OPTIMIZE THIS BY USING Recipe.Create() .AddIngredient()!!!
 			// EXCLUDES: Unsafe Wall Recipes, DD2 Sentry Staff Conversion, Ancient Armor, Downgrading. They may be added later? Make a PR if you want them sooner.
-			Recipe shimmer0 = Recipe.Create(ModContent.ItemType<ShimmerBallItem>()); shimmer0.AddIngredient(ItemID.CrystalBall); shimmer0.AddTile<ShimmerBallTile>(); shimmer0.Register();
+			Recipe.Create(ModContent.ItemType<ShimmerBallItem>()) .AddIngredient(ItemID.CrystalBall) .AddTile(ModContent.TileType<ShimmerBallTile>()) .Register();
+			Recipe.Create(ItemID.CrystalBall) .AddIngredient(ModContent.ItemType<ShimmerBallItem>()) .AddTile(ModContent.TileType<ShimmerBallTile>()) .Register();
+			Recipe.Create(ModContent.ItemType<GoldenOneItem>()) .AddIngredient(ItemID.AlphabetStatue1) .AddTile(ModContent.TileType<ShimmerBallTile>()) .Register();
+			Recipe.Create(ItemID.AlphabetStatue1) .AddIngredient(ModContent.ItemType<GoldenOneItem>()) .AddTile(ModContent.TileType<ShimmerBallTile>()) .Register();
 			Recipe shimmer1 = Recipe.Create(ItemID.AegisCrystal); shimmer1.AddIngredient(ItemID.LifeCrystal); shimmer1.AddTile<ShimmerBallTile>(); shimmer1.Register();
 			Recipe shimmer2 = Recipe.Create(ItemID.ArcaneCrystal); shimmer2.AddIngredient(ItemID.ManaCrystal); shimmer2.AddTile<ShimmerBallTile>(); shimmer2.Register();
 			Recipe shimmer3 = Recipe.Create(ItemID.AegisFruit); shimmer3.AddIngredient(ItemID.LifeFruit); shimmer3.AddTile<ShimmerBallTile>(); shimmer3.Register();
