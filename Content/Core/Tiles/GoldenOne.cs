@@ -40,7 +40,7 @@ namespace TLR.Content.Core.Tiles
 		}
         public override void NearbyEffects(int i, int j, bool closer)
         {
-            Main.LocalPlayer.AddBuff(ModContent.BuffType<TheBigOne>(), 1);
+            Main.LocalPlayer.AddBuff(ModContent.BuffType<TheBigOne>(), 60);
         }
         public override void NumDust(int i, int j, bool fail, ref int num) {
 			num = fail ? 1 : 3;
