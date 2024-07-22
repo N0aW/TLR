@@ -1,10 +1,12 @@
 # The Light Reveals (TLR)
-## Version: `v0.10,1-beta.2`
+## Version: `v0.11-beta.1`
 The Light Reveals adds basically all sorts of stuff I think of.
 
 The mod serves to add more combinations for existing accessories (etc. Yoyo Bag), new concepts and QoL features!
 
 This is a beta version with unfinished sprites, lacking content etc.
+
+Vanilla polishing is also a part with things like tool reworks, pearlwood reworks and NPC weapon reworks.
 
 Inspiration taken from Secrets of the Shadows.
 ### Supported Mods:

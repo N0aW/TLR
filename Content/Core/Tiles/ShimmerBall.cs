@@ -11,7 +11,7 @@ namespace TLR.Content.Core.Tiles
 	{
 		public override void SetDefaults() {
 			Item.DefaultToPlaceableTile(ModContent.TileType<ShimmerBallTile>());
-            Item.SetShopValues(Terraria.Enums.ItemRarityColor.Pink5, Item.sellPrice(0, 2, 0, 0));
+            Item.SetShopValues(Terraria.Enums.ItemRarityColor.LightPurple6, Item.sellPrice(0, 2, 0, 0));
             Item.ResearchUnlockCount = 1;
 		}
     }

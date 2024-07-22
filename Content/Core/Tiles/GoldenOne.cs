@@ -12,7 +12,7 @@ namespace TLR.Content.Core.Tiles
 	{
 		public override void SetDefaults() {
 			Item.DefaultToPlaceableTile(ModContent.TileType<GoldenOneTile>());
-            Item.SetShopValues(Terraria.Enums.ItemRarityColor.Pink5, Item.sellPrice(0, 0, 0, 60));
+            Item.SetShopValues(Terraria.Enums.ItemRarityColor.LightPurple6, Item.sellPrice(0, 0, 0, 60));
             Item.ResearchUnlockCount = 1;
             Item.accessory = true;
             Item.maxStack = 1;

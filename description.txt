@@ -1,3 +1,7 @@
 The Light Reveals is an mod that adds all sorts of stuff I think of.
 
 Inspired off Secrets of the Shadows.
+
+I try to make new stuff, like a tile and an accessory in the same item.
+
+I also polish vanilla, with things as reworks of Pearlwood and tools, and extended recipe trees.

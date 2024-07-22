@@ -22,12 +22,12 @@ namespace TLR
     public class TLRConfigServer : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
-        [Header ("itemsettings")]
+        [Header ("overhauls")]
         [DefaultValue(true)]
         [ReloadRequired]
-        public bool Gamebreakers;
-        [DefaultValue(false)]
+        public bool PearlwoodOverhauls;
+        [DefaultValue(true)]
         [ReloadRequired]
-        public bool Gamecrashers;
+        public bool UselessOverhauls;
     }
 }
