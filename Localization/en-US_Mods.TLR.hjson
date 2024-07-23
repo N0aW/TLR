@@ -193,11 +193,6 @@ Configs: {
 			Label: Useless Overhauls
 			Tooltip: Overhauls useless items (ec. Pearlwood Items) to be more useful.
 		}
-
-		ToolOverhauls: {
-			Tooltip: Overhauls tools to be actually viable weapons, (ec. hammers deal more damage with less speed.)
-			Label: Tool Overhauls
-		}
 	}
 }
 
@@ -207,21 +202,3 @@ Tiles: {
 }
 
 Conditions.HoldHammer: Holding hammer
-
-DamageClasses: {
-	MasochistGeneric.DisplayName: Masochist Generic
-	MasochistMagic.DisplayName: Masochist Magic
-	MasochistMelee.DisplayName: Masochist Melee
-	MasochistMeleeNoSpeed.DisplayName: Masochist Melee No Speed
-	MasochistRanged.DisplayName: Masochist Ranged
-	MasochistSummon.DisplayName: Masochist Summon
-	MasochistSummonMeleeSpeed.DisplayName: Masochist Summon Melee Speed
-	RangedMagicHybrid.DisplayName: Ranged Magic Hybrid
-	SadistGeneric.DisplayName: Sadist Generic
-	SadistMagic.DisplayName: Sadist Magic
-	SadistMelee.DisplayName: Sadist Melee
-	SadistMeleeNoSpeed.DisplayName: Sadist Melee No Speed
-	SadistRanged.DisplayName: Sadist Ranged
-	SadistSummon.DisplayName: Sadist Summon
-	SadistSummonMeleeSpeed.DisplayName: Sadist Summon Melee Speed
-}

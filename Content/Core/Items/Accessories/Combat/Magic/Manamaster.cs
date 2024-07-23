@@ -19,10 +19,10 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Magic
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.manaFlower = true;
-            player.manaCost -= 0.12f;
+            player.manaCost -= 0.08f;
             player.aggro -= 400;
 			player.statManaMax2 += 40;
-            player.GetDamage(DamageClass.Magic) += 0.15f;
+            player.GetDamage(DamageClass.Magic) += 0.12f;
             player.magicCuffs = true;
             player.manaMagnet = true;
             player.starCloakItem = Item;

@@ -11,7 +11,7 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Summon
 			Item.width = 36;
 			Item.height = 36;
 			Item.value = Item.sellPrice(gold: 15);
-			Item.rare = ItemRarityID.Cyan;
+			Item.rare = ItemRarityID.Yellow;
 			Item.accessory = true;
 			Item.ResearchUnlockCount = 1;
 			Item.maxStack = 1;

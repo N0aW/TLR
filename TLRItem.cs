@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using TLR.Content.Core.Items.Accessories.Combat.Defensive;

@@ -23,8 +23,8 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
 			if (player.HeldItem.DamageType.CountsAsClass(DamageClass.Ranged)) {
 				player.scope = true;
 			}
-			player.GetDamage(DamageClass.Ranged) += 0.15f;
-			player.GetCritChance(DamageClass.Ranged) += 15;
+			player.GetDamage(DamageClass.Ranged) += 0.10f;
+			player.GetCritChance(DamageClass.Ranged) += 10;
 			player.aggro -= 400;
 			player.AddBuff(BuffID.AmmoBox, 1);
 			player.GetModPlayer<TLRPlayer>().cyberScope = true;
