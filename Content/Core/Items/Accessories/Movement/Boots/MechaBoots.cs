@@ -40,9 +40,8 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 			CreateRecipe()
 				.AddIngredient(ItemID.TerrasparkBoots)
 				.AddIngredient(ItemID.AmphibianBoots)
-				.AddIngredient(ItemID.SoulofMight, 10)
-				.AddIngredient(ItemID.SoulofFright, 10)
-				.AddIngredient(ItemID.SoulofSight, 10)
+				.AddIngredient(ItemID.Cog, 25)
+				.AddIngredient(ItemID.SoulofFlight, 10)
 				.AddTile(TileID.TinkerersWorkbench)
 				.Register();
 		}
