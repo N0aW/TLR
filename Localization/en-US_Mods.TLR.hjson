@@ -85,7 +85,8 @@ Items: {
 			Increases jump speed and allows auto-jump
 			Allows extended underwater breathing
 			Grants immunity to fire blocks and 10 seconds of lava
-			Reduces damage from lava greatly and negates fall damage
+			Grants immunity to fall damage and knockback
+			Reduces damage from lava greatly
 			'''
 		DisplayName: Mecha Boots
 	}
@@ -97,10 +98,10 @@ Items: {
 			16% increased movement speed
 			Provides the ability to swim and walk on liquids
 			Increases jump speed and allows auto-jump
-			Allows extended underwater breathing, dashing and climbing walls
-			Grants a chance to dodge attacks
+			Allows extended underwater breathing and dashing
 			Grants immunity to fire blocks and 10 seconds of lava
-			Reduces damage from lava greatly and negates fall damage
+			Grants immunity to fall damage and knockback
+			Reduces damage from lava greatly
 			'''
 		DisplayName: Shroomts
 	}
@@ -112,10 +113,9 @@ Items: {
 			20% increased movement speed
 			Provides the ability to swim and walk on liquids
 			Increases jump speed and allows auto-jump
-			Allows extended underwater breathing, dashing and climbing walls
-			Grants a chance to dodge attacks
+			Allows extended underwater breathing and dashing
 			Grants total immunity to fire blocks and lava
-			Reduces damage from lava greatly and negates fall damage
+			Grants immunity to fall damage and knockback
 			'''
 		DisplayName: Stellar Streads
 	}
@@ -202,3 +202,4 @@ Tiles: {
 }
 
 Conditions.HoldHammer: Holding hammer
+DamageClasses.CursorGeneric.DisplayName: cursor damage

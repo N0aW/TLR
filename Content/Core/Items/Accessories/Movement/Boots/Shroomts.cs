@@ -31,18 +31,17 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 			player.accDivingHelm = true;
 			player.arcticDivingGear = true;
             player.dashType = 1;
-            player.spikedBoots = 2;
-            player.blackBelt = true;
 			player.frogLegJumpBoost = true;
 			player.noFallDmg = true;
 			player.autoJump = true;
+			player.noKnockback = true;
         }
 
         public override void AddRecipes()
 		{
 			CreateRecipe()
 				.AddIngredient(ModContent.ItemType<MechaBoots>())
-				.AddIngredient(ItemID.MasterNinjaGear)
+				.AddIngredient(ItemID.Tabi)
 				.AddIngredient(ItemID.ShroomiteBar, 18)
 				.AddTile(TileID.TinkerersWorkbench)
 				.Register();

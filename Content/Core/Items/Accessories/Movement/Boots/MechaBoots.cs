@@ -33,6 +33,7 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 			player.frogLegJumpBoost = true;
 			player.noFallDmg = true;
 			player.autoJump = true;
+			player.noKnockback = true;
         }
 
         public override void AddRecipes()
@@ -40,7 +41,16 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 			CreateRecipe()
 				.AddIngredient(ItemID.TerrasparkBoots)
 				.AddIngredient(ItemID.AmphibianBoots)
-				.AddIngredient(ItemID.Cog, 25)
+				.AddIngredient(ItemID.AdamantiteBar, 18)
+				.AddIngredient(ItemID.Cog, 75)
+				.AddIngredient(ItemID.SoulofFlight, 10)
+				.AddTile(TileID.TinkerersWorkbench)
+				.Register();
+			CreateRecipe()
+				.AddIngredient(ItemID.TerrasparkBoots)
+				.AddIngredient(ItemID.AmphibianBoots)
+				.AddIngredient(ItemID.TitaniumBar, 18)
+				.AddIngredient(ItemID.Cog, 75)
 				.AddIngredient(ItemID.SoulofFlight, 10)
 				.AddTile(TileID.TinkerersWorkbench)
 				.Register();

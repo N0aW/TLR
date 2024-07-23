@@ -34,13 +34,12 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 			player.accFlipper = true;
 			player.accDivingHelm = true;
 			player.arcticDivingGear = true;
-            player.dashType = 1;
-            player.spikedBoots = 2;
-            player.blackBelt = true;
+			player.dashType = 1;
 			player.frogLegJumpBoost = true;
 			player.noFallDmg = true;
 			player.autoJump = true;
             player.empressBrooch = true;
+			player.noKnockback = true;
         }
 
         public override void AddRecipes()
