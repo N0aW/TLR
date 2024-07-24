@@ -24,7 +24,8 @@ namespace TLR
         public override ConfigScope Mode => ConfigScope.ServerSide;
         [Header ("overhauls")]
         [DefaultValue(true)]
-        [ReloadRequired]
         public bool UselessOverhauls;
+        [DefaultValue(true)]
+        public bool LargeGemBuffs;
     }
 }
