@@ -20,7 +20,10 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Ranged
         {
             player.hasMoltenQuiver = true;
 			player.magicQuiver = true;
-			if (player.HeldItem.DamageType.CountsAsClass(DamageClass.Ranged)) {
+			if (player.HeldItem.DamageType.CountsAsClass(DamageClass.Ranged) && ModContent.GetInstance<TLRConfigClient>().AllScope) {
+				player.scope = true;
+			}
+			if (player.HeldItem.DamageType.CountsAsClass(DamageClass.Ranged) && player.HeldItem.useAmmo == AmmoID.Bullet && !ModContent.GetInstance<TLRConfigClient>().AllScope) {
 				player.scope = true;
 			}
 			player.GetDamage(DamageClass.Ranged) += 0.10f;

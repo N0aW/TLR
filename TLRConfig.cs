@@ -16,6 +16,7 @@ using Terraria.ModLoader.Config;
 using Terraria.ModLoader.Config.UI;
 using Terraria.UI;
 using tModPorter;
+using XPT.Core.Audio.MP3Sharp.Decoding;
 
 namespace TLR
 {
@@ -27,5 +28,11 @@ namespace TLR
         public bool UselessOverhauls;
         [DefaultValue(true)]
         public bool LargeGemBuffs;
+    }
+    public class TLRConfigClient : ModConfig
+    {
+        public override ConfigScope Mode => ConfigScope.ClientSide;
+        [Header ("accessories")]
+        public bool AllScope;
     }
 }

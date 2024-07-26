@@ -6,7 +6,7 @@ Items: {
 		Tooltip:
 			'''
 			Increases view range for ranged weapons (Right-click to zoom out)
-			15% increased ranged damage and critical strike chance
+			10% increased ranged damage and critical strike chance
 			Greatly increased arrow speed
 			Wooden arrows are lit ablaze
 			Enemies are less likely to target you
@@ -192,6 +192,25 @@ Configs: {
 		UselessOverhauls: {
 			Label: Useless Overhauls
 			Tooltip: Overhauls useless items (ec. Pearlwood Items) to be more useful.
+		}
+
+		LargeGemBuffs: {
+			Label: Large Gem Buffs
+			Tooltip: "Having large gems in your inventory"
+		}
+	}
+
+	TLRConfigClient: {
+		DisplayName: TLR Config Client
+		Headers.accessories: Accessory Use Changes
+
+		AllScope: {
+			Label: Recon Scope with all Ranged weapons
+			Tooltip:
+				'''
+				Recon Scope works with all ranged weapons, not just guns
+				Disable for items that require right-clicking for special abilities
+				'''
 		}
 	}
 }
