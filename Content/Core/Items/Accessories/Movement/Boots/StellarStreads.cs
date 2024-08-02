@@ -44,12 +44,21 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 
         public override void AddRecipes()
 		{
-			CreateRecipe()
-				.AddIngredient(ModContent.ItemType<Shroomts>())
-				.AddIngredient(ItemID.EmpressFlightBooster)
-				.AddIngredient(ItemID.LunarBar, 10)
-				.AddTile(TileID.TinkerersWorkbench)
-				.Register();
+			if (ModContent.GetInstance<TLRConfigServer>().StellarStreadsPostML) {
+				CreateRecipe()
+					.AddIngredient(ModContent.ItemType<Shroomts>())
+					.AddIngredient(ItemID.EmpressFlightBooster)
+					.AddIngredient(ItemID.LunarBar, 10)
+					.AddTile(TileID.TinkerersWorkbench)
+					.Register();
+			}
+			else {
+				CreateRecipe()
+					.AddIngredient(ModContent.ItemType<Shroomts>())
+					.AddIngredient(ItemID.EmpressFlightBooster)
+					.AddTile(TileID.TinkerersWorkbench)
+					.Register();
+			}
 		}
 	}
 }

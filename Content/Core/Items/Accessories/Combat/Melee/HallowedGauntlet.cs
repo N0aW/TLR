@@ -34,25 +34,50 @@ namespace TLR.Content.Core.Items.Accessories.Combat.Melee
 
         public override void AddRecipes()
 		{
-			CreateRecipe()
-				.AddIngredient(ItemID.FireGauntlet)
-				.AddIngredient(ItemID.YoyoBag)
-				.AddIngredient(ItemID.FleshKnuckles)
-				.AddIngredient(ItemID.SharpeningStation)
-				.AddIngredient(ItemID.FrozenTurtleShell)
-				.AddTile(TileID.TinkerersWorkbench)
-				.AddTile(TileID.MythrilAnvil)
-				.Register();
-			CreateRecipe()
-				.AddIngredient(ItemID.BerserkerGlove)
-				.AddIngredient(ItemID.YoyoBag)
-				.AddIngredient(ItemID.AvengerEmblem)
-				.AddIngredient(ItemID.MagmaStone)
-				.AddIngredient(ItemID.SharpeningStation)
-				.AddIngredient(ItemID.FrozenTurtleShell)
-				.AddTile(TileID.TinkerersWorkbench)
-				.AddTile(TileID.MythrilAnvil)
-				.Register();
+			if (ModContent.GetInstance<TLRConfigServer>().HallowGauntletPostPlant) {
+				CreateRecipe()
+					.AddIngredient(ItemID.FireGauntlet)
+					.AddIngredient(ItemID.YoyoBag)
+					.AddIngredient(ItemID.FleshKnuckles)
+					.AddIngredient(ItemID.SharpeningStation)
+					.AddIngredient(ItemID.FrozenTurtleShell)
+					.AddIngredient(ItemID.BrokenHeroSword)
+					.AddTile(TileID.TinkerersWorkbench)
+					.AddTile(TileID.MythrilAnvil)
+					.Register();
+				CreateRecipe()
+					.AddIngredient(ItemID.BerserkerGlove)
+					.AddIngredient(ItemID.YoyoBag)
+					.AddIngredient(ItemID.AvengerEmblem)
+					.AddIngredient(ItemID.MagmaStone)
+					.AddIngredient(ItemID.SharpeningStation)
+					.AddIngredient(ItemID.FrozenTurtleShell)
+					.AddIngredient(ItemID.BrokenHeroSword)
+					.AddTile(TileID.TinkerersWorkbench)
+					.AddTile(TileID.MythrilAnvil)
+					.Register();
+			}
+			else {
+				CreateRecipe()
+					.AddIngredient(ItemID.FireGauntlet)
+					.AddIngredient(ItemID.YoyoBag)
+					.AddIngredient(ItemID.FleshKnuckles)
+					.AddIngredient(ItemID.SharpeningStation)
+					.AddIngredient(ItemID.FrozenTurtleShell)
+					.AddTile(TileID.TinkerersWorkbench)
+					.AddTile(TileID.MythrilAnvil)
+					.Register();
+				CreateRecipe()
+					.AddIngredient(ItemID.BerserkerGlove)
+					.AddIngredient(ItemID.YoyoBag)
+					.AddIngredient(ItemID.AvengerEmblem)
+					.AddIngredient(ItemID.MagmaStone)
+					.AddIngredient(ItemID.SharpeningStation)
+					.AddIngredient(ItemID.FrozenTurtleShell)
+					.AddTile(TileID.TinkerersWorkbench)
+					.AddTile(TileID.MythrilAnvil)
+					.Register();
+			}
 		}
 	}
 }

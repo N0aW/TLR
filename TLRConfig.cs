@@ -28,6 +28,16 @@ namespace TLR
         public bool UselessOverhauls;
         [DefaultValue(true)]
         public bool LargeGemBuffs;
+        [Header ("progression")]
+        [DefaultValue(false)]
+        [ReloadRequired]
+        public bool MechaBootsPostMechs;
+        [DefaultValue(true)]
+        [ReloadRequired]
+        public bool StellarStreadsPostML;
+        [DefaultValue(false)]
+        [ReloadRequired]
+        public bool HallowGauntletPostPlant;
     }
     public class TLRConfigClient : ModConfig
     {

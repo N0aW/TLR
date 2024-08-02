@@ -38,22 +38,48 @@ namespace TLR.Content.Core.Items.Accessories.Movement.Boots
 
         public override void AddRecipes()
 		{
-			CreateRecipe()
-				.AddIngredient(ItemID.TerrasparkBoots)
-				.AddIngredient(ItemID.AmphibianBoots)
-				.AddIngredient(ItemID.AdamantiteBar, 18)
-				.AddIngredient(ItemID.Cog, 75)
-				.AddIngredient(ItemID.SoulofFlight, 10)
-				.AddTile(TileID.TinkerersWorkbench)
-				.Register();
-			CreateRecipe()
-				.AddIngredient(ItemID.TerrasparkBoots)
-				.AddIngredient(ItemID.AmphibianBoots)
-				.AddIngredient(ItemID.TitaniumBar, 18)
-				.AddIngredient(ItemID.Cog, 75)
-				.AddIngredient(ItemID.SoulofFlight, 10)
-				.AddTile(TileID.TinkerersWorkbench)
-				.Register();
+			if (ModContent.GetInstance<TLRConfigServer>().MechaBootsPostMechs) {
+				CreateRecipe()
+					.AddIngredient(ItemID.TerrasparkBoots)
+					.AddIngredient(ItemID.AmphibianBoots)
+					.AddIngredient(ItemID.AdamantiteBar, 18)
+					.AddIngredient(ItemID.Cog, 75)
+					.AddIngredient(ItemID.SoulofFlight, 10)
+					.AddIngredient(ItemID.SoulofMight, 10)
+					.AddIngredient(ItemID.SoulofFright, 10)
+					.AddIngredient(ItemID.SoulofSight, 10)
+					.AddTile(TileID.TinkerersWorkbench)
+					.Register();
+				CreateRecipe()
+					.AddIngredient(ItemID.TerrasparkBoots)
+					.AddIngredient(ItemID.AmphibianBoots)
+					.AddIngredient(ItemID.TitaniumBar, 18)
+					.AddIngredient(ItemID.Cog, 75)
+					.AddIngredient(ItemID.SoulofFlight, 10)
+					.AddIngredient(ItemID.SoulofMight, 10)
+					.AddIngredient(ItemID.SoulofFright, 10)
+					.AddIngredient(ItemID.SoulofSight, 10)
+					.AddTile(TileID.TinkerersWorkbench)
+					.Register();
+			}
+			else {
+				CreateRecipe()
+					.AddIngredient(ItemID.TerrasparkBoots)
+					.AddIngredient(ItemID.AmphibianBoots)
+					.AddIngredient(ItemID.AdamantiteBar, 18)
+					.AddIngredient(ItemID.Cog, 75)
+					.AddIngredient(ItemID.SoulofFlight, 10)
+					.AddTile(TileID.TinkerersWorkbench)
+					.Register();
+				CreateRecipe()
+					.AddIngredient(ItemID.TerrasparkBoots)
+					.AddIngredient(ItemID.AmphibianBoots)
+					.AddIngredient(ItemID.TitaniumBar, 18)
+					.AddIngredient(ItemID.Cog, 75)
+					.AddIngredient(ItemID.SoulofFlight, 10)
+					.AddTile(TileID.TinkerersWorkbench)
+					.Register();
+			}
 		}
 	}
 }
